@@ -1,0 +1,67 @@
+﻿capital = 743
+
+oob = "WAB_1936"
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 3
+		}
+		
+		communism = {
+			popularity = 45
+		}
+
+		anarch = {
+			popularity = 32
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "The Wabanaki People's Congress"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Wab.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+	}
+}
+
+create_corps_commander = {
+	name = "Oswald Beaumont"
+	portrait_path = ""
+	traits = { 
+		trickster
+	}
+	skill = 3
+}

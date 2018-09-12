@@ -1,0 +1,1226 @@
+focus_tree = {
+	id = NEE_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = NEE
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = NEE
+		}
+	}
+	focus = {
+		id = NEE_Re
+		icon = GFX_focus_NEE_fem_officer
+		x = 1
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { days = 1 id = NewEngland.7 }
+			add_political_power = 33
+			add_stability = 0.01
+			swap_ideas = { remove_idea = NEWarTorn add_idea = NEWarTorn2 }
+		}
+	}
+	focus = {
+		id = NEE_Re2
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_Re }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 33
+			add_stability = 0.03
+			add_manpower = 100000
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_extra_state_shared_building_slots = 2	
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re3
+		icon = GFX_focus_NEE_road
+		prerequisite = { focus = NEE_Re2 }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 33
+			add_stability = 0.06
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re3a
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_Re3 }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re3b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_Re3a }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes } 
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes } 
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re3c
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_Re3b }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { days = 1 id = NewEngland.8 }
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1 
+				add_extra_state_shared_building_slots = 1 
+			}
+			add_ideas = NEFac
+			every_country = {
+				limit = {
+					has_government = communism
+				}
+				add_ideas = NEFac
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re4
+		icon = GFX_focus_NEE_roundabout
+		prerequisite = { focus = NEE_Re3 }
+		available = {
+		
+		}
+		x = 1
+		y = 3
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 33
+			add_stability = 0.05
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re5
+		icon = GFX_focus_NEE_rail
+		prerequisite = { focus = NEE_Re4 }
+		available = {
+		
+		}
+		x = 1
+		y = 4
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Re6
+		icon = GFX_focus_NEE_we
+		prerequisite = { focus = NEE_Re5 }
+		available = {
+		
+		}
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.05
+			swap_ideas = { remove_idea = NEWarTorn2 add_idea = NEMarch }
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes } 
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Dev
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { 
+			focus = NEE_Re6 
+		}
+		prerequisite = {
+			focus = NEE_Re3c
+		}
+		available = {
+		
+		}
+		x = 2
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = NewEngland.9
+		}
+	}
+	focus = {
+		id = NEE_Devst
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+        	focus = NEE_Trot
+        	focus = NEE_Deng
+   		}
+		prerequisite = { focus = NEE_Dev }
+		bypass = {	
+			NEE = { 
+				has_country_flag = Develop }
+		}
+		available = {
+			NEE = { 
+				has_idea = NEDevstdv
+			}
+		}
+		x = 2
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {	
+		}
+	}
+	focus = {
+		id = NEE_Devsta
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Dev }
+		available = {
+		
+		}
+		x = 2
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			NEE = { 
+				clr_country_flag = Develop
+			}	
+		}
+	}
+	focus = {
+		id = NEE_Devst1
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { 
+			focus = NEE_Trot 
+			focus = NEE_Devst 
+		}
+		available = {
+		
+		}
+		x = 2
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = NewEngland.10	
+		}
+	}
+	focus = {
+		id = NEE_Devst2
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst1 }
+		available = {
+		
+		}
+		x = 2
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.75 uses = 2 category = synth_resources }	
+		}
+	}
+	focus = {
+		id = NEE_Devst3a
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst2 }
+		available = {
+		
+		}
+		x = 0
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NEE_Devst3b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst2 }
+		available = {
+		
+		}
+		x = 2
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_state = {
+					limit = {
+						controller = { tag = ROOT }
+					}
+				add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } 
+				add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } 
+				add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } 
+				add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } 
+			}
+		}
+	}
+	focus = {
+		id = NEE_Devst3c
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst2 }
+		available = {
+		
+		}
+		x = 4
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = { type = rubber amount = 8 state = 767 }	
+		}
+	}
+	focus = {
+		id = NEE_Devst4
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst3a }
+		prerequisite = { focus = NEE_Devst3b }
+		prerequisite = { focus = NEE_Devst3c }
+		available = {
+		
+		}
+		x = 2
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = industry }	
+		}
+	}
+	focus = {
+		id = NEE_Devst5
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst4 }
+		available = {
+		
+		}
+		x = 2
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = construction_tech }	
+		}
+	}
+	focus = {
+		id = NEE_Devst6
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst5 }
+		available = {
+		
+		}
+		x = 2
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = { days = 1 id = NewEngland.14 }
+			hidden_effect = { add_ideas = closed_economy }
+		}
+	}
+	focus = {
+		id = NEE_Devst7
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+
+   		}
+		prerequisite = { focus = NEE_Devst6 }
+		available = {
+		
+		}
+		x = 2
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_neighbor_of = NEE
+				}
+				country_event = { days = 1 id = NewEngland.15 }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Devst8
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+			focus = NEE_Devst8b
+   		}
+		prerequisite = { focus = NEE_Devst7 }
+		available = {
+			NEE = { has_idea = NEDevstdv }
+		}
+		x = 1
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { NESoic }
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = NEE_Devst8b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+			focus = NEE_Devst8
+   		}
+		prerequisite = { focus = NEE_Devst7 }
+		available = {
+			NEE = { has_idea = NEDevstdv }
+		}
+		x = 3
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { NESoic }
+			SOV = {
+				add_to_faction = NEE
+			}
+		}
+	}
+	focus = {
+		id = NEE_Trot
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+       		focus = NEE_Devst
+       		focus = NEE_Deng
+   		}
+   		bypass = {	
+			NEE = { 
+				has_country_flag = Trotsky }
+		}
+		prerequisite = { focus = NEE_Dev }
+		available = {
+			NEE = { 
+				has_idea = NETrotstdv
+			}
+		}
+		x = 7
+		y = 7
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = NEE_Trota
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+       		focus = NEE_Devst
+       		focus = NEE_Deng
+   		}
+   		bypass = {
+		}
+		prerequisite = { focus = NEE_Trot }
+		available = {
+		
+		}
+		x = 7
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			NEE = { 
+				clr_country_flag = Trotsky
+			}
+		}
+	}
+	focus = {
+		id = NEE_Trot2
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot focus = NEE_Devst }
+		available = {
+		
+		}
+		x = 7
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = NewEngland.11
+		}
+	}
+	focus = {
+		id = NEE_Trot3a
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot2}
+		available = {
+		
+		}
+		x = 5
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_neighbor_of = NEE
+				}
+				add_ideas = NEAntiCa
+			}
+		}
+	}
+	focus = {
+		id = NEE_Trot3b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot2}
+		available = {
+		
+		}
+		x = 7
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_neighbor_of = NEE
+				}
+				add_popularity = { ideology = communism popularity = 0.05 }
+			}
+		}
+	}
+	focus = {
+		id = NEE_Trot4
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot3b}
+		available = {
+		
+		}
+		x = 7
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_grand_battle_plan }
+			add_tech_bonus = { bonus = 0.5 uses = 2 category = cat_mass_assault }
+		}
+	}
+	focus = {
+		id = NEE_Trot5
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot4}
+		available = {
+		
+		}
+		x = 5
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = armor }
+		}
+	}
+	focus = {
+		id = NEE_Trot6
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot5}
+		available = {
+		
+		}
+		x = 7
+		y = 13
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = infantry_tech }
+		}
+	}
+	focus = {
+		id = NEE_Trot7
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot6}
+		available = {
+		
+		}
+		x = 7
+		y = 14
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NEE_Trot8
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot7}
+		available = {
+		
+		}
+		x = 7
+		y = 15
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NETrench
+		}
+	}
+	focus = {
+		id = NEE_Trot9
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot8}
+		available = {
+		
+		}
+		x = 7
+		y = 16
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = rocketry }
+		}
+	}
+	focus = {
+		id = NEE_Trot9b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = {
+   		}
+		prerequisite = { focus = NEE_Trot8}
+		available = {
+		
+		}
+		x = 9
+		y = 16
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = { bonus = 0.5 uses = 1 category = nuclear }
+		}
+	}
+	focus = {
+		id = NEE_Trot10
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = { focus = NEE_Trot10b }
+		prerequisite = { focus = NEE_Trot9 }
+		available = {
+			NEE = { has_idea = NETrotstdv }
+			SOV = { has_completed_focus = SOV_great_purge }
+			NOT = {
+				has_global_flag = trotsky_dead
+			}
+		}
+		x = 7
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = TrotskyLeader
+				kill_country_leader = yes
+			}
+			create_country_leader = {
+				name = "Leon Trotsky"
+				desc = "POLITICS_LEON_TROTSKY_DESC"
+				picture = "Portrait_Leon_Trotsky.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					permanent_revolutionary
+				}
+			}
+			add_ideas = { NERarmy }
+			create_faction = Fourth_International
+		}
+	}
+	focus = {
+		id = NEE_Trot10b
+		icon = GFX_focus_NEE_VolBrigEngRep
+		mutually_exclusive = { focus = NEE_Trot10 }
+		prerequisite = { focus = NEE_Trot9}
+		available = { NEE = { has_idea = NETrotstdv } }
+		x = 5
+		y = 17
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { NERarmy }
+			set_rule = { can_create_factions = yes }
+		}
+	}
+	focus = {
+		id = NEE_Deng
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	focus = NEE_Devst
+        	focus = NEE_Trot
+   		}
+   		bypass = {	
+			NEE = { 
+				has_country_flag = Deng 
+			}
+		}
+		prerequisite = { focus = NEE_Dev }
+		available = {
+			NEE = { 
+				has_idea = NEDengstdv
+			}
+		}
+		x = 12
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			NEE = { 
+				clr_country_flag = Deng 
+			}
+		}
+	}
+	focus = {
+		id = NEE_Deng2a
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	focus = NEE_Deng2b
+   		}
+		prerequisite = { focus = NEE_Deng }
+		available = {
+			
+		}
+		x = 12
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NEWamp
+		}
+	}
+	focus = {
+		id = NEE_Deng2a2
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	focus = NEE_Deng2b2
+   		}
+		prerequisite = { focus = NEE_Deng2a }
+		available = {
+			
+		}
+		x = 12
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = GCE }
+		}
+	}
+	focus = {
+		id = NEE_Deng2b
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	focus = NEE_Deng2a
+   		}
+		prerequisite = { focus = NEE_Deng }
+		available = {
+			
+		}
+		x = 14
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NEDolla
+			add_stability = 0.005
+		}
+	}
+	focus = {
+		id = NEE_Deng2b2
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	focus = NEE_Deng2a2
+   		}
+		prerequisite = { focus = NEE_Deng2b }
+		available = {
+
+		}
+		x = 14
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = { type = convoy_1 amount = 10 producer = GCE }
+			add_equipment_to_stockpile = { type = convoy_1 amount = 10 producer = USA }
+			add_equipment_to_stockpile = { type = convoy_1 amount = 10 producer = ENG }
+			add_equipment_to_stockpile = { type = convoy_1 amount = 10 producer = FOR }
+			add_equipment_to_stockpile = { type = convoy_1 amount = 10 producer = OHI }
+		}
+	}
+	focus = {
+		id = NEE_Deng3
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	
+   		}
+		prerequisite = { focus = NEE_Deng2b2 focus = NEE_Deng2a2 }
+		available = {
+
+		}
+		x = 13
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = NETrade
+		}
+	}
+	focus = {
+		id = NEE_Deng4
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	
+   		}
+		prerequisite = { focus = NEE_Deng3 }
+		available = {
+
+		}
+		x = 13
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NEE_Deng5
+		icon = GFX_focus_NEE_Revisionism
+		mutually_exclusive = {
+        	
+   		}
+		prerequisite = { focus = NEE_Deng4 }
+		available = {
+
+		}
+		x = 13
+		y = 12
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = NEE_NewYorkPre
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = {}
+		available = {
+		
+		}
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = NEE_NewYork
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_NewYorkPre }
+		available = {
+		
+		}
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			NYC = {
+				country_event = NewYork.1
+			}
+		}
+	}
+	focus = {
+		id = NEE_Acadie
+		icon = GFX_focus_NEE_VolBrigEngRep
+		prerequisite = { focus = NEE_NewYorkPre }
+		available = {
+		
+		}
+		x = 12
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = NewEngland.19
+		}
+	}
+	focus = {
+		id = NEE_School
+		icon = GFX_focus_NEE_we
+		prerequisite = {}
+		available = {
+		
+		}
+		x = 7
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NEE_Rifle
+		icon = GFX_focus_NEE_we
+		prerequisite = {}
+		available = {
+		
+		}
+		x = 9
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+}

@@ -1,0 +1,541 @@
+﻿add_namespace = NewEngland
+
+# Border Skirmish with the south
+country_event = {
+	id = NewEngland.1
+	title = NewEngland.1.t
+	desc = NewEngland.1.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { # Send Volunteers
+		name = NewEngland.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		start_border_war = { 
+			change_state_after_war = no 
+			attacker = { 
+				state = 765 
+				num_provinces = 2
+				on_win = GoldenCoast.12
+				on_lose = NewEngland.2
+				on_cancel = NewEngland.20
+			} 
+			defender = {
+				state = 767
+				num_provinces = 2
+				on_win = NewEngland.2
+				on_lose = GoldenCoast.12
+				on_cancel = NewEngland.20
+			}
+		}
+	}
+	option = { # peacedeal
+		name = NewEngland.1.b
+		ai_chance = { factor = 0 }
+		GCE = {
+			effect_tooltip = {
+				add_stability = 0.05
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 500
+					producer = NEE
+				}
+			}
+			country_event = { days = 1 id = GoldenCoast.3 }
+		}
+	}
+}
+# Successful Raid
+country_event = {
+	id = NewEngland.2
+	title = NewEngland.2.t
+	desc = NewEngland.2.d
+	picture = GFX_report_event_dead_soldiers
+	mean_time_to_happen = {days = 1}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = NewEngland.2.a
+		if = {
+			limit = {
+				765 = { 
+					is_owned_by = GCE 
+					any_neighbor_state = { 
+						OR = {
+							is_owned_by = GCE								
+						}
+					} 
+				}
+			}
+			765 = { add_manpower = -30000 }
+		}		
+		if = {
+			limit = { 
+				NOT = { 
+					765 = { 
+						is_owned_by = GCE 
+						any_neighbor_state = { 
+							OR = {
+								is_owned_by = GCE
+							} 	
+						}
+					}
+				}
+			}
+			random_owned_state = {
+				limit = { 
+					any_neighbor_state = { 
+						OR = {
+							is_owned_by = GCE
+							
+						}
+					} 
+				} 
+				add_manpower = -30000
+			}
+		}
+		765 = { set_demilitarized_zone = yes }
+		NEE = {
+			army_experience = 12.5
+			add_political_power = 25
+		}
+	}
+}
+country_event = {
+	id = NewEngland.3
+	title = NewEngland.3.t
+	desc = NewEngland.3.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	trigger = {
+		tag = NEE
+		AND = {
+			owns_state = 764
+			owns_state = 765
+			owns_state = 357
+			owns_state = 762
+			owns_state = 766
+			owns_state = 767
+		}
+	}
+	option = {
+		name = NewEngland.3.a
+		army_experience = 50
+		add_political_power = 100
+		}
+}
+country_event = {
+	id = NewEngland.4
+	title = NewEngland.4.t
+	desc = NewEngland.4.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	trigger = {
+		tag = NEE
+		AND = {
+			has_government = democratic
+		}
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	option = {
+		name = NewEngland.4.a
+		add_political_power = -100
+		}
+}
+country_event = {
+	id = NewEngland.5
+	title = NewEngland.5.t
+	desc = NewEngland.5.d
+	picture = GFX_report_event_dead_soldiers
+	fire_only_once = yes
+	trigger = {
+		tag = NEE
+		AND = {
+			has_government = communism
+		}
+	}
+	mean_time_to_happen = {
+		days = 365
+	}
+	option = {
+		name = NewEngland.5.a
+		add_popularity = { ideology = communism popularity = 0.1 }
+		}
+}
+country_event = {
+	id = NewEngland.6
+	title = NewEngland.6.t
+	desc = NewEngland.6.d
+	picture = GFX_report_event_dead_soldiers            #event to add conscription % idea when NU high
+	fire_only_once = yes
+	trigger = {
+		tag = NEE
+		AND = {
+			has_war_support > 80
+		}
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	option = {
+		name = NewEngland.6.a
+		add_ideas = NEVolunteers
+		}
+}
+country_event = {
+	id = NewEngland.7
+	title = NewEngland.7.t
+	picture = GFX_report_event_dead_soldiers
+	desc = NewEngland.7.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = NewEngland.7.a
+			add_political_power = 150
+			add_manpower = 10000
+			add_stability = 0.02
+		}
+	option = {
+		name = NewEngland.7.b
+			add_political_power = -150
+			add_stability = -0.02
+		}
+}
+country_event = {
+	id = NewEngland.8
+	title = NewEngland.8.t
+	picture = GFX_report_event_dead_soldiers
+	desc = NewEngland.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = NewEngland.8.a
+		add_political_power = 50
+		add_ideas = NEConvFac
+		}
+	option = {
+		name = NewEngland.8.b
+		add_political_power = 50
+		add_ideas = NEMilFac
+		}
+}
+country_event = {
+	id = NewEngland.9
+	title = NewEngland.9.t
+	picture = GFX_report_event_generic_communist_congress
+	desc = NewEngland.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = NewEngland.9.a
+		add_political_power = 50
+		set_country_flag = Develop
+		add_ideas = NEDevstdv
+	}
+	option = {
+		name = NewEngland.9.b
+		add_political_power = 50
+		set_country_flag = Trotsky
+		add_ideas = NETrotstdv
+	}
+	option = {
+		name = NewEngland.9.c
+		add_political_power = 50
+		set_country_flag = Deng
+		add_ideas = NEDengstdv
+	}
+
+}
+country_event = {
+	id = NewEngland.10
+	title = NewEngland.10.t
+	picture = GFX_report_event_generic_communist_congress
+	desc = NewEngland.10.d
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = NewEngland.10.a
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_political_power = 50
+			add_timed_idea = { idea = NEPro days = 365 }
+		}
+		country_event = { days = 365 id = NewEngland.10 }
+	}
+	option = {
+		name = NewEngland.10.b
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+		add_political_power = 50
+		add_tech_bonus = { bonus = 0.5 uses = 2 }
+		add_timed_idea = { idea = NERes days = 365 }
+		}
+		country_event = { days = 365 id = NewEngland.10 }
+	}
+}
+country_event = {
+	id = NewEngland.11
+	title = NewEngland.11.t
+	picture = GFX_report_event_generic_communist_congress
+	desc = NewEngland.11.d
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = NewEngland.11.a
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_political_power = 50
+			add_timed_idea = { idea = NEAntiFa days = 365 }
+		}
+		every_country = {
+			limit = {
+				has_government = fascism
+			}
+			add_political_power = -25
+			add_popularity = { ideology = communism popularity = 0.05 }
+		}
+		country_event = { days = 365 id = NewEngland.11 }
+	}
+	option = {
+		name = NewEngland.11.b
+		every_country = {
+			limit = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			add_political_power = -50
+			add_popularity = { ideology = communism popularity = 0.05 }
+			add_timed_idea = { idea = NEAntiCa days = 365 }
+		}
+		country_event = { days = 365 id = NewEngland.11 }
+	}
+	option = {
+		name = NewEngland.11.c
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_political_power = 50
+			add_timed_idea = { idea = NEWW days = 365 }
+		}
+		country_event = { days = 365 id = NewEngland.11 }
+	}
+	option = {
+		name = NewEngland.11.e
+		every_country = {
+			limit = {
+				has_government = communism
+			}
+			add_political_power = 50
+			add_tech_bonus = { bonus = 0.5 uses = 2 }
+			add_timed_idea = { idea = NERom days = 365 }
+		}
+		country_event = { days = 365 id = NewEngland.11 }
+	}
+}
+country_event = {
+	id = NewEngland.12
+	title = NewEngland.12.t
+	desc = NewEngland.12.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = NewEngland.12.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = NewEngland.13
+	title = NewEngland.13.t
+	desc = NewEngland.13.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = NewEngland.13.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		create_wargoal = { type = annex_everything target = NYC }
+	}
+}
+country_event = {
+	id = NewEngland.14
+	title = NewEngland.14.t
+	desc = NewEngland.14.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = NewEngland.14.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		add_manpower = -8
+		add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = NEE }
+	}
+}
+country_event = {
+	id = NewEngland.15
+	title = NewEngland.15.t
+	desc = NewEngland.15.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = NewEngland.15.a
+		ai_chance = { factor = 50 }
+		add_popularity = { ideology = communism popularity = 0.05 }
+	}
+	option = { 
+		name = NewEngland.15.b
+		ai_chance = { factor = 50 }
+		add_political_power = -50
+		add_stability = -0.01
+		add_popularity = { ideology = communism popularity = -0.01 }
+	}
+}
+country_event = {
+	id = NewEngland.16
+	title = NewEngland.16.t
+	desc = NewEngland.16.d
+	trigger= {
+		has_global_flag = trotsky_dead
+		tag = NEE
+		NEE = { has_country_flag = TrotskyLeader }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	option = {
+		name = NewEngland.16.a
+		ai_chance = { factor = 100 }
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Supreme Council"
+			desc = "POLITICS_KING_ZOG_DESC"
+			picture = "Portrait_Supreme_Council.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+		
+			}
+		}
+	}
+}
+country_event = {
+	id = NewEngland.17
+	title = NewEngland.17.t
+	desc = NewEngland.17.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NewEngland.17.a
+		ai_chance = { factor = 100 }
+		declare_war_on = { target = MAD type = annex_everything }
+	}
+	option = {
+		name = NewEngland.17.b
+		ai_chance = { factor = 0 }
+		add_political_power = -250
+	}
+}
+country_event = {
+	id = NewEngland.18
+	title = NewEngland.18.t
+	desc = NewEngland.18.d
+	trigger= {
+		745 = { is_owned_by = MAD }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	option = {
+		name = NewEngland.18.a
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = NewEngland.19
+	title = NewEngland.19.t
+	desc = NewEngland.19.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NewEngland.19.a
+		ai_chance = { factor = 100 }
+		ABE = { 
+			transfer_state = 465
+			declare_war_on = { target = ACA type = annex_everything }
+		}
+		NEE = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = ABE
+					autonomous_state = autonomy_integrated_puppet
+				}
+			else = {
+				puppet = ABE
+			}
+			}
+			add_to_war = { targeted_alliance = ABE enemy = ACA }
+			add_state_claim = 465
+			add_state_claim = 464
+		}
+
+	}
+	option = {
+		name = NewEngland.19.b
+		ai_chance = { factor = 100 }
+		add_state_claim = 465
+		add_state_claim = 464
+	}
+}
+country_event = {
+	id = NewEngland.20
+	title = NewEngland.20.t
+	desc = NewEngland.20.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NewEngland.19.a
+		ai_chance = { factor = 100 }
+	}
+}

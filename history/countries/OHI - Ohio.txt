@@ -1,0 +1,109 @@
+﻿capital = 775
+
+oob = "OHI_1936"
+
+set_research_slots = 2
+set_stability = 0.6
+set_war_support = 0.7
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+
+}
+
+set_convoys = 40
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 20
+		}
+
+		neutrality = {
+			popularity = 40
+		}
+		
+		communism = {
+			popularity = 20
+			banned = yes
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+
+}
+create_country_leader = {
+	name = "Martin Davey"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "Portrait_OHI_Martin.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Dwain I"
+	desc = "POLITICS_EARL_BROWDER_DESC"
+	picture = "Portrait_OHI_Dwain_Marx.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+create_corps_commander = {
+	name = "Jeff Goldblum"
+		picture = "gfx/leaders/GCE/Portrait_Panderson.dds"
+	traits = {  trickster panzer_leader }
+	skill = 5
+
+}
+
+create_corps_commander = {
+	name = "Channing Langley"
+		picture = "gfx/leaders/GCE/Portrait_Panderson.dds"
+	traits = {  trait_engineer  }
+	skill = 5
+
+}
+
+create_field_marshal = {
+	name = "Peter Blake"
+		picture = "gfx/leaders/GCE/Portrait_Panderson.dds"
+	traits = { logistics_wizard offensive_doctrine }
+	skill = 5
+
+}
+create_navy_leader = {
+	name = "George Greco"
+		picture = "gfx/leaders/GCE/Portrait_Panderson.dds"
+	traits = {  }
+	skill = 2
+}

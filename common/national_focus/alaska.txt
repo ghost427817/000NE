@@ -1,0 +1,378 @@
+focus_tree = {
+	id = 'alaska'
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			tag = ALS
+		}
+	}
+default = no
+	focus = {
+		id = CommieALS
+		icon = GFX_goal_support_communism
+		x = 3
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = LoserALS }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 150
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 30
+						}
+
+						fascism = {
+							popularity = 0
+						}
+		
+						communism = {
+							popularity = 70
+						}
+			
+						neutrality = { 
+							popularity = 0
+						}
+					}
+	
+				ruling_party = communism
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOVALS
+		icon = GFX_goal_support_communism
+		x = 3
+		y = 1
+		cost = 10
+		mutually_exclusive = { focus = IndependentALS focus = ENGALS }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 50
+				is_historical_focus_on = yes
+			}
+		}
+		prerequisite = {focus = CommieALS }
+		completion_reward = {
+			SOV = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = {
+						target = ALS
+						autonomous_state = autonomy_integrated_puppet
+					}
+	
+					else = {
+						puppet = ALS
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = IndependentALS
+		icon = GFX_goal_support_communism
+		x = 5
+		y = 1
+		prerequisite = { focus = LoserALS focus = CommieALS }
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOVALS focus = ENGALS }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ResourceALS
+		icon = GFX_goal_support_communism
+		x = 5
+		y = 2
+		prerequisite = { focus = IndependentALS}
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SOVALS focus = ENGALS }
+		completion_reward = {
+			add_resource = {
+    			type = oil
+    			amount = 150
+    			state = 463
+			}
+		}
+	}
+	focus = {
+		id = LoserALS
+		icon = GFX_goal_support_democracy
+		x = 7
+		y = 0
+		cost = 10
+		mutually_exclusive = { focus = CommieALS }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = ENGALS
+		icon = GFX_goal_support_democracy
+		x = 7
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = LoserALS }
+		mutually_exclusive = { focus = SOVALS focus = IndependentALS }
+		completion_reward = {
+			ENG = {
+				if = {
+					limit = {
+						has_dlc = "Together for Victory"
+					}
+					set_autonomy = {
+						target = ALS
+						autonomous_state = autonomy_integrated_puppet
+					}
+	
+					else = {
+						puppet = ALS
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = army_effortALS
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 10
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effortALS
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = army_effortALS }
+		x = -1
+		y = 1
+		relative_position_id = army_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = motorization_effortALS
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = army_effortALS }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = army_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.75
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = doctrine_effortALS
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = army_effortALS }
+		x = 0
+		y = 2
+		relative_position_id = army_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_2ALS
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = equipment_effortALS }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonusALS
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = mechanization_effortALS
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = motorization_effortALS }
+		x = 0
+		y = 2
+		relative_position_id = motorization_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = doctrine_effort_2ALS
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = doctrine_effortALS }
+		x = 0
+		y = 2
+		relative_position_id = doctrine_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = equipment_effort_3ALS
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = equipment_effort_2ALS }
+		x = 0
+		y = 2
+		relative_position_id = equipment_effort_2ALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = armor_effortALS
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = mechanization_effortALS }
+		x = 0
+		y = 2
+		relative_position_id = mechanization_effortALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = special_forcesALS
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = equipment_effort_3ALS }
+		prerequisite = { focus = doctrine_effort_2ALS }
+		prerequisite = { focus = armor_effortALS }
+		x = 1
+		y = 1
+		relative_position_id = equipment_effort_3ALS
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.5
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+}

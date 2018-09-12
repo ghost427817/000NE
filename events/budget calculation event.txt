@@ -1,0 +1,153 @@
+﻿add_namespace = taxes
+	
+	country_event = {
+#big calculator event
+		id = taxes.1
+		title = taxes.1.t
+		desc = taxes.1.d
+		picture = GFX_report_event_merchant_ship_01
+		is_triggered_only = yes
+		hidden = yes
+		fire_only_once = no
+
+		immediate = { 
+			ai_chance = { factor = 100 }
+#if statements for checking what Taxes ROOT has
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = No_Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 1 }
+				set_variable = { ROOT.BudgetCalc = 1 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Some_Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 2 }
+				set_variable = { ROOT.BudgetCalc = 2 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = More_Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 3 }
+				set_variable = { ROOT.BudgetCalc = 3 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 4 }
+				set_variable = { ROOT.BudgetCalc = 4 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = High_Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 5 }
+				set_variable = { ROOT.BudgetCalc = 5 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Reinhardt_Taxes
+					}
+				}
+				set_variable = { ROOT.BudgetFromTaxes = 3 }
+				set_variable = { ROOT.BudgetCalc = 3 }
+			}
+#If statements for checking what government spending ROOT has
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Social_Spending_4
+					}
+				}
+				set_variable = { ROOT.Cost = 4 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Social_Spending_3
+					}
+				}
+				set_variable = { ROOT.Cost = 3 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Social_Spending_2
+					}
+				}
+				set_variable = { ROOT.Cost = 2 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = Social_Spending
+					}
+				}
+				set_variable = { ROOT.Cost = 1 }
+			}
+#calculation
+			subtract_from_variable = {
+				var = ROOT.BudgetCalc
+    			value = ROOT.Cost
+			}
+			country_event = taxes.2
+		}
+	}
+	country_event = {
+		id = taxes.2
+		title = taxes.2.t
+		desc = taxes.2.d
+		picture = GFX_report_event_merchant_ship_01
+		is_triggered_only = yes
+
+		fire_only_once = no
+
+		option = { 
+			name = taxes.2.a
+			ai_chance = { factor = 100 }
+		}
+	}
+	country_event = {
+		id = taxes.3
+		title = taxes.3.t
+		desc = taxes.3.d
+		picture = GFX_report_event_merchant_ship_01
+		is_triggered_only = yes
+
+		fire_only_once = no
+
+		option = { 
+			name = taxes.3.a
+			ai_chance = { factor = 100 }
+		}
+	}
+	country_event = {
+		id = taxes.4
+		title = taxes.4.t
+		desc = taxes.4.d
+		picture = GFX_report_event_merchant_ship_01
+		is_triggered_only = yes
+
+		fire_only_once = no
+
+		option = { 
+			name = taxes.4.a
+			ai_chance = { factor = 100 }
+		}
+	}
+	

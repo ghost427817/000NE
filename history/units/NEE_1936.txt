@@ -1,0 +1,189 @@
+﻿division_template = {
+	name = "Workers' Militia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Mountainmen"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Volunteer Cavalry"  		# Schnelle-Division (cavalry)
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      # Light tank (tankette) bn
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "Portland Cavalry"
+		location = 7462  # Capital
+		division_template = "Volunteer Cavalry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Hartford Veterans"					#veterans from revolution, former citizens of connecticut
+		location = 7462  # Capital
+		division_template = "Workers' Militia"
+		start_experience_factor = 5
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Simsbury Veterans"					#veterans from revolution, former citizens of connecticut
+		location = 7462  # Capital
+		division_template = "Workers' Militia"
+		start_experience_factor = 5
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Warrick Veterans"			#veterans from revolution, fromer citizens of rhode island
+		location = 1338 # who knows
+		division_template = "Workers' Militia"
+		start_experience_factor = 5
+		start_equipment_factor = 1
+	}
+
+	# II Korps
+	division= {	
+		name = "Augusta Militia"			# Used to form 45. Infanterie--division post-AnschlRCNS
+		location = 3732 # 
+		division_template = "Workers' Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "White Mountain Militia"			# Used to form 3. Gebirgs-division post-AnschlRCNS
+		location = 10481  # Cental New Hampshire
+		division_template = "Mountainmen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "Green Mountain Militia"			# Used to form 2. Gebirgs-division post-AnschlRCNS
+		location = 9675  # South Vermont
+		division_template = "Mountainmen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	navy = {					
+		name = "Revolutionary Communal Navy"				
+		base = 3732
+		location = 3732 # Augusta
+		ship = { name = "RCNS Revolutionary" definition = battleship equipment = { battleship_1 = { amount = 1 owner = NEE} } }				
+		ship = { name = "RCNS Historical" definition = battleship equipment = { battleship_1 = { amount = 1 owner = NEE} } }				
+		ship = { name = "RCNS Dialectical" definition = battleship equipment = { battleship_1 = { amount = 1 owner = NEE} } }
+		ship = { name = "RCNS Karl Marx" definition = carrier equipment = { carrier_1 = { amount = 1 owner = NEE } } 
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "NEE" amount = 8 } # historical: 16
+				cv_CAS_equipment_1 =  { owner = "NEE" amount = 14 } # historical: 30
+				cv_nav_bomber_equipment_1 =  { owner = "NEE" amount = 8 } # historical: 12
+			}				
+		}
+		ship = { name = "RCNS Portland" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Nashua" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Concord" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Bangor" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Machias" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Boston" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Green Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS White Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Blair Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Talcott Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Katahdin Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Wildcat Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Kinsman Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Saddleback Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Galehead Mountain" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Freiderich R-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Karl R-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Bartolomeo R-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Nicola R-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Rosa S-46" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Amadeo S-47" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Vladimir S-48" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }			
+		ship = { name = "RCNS Antonio O-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS Iosif R-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS R-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS S-25" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS S-26" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+		ship = { name = "RCNS S-32" definition = submarine equipment = { submarine_1 = { amount = 1 owner = NEE } } }
+	}
+}
+
+air_wings = {
+	### Soviet planes
+	357 = {
+		fighter_equipment_0 =  {
+			owner = "NEE" 
+			creator = "SOV"
+			amount = 40
+		}
+	}
+	743 = {
+		# 7th Bombardment Group 
+		# 19th Bombardment Group 
+		tac_bomber_equipment_0 = {
+			owner = "NEE"
+			creator = "SOV" 
+			amount = 60
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NEE"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NEE"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

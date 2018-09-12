@@ -1,0 +1,141 @@
+﻿capital = 745
+OOB = "MAD_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+}
+set_stability = 0.3
+set_war_support = 0.8
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 1
+		}
+
+		fascism = {
+			popularity = 94
+		}
+		
+		communism = {
+			popularity = 1
+			banned = yes
+		}
+		
+		neutrality = { 
+			popularity = 1
+		}
+
+		anarch = { 
+			popularity = 1
+		}
+	}
+
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_convoys = 25
+
+create_country_leader = {
+	name = "Peter Anderson"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Panderson.dds"
+	expire = "1950.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Gerald Duff"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Duff.dds"
+	expire = "1943.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Eric Killingly"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Killingly.dds"
+	expire = "1945.2.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Jacob Colwell"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_Colwell.dds"
+	expire = "1965.1.2"
+	ideology = falangism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Alice Patterson"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Alice Patterson.dds"
+	expire = "2000.2.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Boston Industrial Council"
+	desc = "POLITICS_KING_ZOG_DESC"
+	picture = "Portrait_BostonCouncil.dds"
+	expire = "2000.2.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Jacob Colwell"
+	portrait_path = "Portrait_Colwell.dds"
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Levi Eaton"
+		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { blockade_runner spotter }
+	skill = 2
+}
+

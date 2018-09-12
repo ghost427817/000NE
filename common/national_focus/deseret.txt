@@ -1,0 +1,509 @@
+#mormon
+focus_tree = {
+	id = deseret_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DES
+		}
+		modifier = {
+			add = 10
+			original_tag = DES
+		}
+	}
+	default = no
+	focus = {
+		id = MormonPrefocus
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { }
+		available = {
+		}
+		x = 6
+		y = 0
+		cost = 1
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 100
+			country_event = { id = mormon.2 }
+		}
+	}
+	focus = {
+		id = MormonLeft
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = MormonPrefocus }
+		mutually_exclusive = { focus = MormonRight }
+		available = {
+			OR = {
+				check_variable = {
+   					mormonvote = 1
+				}
+				check_variable = {
+   					mormonvote = 2
+				}
+			}
+		}
+		relative_position_id = MormonPrefocus
+		x = -4
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 50
+						}
+
+						fascism = {
+							popularity = 0
+						}
+		
+						communism = {
+							popularity = 50
+						}
+			
+						neutrality = { 
+							popularity = 0
+						}
+					}
+	
+				ruling_party = neutrality
+				}
+			}
+		}
+	}
+	focus = {
+		id = MormonLeftLeft
+		icon = GFX_idea_PO
+		prerequisite = { focus = MormonLeft }
+		mutually_exclusive = { focus = MormonLeftRight }
+		available = {
+			check_variable = {
+   				mormonvote = 1
+			}
+		}
+		relative_position_id = MormonLeft
+		x = -2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = DESPO
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 20
+						}
+
+						fascism = {
+							popularity = 0
+						}
+		
+						communism = {
+							popularity = 80
+						}
+			
+						neutrality = { 
+							popularity = 0
+						}
+					}
+	
+				ruling_party = communism
+				}
+			}
+		}
+	}
+	focus = {
+		id = MormonLeftRight
+		icon = GFX_idea_LDS
+		prerequisite = { focus = MormonLeft }
+		mutually_exclusive = { focus = MormonLeftLeft }
+		available = {
+			check_variable = {
+   				mormonvote = 2
+			}
+		}
+		relative_position_id = MormonLeft
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = DESPOCITO
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 60
+						}
+
+						fascism = {
+							popularity = 0
+						}
+		
+						communism = {
+							popularity = 40
+						}
+			
+						neutrality = { 
+							popularity = 0
+						}
+					}
+	
+				ruling_party = democratic
+				}
+			}
+		}
+	}
+	focus = {
+		id = MormonRight
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = MormonPrefocus }
+		mutually_exclusive = { focus = MormonLeft }
+		available = {
+			OR = {
+				check_variable = {
+   					mormonvote = 3
+				}
+				check_variable = {
+   					mormonvote = 4
+				}
+			}
+		}
+		relative_position_id = MormonPrefocus
+		x = 4
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 0
+						}
+
+						fascism = {
+							popularity = 30
+						}
+		
+						communism = {
+							popularity = 20
+						}
+			
+						neutrality = { 
+							popularity = 50
+						}
+					}
+	
+				ruling_party = neutrality
+				}
+			}
+		}
+	}
+	focus = {
+		id = MormonRightLeft
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = MormonRight }
+		mutually_exclusive = { focus = MormonRightCenter }
+		available = {
+			check_variable = {
+   					mormonvote = 3
+			}
+		}
+		relative_position_id = MormonRight
+		x = -2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 0
+						}
+
+						fascism = {
+							popularity = 40
+						}
+		
+						communism = {
+							popularity = 10
+						}
+			
+						neutrality = { 
+							popularity = 50
+						}
+					}
+	
+				ruling_party = neutrality
+				}
+			}
+		}
+	}
+	focus = {
+		id = MormonRightCenter
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = MormonRight }
+		mutually_exclusive = { focus = MormonRightLeft }
+		available = {
+			check_variable = {
+   					mormonvote = 4
+			}
+		}
+		relative_position_id = MormonRight
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = Mormleft
+			hidden_effect = {
+				set_politics = {
+    				parties = {
+						democratic = { 
+							popularity = 0
+						}
+
+						fascism = {
+							popularity = 50
+						}
+		
+						communism = {
+							popularity = 10
+						}
+			
+						neutrality = { 
+							popularity = 40
+						}
+					}
+	
+				ruling_party = fascism
+				}
+			}
+		}
+	}
+	focus = {
+		id = Kanab
+		icon = GFX_idea_UO
+		prerequisite = { focus = MormonLeftLeft focus = MormonLeftRight }
+		available = {
+			DES = {
+				controls_state = 785
+			}
+		}
+		relative_position_id = MormonLeftLeft
+		x = 2
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = Enoch
+		icon = GFX_idea_UO
+		prerequisite = { focus = Kanab }
+		available = {
+			DES = {
+				controls_state = 786
+			}
+		}
+		relative_position_id = Kanab
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MormonTHD
+		icon = GFX_focus_generic_join_comintern 
+		prerequisite = { focus = MormonLeftLeft }
+		available = {
+			
+		}
+		relative_position_id = MormonLeftLeft
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MormonIndCon
+		icon = GFX_focus_generic_soviet_politics 
+		prerequisite = { focus = MormonTHD }
+		available = {
+			
+		}
+		relative_position_id = MormonTHD
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = ExpandMorm
+		icon = GFX_idea_DLF
+		prerequisite = { focus = MormonPrefocus }
+		available = {
+			
+		}
+		relative_position_id = MormonPrefocus
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = {
+				add_ideas = {
+					DLF
+				}
+			}
+		}
+	}
+	focus = {
+		id = ExpandMorm2
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = ExpandMorm }
+		available = {
+			
+		}
+		relative_position_id = ExpandMorm
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = DLF_tt
+			set_country_flag = DES_Proselytize
+		}
+	}
+	focus = {
+		id = MormonProph
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = MormonLeftRight }
+		available = {
+			
+		}
+		relative_position_id = MormonLeftRight
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MormonCongress
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = MormonProph }
+		available = {
+			
+		}
+		relative_position_id = MormonProph
+		x = 0
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+}

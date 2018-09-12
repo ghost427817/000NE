@@ -1,0 +1,25 @@
+state={
+	id=780
+	name="STATE_780"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = NYC
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = NYC
+		add_core_of = USA
+		victory_points = {
+			9708 30.0 
+		}
+	}
+	provinces={
+		6717 9708 11650 11680 
+	}
+	manpower=100000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

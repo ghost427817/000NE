@@ -1,0 +1,19 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		847 3850 6872 6885 9804 12405 
+	}
+	history={
+		owner = PEN
+		add_core_of = PEN
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+		}
+	}
+	manpower=250000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

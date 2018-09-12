@@ -1,0 +1,7 @@
+Deseret_Expansion = {
+	icon = infiltration
+	priority = 100
+	visible = {
+		has_country_flag = DES_Proselytize
+	}
+}

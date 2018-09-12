@@ -1,0 +1,86 @@
+﻿add_namespace = mormon
+
+country_event = {
+	id = mormon.1
+	is_triggered_only = yes
+	#trigger = {
+	#	
+	#}
+
+	hidden = yes
+
+	#immediate = {
+
+	#}
+}
+country_event = {
+	id = mormon.2
+	title = mormon.2.t
+	desc = mormon.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = mormon.2.a
+		ai_chance = { factor = 90 }
+		set_variable = { mormonvote = 1 }
+	}
+	option = {
+		name = mormon.2.b
+		ai_chance = { factor = 0 }
+		set_variable = { mormonvote = 2 }
+	}
+	option = {
+		name = mormon.2.c
+		ai_chance = { factor = 10 }
+		set_variable = { mormonvote = 3 }
+	}
+	option = {
+		name = mormon.2.e
+		ai_chance = { factor = 0 }
+		set_variable = { mormonvote = 4 }
+	}
+}
+country_event = {
+	id = mormon.3
+	title = mormon.3.t
+	desc = mormon.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = mormon.3.a
+		ai_chance = { factor = 100 }
+		DES = {
+			transfer_state = var:defender_state_temp
+			add_political_power = 100
+		}
+	}
+}
+country_event = {
+	id = mormon.4
+	title = mormon.4.t
+	desc = mormon.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = mormon.3.a
+		ai_chance = { factor = 100 }
+		DES = {
+			add_political_power = -100
+		}
+	}
+}
+country_event = {
+	id = mormon.5
+	title = mormon.5.t
+	desc = mormon.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = mormon.3.a
+		ai_chance = { factor = 100 }
+	}
+}

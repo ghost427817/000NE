@@ -1,0 +1,56 @@
+﻿add_namespace = RC
+
+country_event = {
+	id = RC.1
+	title = RC.1.t
+	desc = RC.1.d
+	picture = GFX_report_militia
+	
+	trigger = {
+		TAG = CAT
+		CAT = {
+			has_war = no
+		}
+		NOT = {
+			has_country_leader = { ruling_only = yes name = "CNT-FAI" }
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = RC.1.a
+		ai_chance = { factor = 100 }
+		drop_cosmetic_tag = yes
+		set_party_name = { ideology = communism long_name = CAT_communism_2_party name = CAT_communism_2_party }
+	}
+}
+country_event = {
+	id = RC.2
+	title = RC.2.t
+	desc = RC.2.d
+	picture = GFX_report_militia
+	
+	trigger = {
+		TAG = ARA
+		NOT = {
+			has_country_leader = { ruling_only = yes name = "CNT-FAI" }
+		}
+		ARA = {
+			has_war = no
+		}
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = RC.2.a
+		ai_chance = { factor = 100 }
+		drop_cosmetic_tag = yes
+		set_party_name = { ideology = communism long_name = ARA_communism_2_party name = ARA_communism_2_party }
+	}
+}

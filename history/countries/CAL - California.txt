@@ -1,0 +1,66 @@
+﻿capital = 378
+
+oob = "CAL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 40
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 45
+			#banned = yes
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Frank Merriam"
+	desc = "POLITICS_Merriam"
+	picture = "gfx/leaders/CAL/Portrait_Merriam.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Upton Sinclair"
+	desc = "POLITICS_Sinclair"
+	picture = "gfx/leaders/CAL/Portrait_Sinclair.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Walt Disney"
+	desc = "POLITICS_Disney"
+	picture = "gfx/leaders/CAL/Portrait_Disney.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,3 @@
+spriteTypes = { 
+##Icon For: alignwithohio \r\n SpriteType = { \r\n name = "GFX_alignwithohio" \r\n texturefile = "gfx/interface/goals/GFX_alignwithohio.tga" \r\n } 
+ }

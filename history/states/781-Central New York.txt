@@ -1,0 +1,26 @@
+state={
+	id=781
+	name="STATE_781"
+	resources={
+		steel=3.000
+	}
+
+	history={
+		owner = NYC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 5
+
+		}
+		add_core_of = NYC
+		add_core_of = USA
+	}
+	provinces={
+		1436 9721 
+	}
+	manpower=100000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=770
+	name="STATE_770"
+	provinces={
+		7420 10233 10303 11731 
+	}
+	resources = {
+		steel 18.000
+	}
+	history={
+		owner = FOR
+		add_core_of = FOR
+		add_core_of = USA
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 6
+		}
+	}
+	state_category=metropolis
+	manpower=150000
+	buildings_max_level_factor=1.000
+}

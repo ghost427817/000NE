@@ -1,0 +1,77 @@
+﻿division_template = {
+	name = "Artillery Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Militarized Police Division"				# Conscripts units (lowest experience, oldest equipment)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }   # police
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "National Guard"
+		location = 6909
+		division_template = "Mercenary Division"
+		start_experience_factor = 5
+	}
+	division = {
+		name = "Amherst Police"
+		location = 3710
+		division_template = "Conscripts"
+		start_equipment_factor = 4
+	}
+	division = {
+		name = "Cambridge Police"
+		location = 3906
+		division_template = "Militarized Police Division"
+		start_equipment_factor = 3
+	}
+	division = {
+		name = "Hartford Police"
+		location = 9850
+		division_template = "Militarized Police Division"
+		start_equipment_factor = 3
+	}
+	division = {
+		name = "Newark Police"
+		location = 11782
+		division_template = "Militarized Police Division"
+		start_equipment_factor = 3
+	}
+	division = {
+		name = "Boston Police"
+		location = 905
+		division_template = "Militarized Police Division"
+		start_equipment_factor = 3
+	}
+	division = {
+		name = "Atlantic City Police"
+		location = 11900
+		division_template = "Militarized Police Division"
+		start_equipment_factor = 3
+	}
+}

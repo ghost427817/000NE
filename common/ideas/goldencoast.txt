@@ -1,0 +1,642 @@
+ideas = {
+
+	country = {
+		StrikeGCE = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.030
+				production_speed_buildings_factor = -0.1
+			}
+
+		}
+		FreeMarket2 = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_time_factor = 0.05
+				stability_weekly = -0.030
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+		FreeMarket = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = -0.015
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+
+		}
+		IndependeceSpirit = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.015
+				autonomy_gain = 1
+			}
+		}
+		DLF = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.015
+			}
+		}
+		NaughtyWorkers = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = 2
+				war_support_weekly = -0.05
+				stability_weekly = -0.015
+				mobilization_speed = -0.1
+				army_morale_factor = -0.5
+				army_org = -5
+				training_time_factor = 0.5
+				attrition = 0.9
+			}
+		}
+		DESPOCITO = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.25
+			}
+		}
+		DESPO = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = 0.25
+				stability_weekly = 0.005
+			}
+		}
+		OHIKnights = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_armor_speed_factor = -0.05
+				army_infantry_attack_factor = 0.05
+			}
+		}
+		newyorkauto3 = {
+			
+			allowed = {
+				is_puppet = YES
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 5
+				stability_factor = -0.10
+			}
+		}
+		newyorkauto2 = {
+			
+			allowed = {
+				is_puppet = YES
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				autonomy_gain = 3
+			}
+		}
+		newyorkauto = {
+			
+			allowed = {
+				is_puppet = YES
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+		greenland = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 5
+			}
+		}
+		camps2_gc = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = -0.1
+				drift_defence_factor = 0.25
+				stability_factor = 0.10
+				political_power_gain = 1
+				democratic_acceptance = -15
+				communism_acceptance = -100
+				fascism_acceptance = 100
+			}
+		}
+		camps_gc = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				drift_defence_factor = 0.25
+				stability_factor = 0.10
+				political_power_gain = 1
+				democratic_acceptance = -7
+				communism_acceptance = -40
+				fascism_acceptance = 50
+			}
+		}
+		vanguard_gc = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+				army_org_Factor = 0.05
+				planning_speed = 0.25
+				stability_factor = 0.10
+				political_power_gain = 1
+				army_core_defence_factor = 0.5
+				max_dig_in = 1
+			}
+		}
+		fash_gc = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.5
+				fascism_drift = 0.10
+				neutrality_drift = 0.10
+				army_core_defence_factor = 0.2
+			}
+		}
+		nat_gc = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_core_defence_factor = 0.2
+				conscription = 0.02
+				planning_speed = 0.10
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+		officer_gc = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_Factor = 0.05
+				planning_speed = 0.10
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+		fashyouth_gc = {
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_weekly = 0.001
+				conscription_factor = 0.1
+			}
+		}
+	}
+	political_advisor = {
+		
+		GCGaryAnderson = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		GCDylan_Hart = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		GCChristopher_Lloyd = {
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		} 
+		GCMonarch = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { staunch_monarchist }
+	
+			#on_add = {
+			#	country_event = political.1
+			#}
+	
+			#do_effect = {
+			#	NOT = {
+			#		has_government = communism
+			#	}
+			#}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		GCAlice_Patterson = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		GCEric_Killingly = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+}
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		Anderson_Sec = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+		}
+	}
+	naval_manufacturer = { 
+		
+		designer = yes
+		Anderson_Sec_nav = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		Anderson_Sec_air = {
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	industrial_concern = {
+		designer = yes
+		GC_Duff_Steel = {
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		}
+	materiel_manufacturer = {
+		
+		designer = yes
+		GCAnderson_MOT = {
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		GCMorgan_Harper = {
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}	
+		
+	# MILITARY
+	army_chief = {
+
+		GCScott_Duncan = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		GCJoshua_Black = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	navy_chief = { #CHIEF OF NAVY
+		
+		GCBlaise_Mcconnell = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	high_command = {
+
+		GCFrederick_Morgan = {
+
+			
+			allowed = {
+				original_tag = GCE
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

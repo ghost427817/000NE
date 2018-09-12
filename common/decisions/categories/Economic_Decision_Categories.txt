@@ -1,0 +1,7 @@
+Economic_Decisions = {
+	icon = generic_political_actions
+	priority = 100
+	visible = {
+		always = yes
+	}
+}

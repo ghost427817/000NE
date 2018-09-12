@@ -1,0 +1,46 @@
+﻿capital = 366
+
+oob = "FLO_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	limited_conscription
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 45
+		}
+
+		fascism = {
+			popularity = 55
+		}
+		
+		communism = {
+			popularity = 0
+			#banned = yes
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Southern Placeholder"
+	desc = "POLITICS_Gene"
+	picture = "gfx/leaders/GRG/Portrait_Gene.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

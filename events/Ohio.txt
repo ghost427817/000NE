@@ -1,0 +1,75 @@
+﻿add_namespace = ohio
+
+country_event = {
+	id = ohio.1
+	title = ohio.1.t
+	desc = ohio.1.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = ohio.1.a
+		ai_chance = { factor = 100 }
+		OHI = {
+			transfer_state = 823
+			add_state_core = 823
+			country_event = ohio.2
+		}
+	}
+}
+country_event = {
+	id = ohio.2
+	title = ohio.2.t
+	desc = ohio.2.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+
+	option = { 
+		name = ohio.2.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+	}
+}
+country_event = {
+	id = ohio.3
+	title = ohio.3.t
+	desc = ohio.3.d
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1}
+
+	option = { 
+		name = ohio.3.a
+		ai_chance = { factor = 100 }
+		OHI = {
+			transfer_state = 814
+			add_state_core = 814
+			country_event = ohio.2
+		}
+	}
+}
+country_event = {
+	id = ohio.4
+	title = ohio.4.t
+	desc = ohio.4.d
+	picture = GFX_report_event_generic_sign_treaty2
+	trigger = {
+		original_tag = OHI
+		has_war = yes
+		OHI = { has_completed_focus = KnightsOHI }
+	}
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = { 
+		name = ohio.4.a
+		ai_chance = { factor = 100 }
+
+	}
+}

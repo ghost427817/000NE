@@ -1,0 +1,19 @@
+state={
+	id=825
+	name="STATE_825"
+	provinces={
+		4627 6971 7588 10441 
+	}
+	history={
+		owner = VIR
+		add_core_of = VIR
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 3
+		}
+	}
+	manpower=250000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

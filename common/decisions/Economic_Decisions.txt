@@ -1,0 +1,32 @@
+Economic_Decisions = {
+	Econ_report = {
+		icon = generic_industry
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+            always = yes
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				ROOT = {
+					has_country_flag = Calibrated_Econ
+				}
+			}
+		}
+		complete_effect = {
+			ROOT = {
+				country_event = taxes.1
+				set_country_flag = Calibrated_Econ
+			}
+		}
+	}
+}

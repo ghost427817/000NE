@@ -1,0 +1,25 @@
+state={
+	id=830
+	name="STATE_830"
+	resources={
+		oil=60.000
+	}
+
+	provinces={
+		2082 5022 5085 7836 7981 9920 12341 
+	}
+	history={
+		owner = TEX
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = TEX
+	
+
+	}
+	manpower=485393
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

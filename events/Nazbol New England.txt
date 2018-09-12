@@ -1,0 +1,96 @@
+﻿add_namespace = MAD
+
+country_event = {
+	id = MAD.1
+    title = MAD.1.t 
+    desc = MAD.1.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+	}
+	hidden = no
+	fire_only_once = yes
+	option = { 
+		ai_chance = { factor = 100 }
+		name = MAD.1.a
+	}
+}
+country_event = {
+	id = MAD.2
+    title = MAD.2.t 
+    desc = MAD.2.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+	}
+	hidden = no
+	fire_only_once = yes
+	option = { 
+		ai_chance = { factor = 100 }
+		name = MAD.2.a
+	}
+}
+country_event = {
+	id = MAD.3
+    title = MAD.3.t 
+    desc = MAD.3.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+	}
+	hidden = no
+	fire_only_once = yes
+	option = { 
+		ai_chance = { factor = 100 }
+		name = MAD.3.a
+	}
+}
+country_event = {
+	id = MAD.4
+    title = MAD.4.t 
+    desc = MAD.4.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+	}
+	hidden = no
+	fire_only_once = yes
+	option = { 
+		ai_chance = { factor = 100 }
+		name = MAD.4.a
+		drop_cosmetic_tag = yes
+		hidden_effect = {
+			set_party_name = { ideology = democratic long_name = GCE_democratic_party name = GCE_democratic_party }
+			set_party_name = { ideology = communism long_name = GCE_communism_party_long name = GCE_communism_party }
+			add_popularity = { ideology = democratic popularity = 0.20 }
+			add_popularity = { ideology = communism popularity = 0.25 }
+			MAD = {
+				annex_country = {
+					target = GCE
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MAD.5
+    title = MAD.5.t 
+    desc = MAD.5.d 
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+	trigger = {
+	}
+	hidden = no
+	fire_only_once = yes
+	option = { 
+		ai_chance = { factor = 100 }
+		name = MAD.5.a
+		kill_country_leader = yes
+		set_country_flag = COL_lead
+	}
+	option = { 
+		ai_chance = { factor = 0 }
+		name = MAD.5.b
+		set_country_flag = KIL_lead
+	}
+}

@@ -1,0 +1,24 @@
+state={
+	id=779
+	name="STATE_779"
+	resources={
+		steel=3.000
+		aluminium = 3.000 
+	}
+
+	history={
+		owner = NYC
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+		}
+		add_core_of = NYC
+		add_core_of = USA
+	}
+	provinces={
+		706 9774 11660 
+	}
+	manpower=100000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

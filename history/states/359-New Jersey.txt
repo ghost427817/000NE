@@ -1,0 +1,32 @@
+
+state={
+	id=359
+	name="STATE_359"
+	resources={
+		aluminium=5.000
+	}
+	history={
+		owner = JER
+		victory_points = {
+			6882 5 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 7
+			air_base = 10
+			dockyard = 2
+			6882 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = JER
+
+	}
+
+	provinces={
+		3693 3863 6882 9801 9864 11740 11782 11900 
+	}
+	manpower=2041332
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+}

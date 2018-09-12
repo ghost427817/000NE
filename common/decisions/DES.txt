@@ -1,0 +1,134 @@
+Deseret_Expansion = {
+	DES_Border_War = {
+		cost = 200
+		fire_only_once = no
+		icon = GFX_idea_LDS
+		war_with_target_on_remove = yes
+		available = {
+			any_state = {
+				is_owned_and_controlled_by = USA
+				set_temp_variable = { var:defender_state_temp = id }
+				any_neighbor_state = {
+					is_fully_controlled_by = ROOT
+					set_temp_variable = { var:attacker_state_temp = id }
+					custom_trigger_tooltip = {
+						tooltip = has_border_troops
+						ROOT = {
+							divisions_in_border_state = {
+								state = var:attacker_state_temp
+								border_state = var:defender_state_temp
+								size > 0
+							}
+						}
+					}
+					hidden_trigger = { NOT = { has_state_flag = border_incident_active } }
+				}
+				AND = { is_core_of = DES }
+				NOT = { has_state_flag = border_incident_active }
+				set_temp_variable = { var:defender_state_temp = id }
+			}
+			NOT = { has_non_aggression_pact_with = ROOT}
+		}
+
+		visible = {
+			USA = { exists = yes }
+			NOT = { has_war_with = ROOT }
+			USA = {
+				NOT = {
+					is_subject_of = ROOT
+				}
+				NOT = {
+					is_in_faction_with = ROOT
+				}
+			}
+			
+			any_state = {
+				is_owned_and_controlled_by = USA
+				is_core_of = DES
+				any_neighbor_state = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+			
+			NOT = {
+				is_subject_of = USA
+			}
+
+		}
+
+		highlight_states = {
+			OR = {
+				state = USA.defender_state_vs_@ROOT
+				AND = {
+					is_owned_and_controlled_by = USA
+					OR = {
+						AND = {
+							ROOT = { is_ai = yes }
+							OR = {
+								is_core_of = DES
+								is_claimed_by = DES
+							}
+						}
+						
+						ROOT = { is_ai = no }
+					}
+					
+					set_temp_variable = { var:defender_state_temp = id }
+					any_neighbor_state = {
+						set_temp_variable = { var:attacker_state_temp = id }
+						ROOT = {
+							divisions_in_border_state = {
+								state = var:attacker_state_temp
+								border_state = var:defender_state_temp
+								size > 0
+							}
+						}
+						is_fully_controlled_by = ROOT
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0.5
+			
+			modifier = {
+				ROOT = { has_government = fascism }
+				
+				factor = 1
+			}
+			
+			modifier = {
+				ROOT = { strength_ratio = { tag = USA ratio < 0.5 } }
+				
+				factor = 0
+			}
+		}
+
+		#days_remove = @border_incident_escalation_countdown
+		#days_re_enable = 150
+
+		war_with_target_on_remove = yes
+
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = var:attacker_state_temp
+					num_provinces = 1
+					on_win = mormon.3
+        			on_lose = mormon.4
+        			on_cancel = mormon.5
+				}
+				
+				defender = {
+					state = var:defender_state_temp
+					num_provinces = 1
+					on_win = mormon.4
+        			on_lose = mormon.3
+        			on_cancel = mormon.5
+				}
+			}
+		}	
+	}
+}

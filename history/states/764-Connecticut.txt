@@ -1,0 +1,30 @@
+state={
+	id=764
+	name="STATE_764"
+	resources={
+		steel=15.000
+	}
+	history={
+		owner = GCE
+		add_core_of = GCE
+		add_core_of = NEE
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 5
+		}
+		victory_points = {
+			9850 15 
+		}
+		victory_points = {
+			6909 6 
+		}
+		}
+	provinces={
+		6909 9832 9847 9850 11830 
+	}
+	manpower=2041332
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,43 @@
+﻿capital = 463
+
+oob = "CAS_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 45
+		}
+
+		fascism = {
+			popularity = 10
+		}
+		
+		communism = {
+			popularity = 45
+			#banned = yes
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "John Weir Troy"
+	desc = "POLITICS_Troy"
+	picture = "gfx/leaders/ALS/Portrait_Troy.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}

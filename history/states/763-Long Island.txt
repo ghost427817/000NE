@@ -1,0 +1,28 @@
+state={
+	id=763
+	name="STATE_763"
+	history={
+		owner = GCE
+		add_core_of = GCE
+		add_core_of = NYC
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 8
+			dockyard = 10
+			3878 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			3878 40 
+		}
+	}
+	provinces={
+		859 3878 3894 6911
+	}
+	manpower=10530
+	state_category=megalopolis
+	buildings_max_level_factor=1.000
+}

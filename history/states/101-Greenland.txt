@@ -1,0 +1,30 @@
+state={
+	id=101
+	name="STATE_101"
+	manpower = 18000
+	resources = {
+		oil = 70.000
+	}
+	state_category = large_city
+	
+	history=
+	{
+		owner = GRL
+		buildings = {
+			arms_factory = 2
+			dockyard = 6
+			air_base = 5
+			infrastructure = 1
+			12512 ={
+				naval_base = 1
+			}
+		}
+		add_core_of = GRL
+		victory_points = {
+			12512 25
+		}
+	}
+	provinces = {
+		10245 10636 12512 13058 13066
+	}
+}

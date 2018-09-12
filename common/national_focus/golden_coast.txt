@@ -1,0 +1,403 @@
+focus_tree = {
+	id = gce_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GCE
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = GCE
+		}
+	}
+	focus = {
+		id = GCE_handerson
+		icon = GFX_idea_Handerson
+		ai_will_do = { factor = 50 } 
+ 		x = 1
+ 		y = 0
+ 		available = {
+ 			date > 1936.1.1
+		}
+ 		mutually_exclusive = { }
+		cost = 1 
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_political_power = 10
+		}
+ 	}
+ 	focus = {
+		id = GCE_Theil
+		icon = GFX_focus_south
+		ai_will_do = { factor = 50 } 
+ 		x = -1
+ 		y = 1
+ 		mutually_exclusive = { }
+		cost = 10 
+		prerequisite = { focus = GCE_handerson }
+		relative_position_id = GCE_handerson
+		available_if_capitulated = yes  
+		completion_reward = {
+			NEE = {
+				country_event = NewEngland.1
+			}
+		}
+ 	}
+ 	focus = {
+		id = GCE_Market
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 50 } 
+ 		x = 1
+ 		y = 1
+ 		mutually_exclusive = { }
+		cost = 10 
+		prerequisite = { focus = GCE_handerson }
+		relative_position_id = GCE_handerson
+		available_if_capitulated = yes  
+		completion_reward = {
+			NYC = {
+				if = {
+					limit = {
+				 		is_puppet_of = USA
+				 	}
+				 	add_timed_idea = {
+    					idea = IndependeceSpirit
+    					days = 830
+					}
+				}
+			}
+			PEN = {
+				if = {
+					limit = {
+				 		is_puppet_of = USA
+				 	}
+				 	add_timed_idea = {
+    					idea = IndependeceSpirit
+    					days = 830
+					}
+				}
+			}
+		}
+ 	}
+ 	focus = {
+		id = GCE_New_Jersey
+		icon = GFX_idea_NJ
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 2
+ 		mutually_exclusive = { }
+		cost = 10 
+		prerequisite = { focus = GCE_handerson }
+		relative_position_id = GCE_handerson
+		available_if_capitulated = yes  
+		completion_reward = {
+			GCE = {
+				diplomatic_relation = {
+    				country = JER
+    				relation = non_aggression_pact
+    				active = yes
+				}
+				add_opinion_modifier = {
+    				target = JER
+    				modifier = gce_jer_friends
+				}
+			}
+			JER = {
+				add_opinion_modifier = {
+    				target = GCE
+    				modifier = gce_jer_friends
+				}
+			}
+		}
+ 	}
+ 	focus = {
+		id = GCE_Free_Market
+		icon = GFX_goal_generic_positive_trade_relations
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		mutually_exclusive = { }
+		cost = 10 
+		prerequisite = { focus = GCE_New_Jersey }
+		prerequisite = { focus = GCE_Market }
+		prerequisite = { focus = GCE_Theil }
+		relative_position_id = GCE_New_Jersey
+		available_if_capitulated = yes  
+		completion_reward = {
+			765 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_ideas = FreeMarket
+		}
+ 	}
+ 	focus = {
+		id = GCE_Strikes
+		icon = GFX_goal_generic_political_pressure
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		cancel = {
+ 			NOT = {
+ 				has_country_leader = {
+					ruling_only = yes
+					name = "Harold Anderson"
+				}
+ 			}
+ 		}
+ 		available = {
+ 			has_idea = StrikeGCE
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Harold Anderson"
+			}
+ 		}
+ 		mutually_exclusive = { }
+		cost = 10 
+		prerequisite = { focus = GCE_Free_Market }
+		relative_position_id = GCE_Free_Market
+		available_if_capitulated = yes  
+		completion_reward = {
+			remove_ideas = StrikeGCE
+		}
+ 	}
+ 	focus = {
+		id = GCE_duff
+		icon = GFX_idea_Duff
+		ai_will_do = { factor = 50 } 
+ 		x = 5
+ 		y = 0
+ 		mutually_exclusive = { }
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 1
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_political_power = 15
+		}
+ 	}
+ 	focus = {
+		id = GCE_BalanceBudget
+		icon = GFX_goal_generic_consumer_goods
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_duff }
+ 		relative_position_id = GCE_duff
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			remove_ideas = FreeMarket
+			remove_ideas = FreeMarket2
+		}
+ 	}
+ 	focus = {
+		id = GCE_Bharbor
+		icon = GFX_goal_generic_construct_naval_dockyard
+		ai_will_do = { factor = 50 } 
+ 		x = -1
+ 		y = 2
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_BalanceBudget }
+ 		relative_position_id = GCE_duff
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			765 = {
+			add_building_construction = {
+    			type = naval_base
+    			level = 9
+    			instant_build = yes
+    			province = 6732
+			}
+			damage_building = {
+    			type = naval_base
+    			damage = 1
+			}
+			}
+		}
+ 	}
+ 	focus = {
+		id = GCE_Providence
+		icon = GFX_goal_generic_construct_naval_dockyard
+		ai_will_do = { factor = 50 } 
+ 		x = 1
+ 		y = 2
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_BalanceBudget }
+ 		relative_position_id = GCE_duff
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			764 = {
+			add_building_construction = {
+    			type = naval_base
+    			level = 9
+    			instant_build = yes
+    			province = 6732
+			}
+			damage_building = {
+    			type = naval_base
+    			damage = 1
+			}
+			}
+		}
+ 	}
+ 	focus = {
+		id = GCE_Ivyleague
+		icon = GFX_focus_research
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 3
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_BalanceBudget }
+ 		relative_position_id = GCE_duff
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_stability = 0.1
+		}
+ 	}
+ 	focus = {
+		id = GCE_URI
+		icon = GFX_focus_research
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 2
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_Providence }
+ 		relative_position_id = GCE_Providence
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.1
+		}
+ 	}
+ 	focus = {
+		id = GCE_UMASS
+		icon = GFX_focus_research
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 2
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = GCE_Bharbor }
+ 		relative_position_id = GCE_Bharbor
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff"
+			}
+		}
+		cost = 10
+		available_if_capitulated = yes  
+		completion_reward = {
+			add_research_slot = 1
+			add_stability = 0.1
+		}
+ 	}
+ 	focus = {
+		id = GCE_PublicEd
+		icon = GFX_goal_generic_scientific_exchange
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 2
+ 		mutually_exclusive = { }
+ 		cancel = {
+        	has_global_flag = {
+    			flag = Duff_Dead
+			}
+    	}
+ 		prerequisite = { focus = GCE_UMASS }
+ 		prerequisite = { focus = GCE_URI }
+ 		prerequisite = { focus = GCE_Ivyleague }
+ 		relative_position_id = GCE_Ivyleague
+ 		available = {
+		}
+		cost = 20
+		available_if_capitulated = yes  
+		completion_reward = {
+			remove_ideas = StrikeGCE
+			add_stability = 0.3
+		}
+ 	}
+ 	focus = {
+		id = GCE_panderson
+		icon = GFX_idea_Panderson
+		ai_will_do = { factor = 50 } 
+ 		x = 9
+ 		y = 0
+ 		mutually_exclusive = { }
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		cost = 1 
+		available_if_capitulated = yes  
+		completion_reward = {
+			clr_global_flag = Duff_Dead
+		}
+ 	}
+	focus = {
+		id = NewFlag
+		icon = GFX_idea_Goodflag
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		mutually_exclusive = { }
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		relative_position_id = GCE_panderson
+		prerequisite = { focus = GCE_panderson }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			country_event = GoldenCoast.8
+		}
+ 	}
+	
+}

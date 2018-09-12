@@ -1,0 +1,134 @@
+﻿division_template = {
+	name = "Mercenary Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0}
+	}
+	priority = 2
+}
+division_template = {
+	name = "Conscripts"				# Conscripts units (lowest experience, oldest equipment)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	#Private Military Divisions
+	division = {
+		name = "Baldwin-Felts Agents"
+		location = 6909
+		division_template = "Mercenary Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Boston Security Company"
+		location = 715
+		division_template = "Conscripts"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Pinkerton Agents"
+		location = 908
+		division_template = "Conscripts"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Theil Conscripts"
+		location = 11900
+		division_template = "Conscripts"
+		start_equipment_factor = 0.3
+	}
+	navy = {					
+		name = "Navy of the Republic"				
+		base = 3878
+		location = 3878 # new york
+		ship = { name = "NERS Anderson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GCE } } }				
+		ship = { name = "NERS Duff" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GCE } } }				
+		ship = { name = "NERS Pinkerton" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Theil" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GCE } } 
+			air_wings = {
+				cv_fighter_equipment_0 =  { owner = "GCE" amount = 8 } # historical: 16
+				cv_CAS_equipment_1 =  { owner = "GCE" amount = 14 } # historical: 30
+				cv_nav_bomber_equipment_1 =  { owner = "GCE" amount = 8 } # historical: 12
+			}				
+		}
+		ship = { name = "NERS New Jersey" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Connecticut" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Massachusetts" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Long Island" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS New York" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Rhode Island" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Boston" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Greenfield" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Simsbury" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Hartford" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Newark" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Trenton" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Warrick" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS New Haven" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS Stamford" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS G-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS G-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS G-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS G-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS C-46" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS C-47" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS C-48" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }			
+		ship = { name = "NERS C-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS E-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS E-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS E-25" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS E-26" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+		ship = { name = "NERS E-32" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GCE } } }
+	}
+}
+air_wings = {
+	### Soviet planes
+	359 = {
+		fighter_equipment_0 =  {
+			owner = "GCE" 
+			creator = "USA"
+			amount = 40
+		}
+		tac_bomber_equipment_0 = {
+			owner = "GCE"
+			creator = "CAN" 
+			amount = 60
+		}
+		# 17th Attack Group 
+		CAS_equipment_1 = {
+			owner = "GCE"
+			creator = "USA" 
+			amount = 48
+	}
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GCE"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 50
+	}
+}

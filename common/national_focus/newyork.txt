@@ -1,0 +1,409 @@
+focus_tree = {
+	id = 'newyork'
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			tag = NYC
+		}
+	}
+default = no
+#Custom focuses start here
+#Focus for Support the Federalists 
+	focus = { 
+		id = supportthefederalists 
+		icon = GFX_goal_support_democracy
+		ai_will_do = { factor = 0 } 
+ 		x =3 
+ 		y =1 
+ 		mutually_exclusive = { 
+ 			focus = supporttheseccessionists
+ 		} 
+ 		prerequisite = { }
+ 		completion_reward = { 
+ 			add_political_power = 150
+ 		}
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+#Focus for Support the Seccessionists 
+	focus = { 
+		id = supporttheseccessionists 
+		icon = GFX_focus_generic_support_the_left_right 
+		ai_will_do = { factor = 100 } 
+ 		x =11 
+ 		y =1 
+ 		mutually_exclusive = { 
+ 			focus = supportthefederalists
+ 		} 
+ 		prerequisite = { }
+ 		cost = 10  
+  		available_if_capitulated = yes
+  		completion_reward = {
+  			add_political_power = 150
+  			set_party_name = { ideology = democratic long_name = NYC_republican_party name = NYC_republican_party }
+  			add_ideas = newyorkauto
+		} 
+ 	}
+#Focus for Pursue Godliness 
+	focus = { 
+		id = pursuegodliness 
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties 
+		ai_will_do = { factor = 0 } 
+		x =15 
+ 		y =2 
+ 		completion_reward = { 
+ 			add_political_power = 150
+ 			set_political_party = { ideology = neutrality popularity = 100 }
+ 			set_politics = { ruling_party = neutrality elections_allowed = no }
+ 			remove_ideas = undisturbed_isolation
+ 			add_ideas = newyorkauto2
+		}
+ 		mutually_exclusive = {
+ 			focus = recognizetheworkerscouncilsaspoliticalentities
+ 			focus = alignwithlocalindustrialists
+ 		} 
+ 		prerequisite = { 
+ 			focus = supporttheseccessionists
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Renegotiate the Philadelphia Agreement 
+	focus = { 
+		id = renegotiatethephiladelphiaagreement 
+		icon = GFX_focus_renounce_the_treaty_of_trianon 
+		ai_will_do = { factor = 0 } 
+ 		x =3 
+ 		y =2 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { 
+ 			focus = supportthefederalists
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Recognize the Workers' Councils as Political Entities 
+	focus = { 
+		id = recognizetheworkerscouncilsaspoliticalentities 
+		icon = GFX_goal_generic_production2 
+		ai_will_do = { factor = 0 } 
+ 		x =7 
+ 		y =2 
+ 		mutually_exclusive = { 
+ 			focus = alignwithlocalindustrialists
+ 			focus = pursuegodliness
+ 		} 
+ 		prerequisite = { 
+ 			focus = supporttheseccessionists
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes
+  		completion_reward = {
+  			add_political_power = 150
+  			add_ideas = newyorkauto2
+		}   
+ 	}
+ #Focus for Align with Local Industrialists 
+	focus = { 
+		id = alignwithlocalindustrialists 
+		icon = GFX_goal_generic_intelligence_exchange 
+		ai_will_do = { factor = 100 }
+		completion_reward = { 
+ 			add_political_power = 150
+ 			remove_ideas = undisturbed_isolation
+ 		}
+ 		x =11
+ 		y =2 
+ 		mutually_exclusive = { 
+ 			focus = recognizetheworkerscouncilsaspoliticalentities
+ 			focus = pursuegodliness
+ 		} 
+ 		prerequisite = { 
+ 			focus = supporttheseccessionists
+ 		} 
+		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Tungsten From the US 
+	focus = { 
+		id = tungstenfromtheus 
+		icon = GFX_focus_generic_tungsten 
+		ai_will_do = { factor = 0 } 
+ 		x =1 
+ 		y =3 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { 
+ 			focus = renegotiatethephiladelphiaagreement
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for The Buffalo Agreement 
+	focus = { 
+		id = thebuffaloagreement 
+		icon = GFX_focus_generic_treaty 
+		ai_will_do = { factor = 0 } 
+		x =3 
+ 		y =3 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { 
+ 			focus = renegotiatethephiladelphiaagreement
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Lower Tariffs 
+	focus = { 
+		id = lowertariffs 
+		icon = GFX_goal_generic_trade 
+		ai_will_do = { factor = 0 } 
+ 		x =5 
+		y =3 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { 
+ 			focus = renegotiatethephiladelphiaagreement
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Mass Retrials 
+	focus = { 
+		id = massretrials 
+		icon = GFX_focus_generic_soviet_politics 
+		ai_will_do = { factor = 0 } 
+ 		x =7 
+ 		y =3 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { 
+ 			focus = recognizetheworkerscouncilsaspoliticalentities
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for New York First Policy 
+	focus = { 
+		id = newyorkfirstpolicy 
+		icon = GFX_goal_tripartite_pact
+		ai_will_do = { factor = 0 } 
+		x =9
+ 		y =3
+ 		completion_reward = {
+ 			add_popularity = { ideology = fascism popularity = 0.3 }
+ 		}
+		mutually_exclusive = { focus = nationofimmigrants  } 
+ 		prerequisite = { focus = alignwithlocalindustrialists} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ }
+ #Focus for Back in New York City 
+	focus = { 
+		id = backinnewyorkcity 
+		icon = GFX_focus_generic_strike_at_democracy3
+		bypass = {
+			NYC = {
+				controls_state = 763
+			}
+		}
+		ai_will_do = { factor = 30 } 
+ 		x =11 
+ 		y =3
+		completion_reward = { 
+			every_country = {
+				limit = {
+					controls_state = 763
+				}
+				country_event = NewYork.2
+			}
+			
+		}
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = alignwithlocalindustrialists} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Nation of Immigrants 
+		focus = { 
+		id = nationofimmigrants 
+		icon = GFX_goal_generic_national_unity 
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+ 			set_political_party = { ideology = democratic popularity = 100 }
+ 			set_politics = { ruling_party = democratic elections_allowed = yes }
+ 			add_manpower = 800000
+ 		}
+		x =13 
+		y =3 
+ 		mutually_exclusive = { 
+ 			focus = newyorkfirstpolicy
+ 		} 
+ 		prerequisite = { 
+ 			focus = alignwithlocalindustrialists
+ 		} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Rubber From the US 
+	focus = { 
+		id = rubberfromtheus 
+		icon = GFX_focus_generic_rubber 
+		ai_will_do = { factor = 0 } 
+ 		x =1 
+ 		y =4 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = tungstenfromtheus} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for The Big Apple 
+	focus = { 
+		id = thebigapple 
+		icon = GFX_focus_generic_strike_at_democracy3 
+		ai_will_do = { factor = 0 } 
+ 		x =3 
+ 		y =4 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = thebuffaloagreement} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Increase Government Programs 
+	focus = { 
+		id = increasegovernmentprograms 
+		icon = GFX_focus_generic_aluminum 
+		ai_will_do = { factor = 0 } 
+ 		x =5 
+ 		y =4 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = lowertariffs} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Workers' Ownership 
+	focus = { 
+		id = workersownership 
+		icon = GFX_focus_generic_join_comintern 
+		ai_will_do = { factor = 0 } 
+		x =7 
+ 		y =4 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = massretrials} 
+ 		cost = 10  
+ 	 	available_if_capitulated = yes  
+ 	}
+ #Focus for New Trade Deals 
+	focus = { 
+		id = newtradedeals 
+		icon = GFX_focus_generic_treaty 
+		ai_will_do = { factor = 0 } 
+		x =11 
+ 		y =4 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = backinnewyorkcity } 
+ 		cost = 10
+ 		available = {
+			any_state = {
+				is_controlled_by = NYC
+				is_coastal = yes
+			}
+		}
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Align with Ohio 
+	focus = { 
+		id = alignwithohio 
+		icon = GFX_treatyofdayton
+		ai_will_do = { factor = 0 } 
+ 		x =15
+ 		y =5 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = pursuegodliness} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Knickerbocker Program 
+	focus = { 
+		id = knickerbockerprogram 
+		icon = GFX_focus_chi_mission_to_the_us 
+		ai_will_do = { factor = 0 } 
+ 		x =4 
+ 		y =5 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = thebigapple} 
+  		prerequisite = { focus =increasegovernmentprograms} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Weapons from the USSR 
+	focus = { 
+		id = weaponsfromtheussr 
+		icon = GFX_focus_chi_mission_to_the_soviet_union 
+		ai_will_do = { factor = 0 } 
+ 		x =7
+ 		y =5 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = workersownership} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for German Resource Deals 
+	focus = { 
+		id = germanresourcedeals 
+		icon = GFX_focus_chi_mission_to_germany 
+		ai_will_do = { factor = 0 } 
+ 		x =9
+ 		y =5 
+ 		mutually_exclusive = { focus = englishtradedeals focus = reacquaintwithholland } 
+ 		prerequisite = { focus = newyorkfirstpolicy} 
+  		prerequisite = { focus = newtradedeals} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ 	}
+ #Focus for Reacquaint with Holland 
+	focus = { 
+		id = reacquaintwithholland 
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties 
+		ai_will_do = { factor = 0 } 
+ 		x =11
+ 		y =5 
+ 		mutually_exclusive = { focus = germanresourcedeals} 
+  		mutually_exclusive = { focus = englishtradedeals} 
+ 		prerequisite = { focus = newtradedeals} 
+ 		cost = 10  
+  		available_if_capitulated = yes 
+  		completion_reward = {
+  			set_cosmetic_tag = NYC_NEW
+  		}
+ 	}
+ #Focus for English Trade Deals 
+	focus = { 
+		id = englishtradedeals 
+		icon = GFX_focus_chi_british_cooperation 
+		ai_will_do = { factor = 0 } 
+ 		x =13
+ 		y =5 
+ 		mutually_exclusive = { focus = germanresourcedeals } 
+ 		prerequisite = { focus = nationofimmigrants} 
+  		prerequisite = { focus = newtradedeals} 
+ 		cost = 10  
+  		available_if_capitulated = yes  
+ }
+ #Focus for War with the US 
+	focus = { 
+		id = warwiththeus 
+		icon = GFX_goal_generic_small_arms 
+		ai_will_do = { factor = 0 } 
+ 		x =11
+ 		y =6 
+ 		mutually_exclusive = { } 
+ 		prerequisite = { focus = weaponsfromtheussr  focus = alignwithohio  focus = germanresourcedeals  focus = englishtradedeals  focus = reacquaintwithholland} 
+ 		cost = 10  
+  		available_if_capitulated = yes 
+  		completion_reward = {
+  			USA = {
+ 				end_puppet = NYC
+ 			}
+  			declare_war_on = { target = USA type = annex_everything }
+  		}
+ 	}#End of focuses 
+}

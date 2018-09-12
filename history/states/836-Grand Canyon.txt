@@ -1,0 +1,23 @@
+state={
+	id=836
+	name="STATE_836"
+	resources={
+		steel=5.000
+		oil=5.000
+		aluminium=2.000
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = USA
+	}
+	provinces={
+		6897 7821 10573 12765 
+	}
+	manpower=43557
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

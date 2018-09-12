@@ -1,0 +1,545 @@
+﻿add_namespace = GoldenCoast
+country_event = {
+	id = GoldenCoast.0 # The unique id. GoldenCoast is the namespace, which can be used for better organization.
+    title = GoldenCoast.0.t # The localisable text that appears as a header
+    desc = GoldenCoast.0.d # The localisable main text body that appears
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	is_triggered_only = no # Optional : if set to "yes" the event will only occur by command
+	trigger = {
+		tag = GCE
+		AND = {
+			GCE = { 
+			has_government = communism
+			communism > 0.5
+			}
+		}
+		AND = {
+			NEE = { 
+			has_government = communism
+			communism > 0.5
+			}
+		NOT = {
+			GCE = {
+				has_civil_war = yes
+			}
+		}
+		}
+	}
+	hidden = no # Optional : if set to "yes" no one will see the event
+	fire_only_once = yes # Optional : if set to "yes" the event will never occur more than once
+	option = { # Player Unites New England as NEE
+		ai_chance = { factor = 80 }
+		name = GoldenCoast.0.a # The localisable text that appears on the button.
+		NEE = {
+			add_manpower = 800000 
+			add_political_power = 500
+			annex_country = {
+				target = GCE
+				}
+			change_tag_from = GCE
+		}
+	}		
+    option = { # Player keeps New England Seperated
+    	ai_chance = { factor = 20 }
+		name = GoldenCoast.0.b # The localisable text that appears on the button.
+        add_political_power = 300
+        kill_country_leader = yes
+       	add_ideas = vanguard_gc
+	}
+}
+country_event = {
+	id = GoldenCoast.1
+	title = GoldenCoast.1.t
+	desc = GoldenCoast.1.d
+	picture = GFX_report_event_generic_funeral #death of Handerson
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		AND = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Harold Anderson" 
+			}
+		}
+		AND = {
+			focus_progress = {
+    			focus = GCE_Strikes
+    			progress > 0.1
+   			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.1.a
+		kill_country_leader = yes
+	}
+}
+country_event = {
+	id = GoldenCoast.2
+	title = GoldenCoast.2.t
+	desc = GoldenCoast.2.d
+	picture = GFX_report_event_fascist_speech
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		AND = {
+			764 = { is_controlled_by = MAD }
+			}
+		AND = {
+			date > 1937.8.14
+		}
+	}
+	immediate = {
+		MAD = {
+			transfer_state = 764
+		}
+	}
+	option = { #appease
+		name = GoldenCoast.2.a
+		ai_chance = { factor = 0 }
+		add_political_power = -50
+		add_stability = 0.02
+		765 = { set_demilitarized_zone = no }
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_popularity = { 
+			ideology = democratic
+			popularity = 0.15
+		}
+		add_ideas = {
+			GCEric_Killingly
+		}
+		add_timed_idea = { 
+			idea = fash_gc 
+			days = 365 
+		}
+		GCE = { transfer_state = 764 }
+	}
+	option = { #step down
+		ai_chance = { factor = 0 }
+		name = GoldenCoast.2.b
+		set_capital = 764
+		765 = { 
+			set_demilitarized_zone = no
+		}
+		set_politics = { 
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		#division_template = {
+		#	name = "Pineshirts"
+		#	regiments = { 
+		#		infantry = { x = 0 y = 0 }
+		#		infantry = { x = 1 y = 0 }
+		#		infantry = { x = 0 y = 1 }
+		#		infantry = { x = 1 y = 1 }
+		#		infantry = { x = 0 y = 2 }
+		#		infantry = { x = 1 y = 2 }
+		#		infantry = { x = 0 y = 3 }
+		#		infantry = { x = 1 y = 3 }
+		#	} 
+		#}
+		#create_unit = {
+		#	name = "Pineshirt-Theil Veterans"
+		#	division_template = "Pineshirts"
+		#	starting_experience_factor = 5.0
+		#}
+		#create_unit = { 
+		#	name = "Pineshirt-Pinkerton Veterans"
+		#	division_template = "Pineshirts" 
+		#	starting_experience_factor = 5.0
+		#}
+	#}
+		add_manpower = 60000
+		GCE = { transfer_state = 764 }
+	}
+	option = { #step down
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.2.i
+		765 = { 
+			set_demilitarized_zone = no
+		}
+		MAD = {
+			change_tag_from = GCE
+		}
+	}
+	option = { #communist help
+		ai_chance = { factor = 0 }
+		name = GoldenCoast.2.c
+		add_popularity = { 
+			ideology = fascism
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = democratic
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.1
+		}
+		add_popularity = { 
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_stability = -0.02
+		declare_war_on = { target = MAD type = annex_everything }
+	}
+	option = { #peter goes it alone
+		ai_chance = { factor = 0 }
+		name = GoldenCoast.2.e
+		add_popularity = { 
+			ideology = fascism
+			popularity = -0.2
+		}
+		add_popularity = { 
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_stability = -0.01
+		declare_war_on = { target = MAD type = annex_everything }
+	}
+	}
+country_event = {
+	id = GoldenCoast.3
+	title = GoldenCoast.3.t
+	desc = GoldenCoast.3.d
+	picture = GFX_report_event_dead_soldiers
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		AND = {
+			765 = { is_demilitarized_zone = yes }
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.3.a
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = GoldenCoast.3.b
+		765 = { 
+			set_demilitarized_zone = no
+		}
+		country_event = { days = 21 id = political.5 }
+	}
+}
+country_event = {
+	id = GoldenCoast.4
+	title = GoldenCoast.4.t
+	desc = GoldenCoast.4.d
+	picture = GFX_report_event_generic_funeral
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		AND = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Gerald Duff" 
+			}
+		}
+		AND = {
+			has_completed_focus = GCE_UMASS
+		}
+		AND = {
+			has_completed_focus = GCE_URI 
+		}
+		AND = {
+			has_completed_focus = GCE_Ivyleague
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.4.a
+		kill_country_leader = yes
+		set_global_flag = Duff_Dead
+	}
+}
+country_event = {
+	id = GoldenCoast.5
+	title = GoldenCoast.5.t
+	desc = GoldenCoast.5.d
+	picture = GFX_report_event_dead_soldiers
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	tag = GCE
+	AND = {
+		date > 1938.1.1
+	}
+	AND = {
+		765 = { is_demilitarized_zone = yes }
+	}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.5.a
+		765 = { 
+			set_demilitarized_zone = no
+		}
+	}
+}
+country_event = {
+	id = GoldenCoast.6
+	title = GoldenCoast.6.t
+	desc = GoldenCoast.6.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+	tag = GCE
+	AND = {
+		date > 1938.1.20
+	}
+	AND = {
+		has_country_leader = {
+			ruling_only = yes
+			name = "Peter Anderson"
+		}
+	}
+	}
+	option = {
+		ai_chance = { factor = 25 }
+		name = GoldenCoast.6.a
+		add_popularity = { 
+			ideology = democratic
+			popularity = 0.25
+		}
+		hidden_effect = {
+			add_popularity = { 
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+		set_politics = { ruling_party = democratic elections_allowed = yes }
+	}
+	option = {
+		ai_chance = { factor = 25 }
+		name = GoldenCoast.6.b
+		add_popularity = { 
+			ideology = communism
+			popularity = 0.35
+		}
+	}
+	option = {
+		ai_chance = { factor = 25 }
+		name = GoldenCoast.6.c
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.25
+		}
+		add_popularity = { 
+			ideology = neutrality
+			popularity = 0.25
+		}
+		hidden_effect = {
+			add_popularity = { 
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+		set_politics = { ruling_party = fascism elections_allowed = no }
+	}
+	option = {
+		ai_chance = { factor = 25 }
+		name = GoldenCoast.6.e
+		add_political_power = -150
+	}
+}
+country_event = {
+	id = GoldenCoast.7
+	title = GoldenCoast.7.t
+	desc = GoldenCoast.7.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.7.a
+		set_cosmetic_tag = GCE_KIL
+		add_stability = 0.15
+	}
+}
+country_event = {
+	id = GoldenCoast.8
+	title = GoldenCoast.8.t
+	desc = GoldenCoast.8.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	trigger = {
+	}
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.8.a
+		set_cosmetic_tag = GCE_GFL
+		add_stability = 0.15
+	}
+}
+country_event = {
+	id = GoldenCoast.9
+	title = GoldenCoast.9.t
+	desc = GoldenCoast.9.d
+	picture = GFX_report_generic_read_write
+	is_triggered_only = no
+	trigger = {
+		tag = GCE
+		AND = {
+			has_government = fascism
+		}
+	}
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.9.a
+		add_political_power = 100
+		complete_national_focus = GCE_Fash
+	}
+}
+country_event = {
+	id = GoldenCoast.10
+	title = GoldenCoast.10.t
+	desc = GoldenCoast.10.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		ai_chance = { factor = 50 }
+		name = GoldenCoast.10.a
+		add_political_power = 100
+		add_popularity = { ideology = democratic popularity = -0.1 }
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = GoldenCoast.10.b
+		add_political_power = 100
+		remove_unit_leader = 69420
+		create_field_marshal = { 
+			name = "Sidney Warren" 
+			picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds" 
+			skill = 3
+		}
+		add_popularity = { ideology = communism popularity = -0.1 }
+	}
+}
+country_event = {
+	id = GoldenCoast.11
+	title = GoldenCoast.11.t
+	desc = GoldenCoast.11.d
+	picture = GFX_report_event_fascist_speech
+
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		AND = {
+			765 = { is_demilitarized_zone = yes }
+			}
+		AND = {
+			date > 1937.8.14
+		}
+		NOT = {
+			has_government = communism
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.11.a
+		MAD = {
+			transfer_state = 764
+			764 = { add_core_of = MAD }
+			set_cosmetic_tag = MAD_AUG
+		}
+	}
+}
+country_event = {
+	id = GoldenCoast.12
+	title = GoldenCoast.12.t
+	desc = GoldenCoast.12.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.12.a
+		NEE = {
+			add_stability = -0.05
+		}
+	}
+}
+country_event = {
+	id = GoldenCoast.13 #lovecraft
+	title = GoldenCoast.13.t
+	desc = GoldenCoast.13.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.13.a
+		
+	}
+}
+country_event = {
+	id = GoldenCoast.14
+	title = GoldenCoast.14.t
+	desc = GoldenCoast.14.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		GCE = {
+			has_idea = FreeMarket
+			has_country_leader = {
+				ruling_only = yes
+				name = "Harold Anderson"
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.14.a
+		add_political_power = -25
+		add_stability = -0.01
+		swap_ideas = {
+    		add_idea = FreeMarket2
+    		remove_idea = FreeMarket
+		}
+	}
+}
+country_event = {
+	id = GoldenCoast.15
+	title = GoldenCoast.15.t
+	desc = GoldenCoast.15.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		GCE = {
+			has_idea = FreeMarket2
+			has_country_leader = {
+				ruling_only = yes
+				name = "Harold Anderson"
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.15.a
+		add_stability = -0.01
+		add_manpower = -1000
+		add_ideas = StrikeGCE
+	}
+}

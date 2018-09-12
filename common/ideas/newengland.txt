@@ -1,0 +1,674 @@
+ideas = {
+	country = {
+
+	NESoic = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.50
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = 0.1
+			}
+	}
+	NERarmy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				planning_speed = 0.10
+				non_core_manpower = 0.02
+				attrition = -0.1
+				land_reinforce_rate = 0.3
+			}
+	}
+	NETrade = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				trade_opinion_factor = 0.75
+			}
+	}
+	NETrench = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_dig_in = 10
+			}
+	}
+	NEWs = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+			}
+	}
+	NERom = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+			}
+	}
+	NEWW = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.1
+				army_morale_factor = 0.1
+				conscription_factor = 0.1
+			}
+	}
+	NEAntiCa = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+			}
+	}
+	NEAntiFa = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.01
+			}
+	}
+	NEPro = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+	}
+	NERes = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
+	}
+	NEWamp = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			conversion_cost_mil_to_civ_factor = -0.50
+		}
+	}
+	NEDolla = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			lend_lease_tension = -0.50
+		}
+	}
+	NEDengstdv = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			trade_opinion_factor = 0.25
+		}
+	}
+	NETrotstdv = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			army_infantry_attack_factor = 0.05
+		}
+	}
+	NEDevstdv = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			production_speed_buildings_factor = 0.1
+		}
+	}
+	NEConvFac = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				equipment_conversion_speed = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+	}
+	NEMilFac = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+	}
+	NEFac = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+	}
+	NEMarch = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				conscription = 0.1
+				max_dig_in = 1
+			}
+	}
+	NEWarTorn2 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.03
+			}
+	}
+	NEWarTorn = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+			}
+	}
+	NEVolunteers = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.1
+			}
+		}
+
+	}
+	political_advisor = {
+		
+		NEArms = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { armaments_organizer }
+		}
+		
+		NEInd = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { captain_of_industry }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		NEWarInd = {
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+
+		NEMarx = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { communist_revolutionary }
+	
+			on_add = {
+				country_event = political.1
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+		NEHenryMad = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { fascist_demagogue }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		NESchwarz = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.7
+			}
+	
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+}
+	# TECHNOLOGY
+	tank_manufacturer = { 
+		
+		designer = yes
+		
+		NETank = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+
+		}
+	}
+	naval_manufacturer = { 
+		
+		designer = yes
+		NENAV = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+		}	
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		NEair = {
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			equipment_bonus = {
+				
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	industrial_concern = {
+		designer = yes
+		NESteel = {
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		}
+	materiel_manufacturer = {
+		
+		designer = yes
+		NEMOT = {
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	theorist = {
+		NETheory = {
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+			
+			traits = { rocket_scientist }
+		}
+	}	
+		
+	# MILITARY
+	army_chief = {
+
+		NELeo_Moses = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		NEMax_Floyd = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+						
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	navy_chief = { #CHIEF OF NAVY
+		
+		NEChristopher_Neal = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+						
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 0.1
+			}
+		}
+	}
+	high_command = {
+
+		NEJohn_Branch = {
+
+			
+			allowed = {
+				original_tag = NEE
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

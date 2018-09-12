@@ -1,0 +1,31 @@
+state={
+	id=826
+	name="STATE_826"
+	resources={
+		steel=10.000
+	}
+	history={
+		owner = NEE
+		add_core_of = ACA
+		add_core_of = ABE
+		add_core_of = NEE
+		add_core_of = GCE
+		buildings = {
+			infrastructure = 5
+			arms_factory = 5
+			industrial_complex = 3
+			air_base = 6
+		}
+
+		victory_points = {
+			1338 5 
+		}
+
+		}
+	provinces={
+		1282 1338 1619 4287 10247 12221 
+	}
+	manpower=420000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}
