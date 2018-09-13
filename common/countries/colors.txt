@@ -584,8 +584,8 @@ RHI = {
 	color_ui = rgb { 203 255 151 } 	
 }
 WEI = {
-	color = rgb { 211 211 211 }
-	color_ui = rgb { 211 211 211 } 	
+	color = rgb { 190 190 190 }
+	color_ui = rgb { 190 190 190 } 	
 }
 ALR = {
 	color = rgb { 166 91 91 }
