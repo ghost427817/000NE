@@ -1,0 +1,273 @@
+focus_tree = { 
+id = US Northern Puppets
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = VIR 
+} 
+modifier = { 
+add = 10 
+tag = PEN
+} 
+} 
+#Focus for Pursue Independence
+focus = { 
+	id = VIR_pursueindependence
+	icon = GFX_focus_generic_support_the_left_right
+	x = 3
+	y = 0
+	cost = 10
+	available_if_capitulated = yes 
+	ai_will_do = { 
+		factor = 10
+ 	} 
+	completion_reward = { 
+		add_political_power = 150
+ 	} 
+
+ } 
+
+#Focus for Unilateral Secession
+focus = { 
+	id = VIR_unilateralsecession
+	icon = GFX_goal_generic_demand_territory
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = VIR_pursueindependence } 
+	ai_will_do = { 
+ 	factor = 10
+ 	} 
+	completion_reward = { 
+		add_autonomy_ratio = {
+			value = 1
+			localization = Unilateral_LOC
+		}
+ 	} 
+
+ } 
+
+#Focus for Bilateral Negotiations
+focus = { 
+	id = VIR_bilateralnegotiations
+	icon = GFX_goal_tripartite_pact
+	x = 5
+	y = 1
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = VIR_pursueindependence } 
+	mutually_exclusive = { focus = VIR_unilateralsecession } 
+	ai_will_do = { 
+ 		factor = 1
+ 	} 
+	available = { 
+		USA = {
+    		has_government = ROOT
+		}
+ 	} 
+	completion_reward = { 
+		add_autonomy_ratio = {
+			value = 1
+			localization = BILATERAL_LOC
+		}
+	} 
+
+ } 
+
+#Focus for Political Direction
+focus = { 
+	id = VIR_politicaldirection
+	icon = GFX_goal_generic_political_pressure
+	x = 15
+	y = 0
+	cost = 10
+	available_if_capitulated = yes 
+	ai_will_do = { 
+ 		factor = 5
+ 	} 
+	completion_reward = { 
+		add_political_power = 150
+ 	} 
+
+ } 
+
+#Focus for Rightism
+focus = { 
+id = VIR_rightism
+icon = GFX_goal_support_fascism
+x = 17
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = VIR_politicaldirection } 
+mutually_exclusive = { focus = VIR_leftism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity = { 
+ideology = fascism 
+popularity = 0.2
+}
+add_popularity = { 
+ideology = neutrality
+popularity = 0.2
+}
+ } 
+
+ }
+focus = {
+	id = VIR_Neutrality
+	icon = GFX_goal_generic_neutrality_focus
+	x = 19
+	y = 2
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = VIR_rightism }
+	mutually_exclusive = {focus = VIR_Nazi focus = VIR_statusquo}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+	}
+}
+focus = {
+	id = VIR_Nazi
+	icon = GFX_goal_support_fascism
+	x = 21
+	y = 2
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = VIR_rightism }
+	mutually_exclusive = {focus = VIR_Neutrality focus = VIR_statusquo }
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+	}
+}
+
+#Focus for Leftism
+focus = { 
+id = VIR_leftism
+icon = GFX_goal_support_communism
+x = 13
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = VIR_politicaldirection } 
+mutually_exclusive = { focus = VIR_rightism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity = { 
+ideology = anarch
+popularity = 0.2 
+}
+add_popularity = { 
+ideology = communism
+popularity = 0.2 
+}
+add_popularity = { 
+ideology = technocracy 
+popularity = 0.2
+}
+ } 
+
+ } 
+
+#Focus for Communist Newspapers
+focus = { 
+id = VIR_communistnewspapers
+icon = GFX_focus_generic_join_comintern
+x = 11
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = VIR_leftism } 
+ai_will_do = { 
+ factor = 1
+ } 
+mutually_exclusive = { focus = VIR_anarch focus = VIR_technate}
+completion_reward = { 
+add_popularity = { 
+ideology = communism
+popularity = 0.1 
+}
+ } 
+
+ }
+focus = {
+	id = VIR_anarch
+	icon = GFX_goal_generic_demand_territory
+	x = 9
+	y = 2
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = VIR_leftism }
+	ai_will_do = { 
+ 		factor = 1
+ 	}
+ 	mutually_exclusive = { focus = VIR_communistnewspapers focus = VIR_technate}
+ 	completion_reward = { 
+		add_popularity = { 
+			ideology = anarch
+			popularity = 0.1 
+		}
+	}
+}
+focus = {
+	id = VIR_technate
+	icon = GFX_goal_generic_production2 
+	x = 13
+	y = 2
+	cost = 10
+	available_if_capitulated = yes
+	prerequisite = { focus = VIR_leftism }
+	ai_will_do = { 
+ 		factor = 1
+ 	}
+ 	mutually_exclusive = { focus = VIR_communistnewspapers focus = VIR_anarch }
+ 	completion_reward = { 
+		add_popularity = { 
+			ideology = technocracy
+			popularity = 0.1 
+		}
+	}
+}
+
+#Focus for Status Quo
+focus = { 
+id = VIR_statusquo
+icon = GFX_goal_support_democracy
+x = 17
+y = 2
+cost = 10
+prerequisite = { focus = VIR_rightism } 
+available_if_capitulated = yes 
+mutually_exclusive = { focus = VIR_Nazi focus = VIR_Neutrality }
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_popularity = { 
+ideology = democratic 
+popularity = 0.2
+}
+ } 
+
+ } 
+
+#End of focuses 
+ }
