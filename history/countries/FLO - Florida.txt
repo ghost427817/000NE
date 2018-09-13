@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Southern Placeholder"
-	desc = "POLITICS_Gene"
-	picture = "gfx/leaders/GRG/Portrait_Gene.dds"
+	name = "David Sholtz"
+	desc = "POLITICS_Dave_Sholtz"
+	picture = "gfx/leaders/FLO/Sholtz.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

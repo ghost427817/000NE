@@ -33,11 +33,31 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+create_country_leader = {
+	name = "Richard Leche"
+	desc = "POLITICS_allen"
+	picture = "gfx/leaders/LOU/Leche.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "James Noe"
+	desc = "POLITICS_allen"
+	picture = "gfx/leaders/LOU/Noe.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
 
 create_country_leader = {
-	name = "Placeholder"
-	desc = "POLITICS_Gene"
-	picture = "gfx/leaders/GRG/Portrait_Gene.dds"
+	name = "Oscar Allen"
+	desc = "POLITICS_allen"
+	picture = "gfx/leaders/LOU/Allen.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

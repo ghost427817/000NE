@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Southern Placeholder"
-	desc = "POLITICS_Gene"
-	picture = "gfx/leaders/GRG/Portrait_Gene.dds"
+	name = "Hugh White"
+	desc = "POLITICS_White"
+	picture = "gfx/leaders/MIS/White.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
