@@ -13,6 +13,9 @@ opinion_modifiers = {
 	gce_jer_friends = {
 		value = 30
 	}
+	secure_alsace = {
+		value = 30
+	}
 	#VANILLA
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100

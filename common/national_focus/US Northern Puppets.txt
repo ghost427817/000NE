@@ -1,5 +1,5 @@
 focus_tree = { 
-id = US Northern Puppets
+id = US_Northern_Puppets
 country = { 
 factor = 0 
 modifier = { 
@@ -39,7 +39,7 @@ focus = {
 	prerequisite = { focus = VIR_pursueindependence } 
 	ai_will_do = { 
  	factor = 10
- 	} 
+ 	}
 	completion_reward = { 
 		add_autonomy_ratio = {
 			value = 1
@@ -92,6 +92,22 @@ focus = {
  	} 
 
  } 
+ focus = { 
+	id = VIR_politicaldirection2
+	icon = GFX_goal_generic_propaganda
+	x = 15
+	y = 2
+	cost = 10
+	available_if_capitulated = yes 
+	ai_will_do = { 
+ 		factor = 5
+ 	} 
+ 	prerequisite = { focus = VIR_politicaldirection } 
+	completion_reward = { 
+		add_political_power = 150
+ 	} 
+
+ } 
 
 #Focus for Rightism
 focus = { 
@@ -104,7 +120,7 @@ available_if_capitulated = yes
 prerequisite = { focus = VIR_politicaldirection } 
 mutually_exclusive = { focus = VIR_leftism } 
 ai_will_do = { 
- factor = 1
+ factor = 5
  } 
 completion_reward = { 
 add_popularity = { 
@@ -147,7 +163,7 @@ focus = {
 	prerequisite = { focus = VIR_rightism }
 	mutually_exclusive = {focus = VIR_Neutrality focus = VIR_statusquo }
 	ai_will_do = {
-		factor = 1
+		factor = 5
 	}
 	completion_reward = {
 		add_popularity = {

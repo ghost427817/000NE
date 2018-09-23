@@ -1,0 +1,49 @@
+focus_tree = { 
+	id = South_German_Reich
+	country = { 
+		factor = 0 
+		modifier = { 
+			add = 15
+			tag = GER
+		} 
+	}
+	focus = {
+		id = Elsasce
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { }
+		available = {
+		}
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+    				target = FRA
+    				modifier = secure_alsace
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+    				target = GER
+    				modifier = secure_alsace
+				}
+			}
+				
+			GER = {
+				add_state_core = 28
+				add_state_core = 17
+				create_wargoal = {
+   					type = annex_everything
+    				target = ALR
+				}
+			}
+		}
+	}
+}
