@@ -1,9 +1,5 @@
 propaganda_efforts = {
 	icon = generic_propaganda
-
-	visible = {
-
-	}
 }
 
 SAF_anti_colonialist_crusade = {
