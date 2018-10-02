@@ -79,15 +79,3 @@ units = {
 		start_equipment_factor = 5
 		start_experience_factor = 5
 	}
-### Starting Equipment ###
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 16
-		progress = 0.5
-		efficiency = 70
-	}
-}

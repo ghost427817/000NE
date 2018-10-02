@@ -1,0 +1,62 @@
+add_namespace = denmark
+country_event = {
+	id = denmark.1
+	title = denmark.1.t
+	desc = denmark.1.d
+	picture = GFX_report_militia
+	
+	trigger = {
+		original_tag = DEN
+		country_exists = DIT
+		country_exists = DEN
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = {  #war
+		name = denmark.1.a
+		ai_chance = { factor = 99 }
+		DEN = {
+			declare_war_on = {
+    			target = DIT
+    			type = annex_everything
+			}
+		}
+	}
+	option = { #rare funny event?
+		name = denmark.1.b
+		ai_chance = { factor = 1 }
+		set_global_flag = FunnyDith
+	}
+}
+country_event = {
+	id = denmark.2
+	title = denmark.2.t
+	desc = denmark.2.d
+	picture = GFX_report_militia
+	
+	trigger = {
+		has_global_flag = FunnyDith
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {days = 1}
+
+	option = {
+		name = denmark.2.a
+		ai_chance = { factor = 100 }
+		DIT = {
+			transfer_state = 58
+			add_state_core = 58
+		}
+		DEN = {
+			declare_war_on = {
+    			target = DIT
+    			type = annex_everything
+			}
+		}
+	}
+}

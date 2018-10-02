@@ -1,4 +1,4 @@
-﻿capital = 764
+﻿capital = 783
 
 oob = "DIT_1936"
 

@@ -1,0 +1,154 @@
+﻿division_template = {
+	name = "Sicherheitspolizei"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 2
+}
+
+units = {
+	division = {
+		name = "Sicherheitspolizei Berlin"
+		location = 6521
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 5
+	}
+	division = {
+		name = "Sicherheitspolizei Rostock"
+		location = 321
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+	division = {
+		name = "Sicherheitspolizei Madgeburg"
+		location = 3522
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+	division = {
+		name = "Sicherheitspolizei Erfurt"
+		location = 6524
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+	division = {
+		name = "1st Sicherheitspolizei Frankfurt"
+		location = 6488
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+	division = {
+		name = "Sicherheitspolizei Hannover"
+		location = 6377
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+	division = {
+		name = "2nd Sicherheitspolizei Frankfurt"
+		location = 6488
+		division_template = "Sicherheitspolizei"
+		start_experience_factor = 3
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "WEI"
+		}
+		requested_factories = 16
+		progress = 0.5
+		efficiency = 70
+	}
+	### Ships Under Contruction ###
+	# SS: Type IIA (x2) ("U-25" "U-26"), Type IIB (x6) ("U-14" "U-16" "U-18" "U-15" "U-20" "U-19")
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "GER" 
+		}
+		requested_factories = 5
+		progress = 0.75
+		amount = 8
+	}
+	# DD: 1934 class (x4) ("Z1" "Z2" "Z3" "Z4")
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.75
+		amount = 4
+	}
+	# CA: "Graf Spee"
+	add_equipment_production = {
+		equipment = {
+			type = heavy_cruiser_1
+			creator = "GER"
+			version_name = "Deutschland Class"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 1
+	}
+		# Scharnhorst
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.25
+		amount = 1
+	}
+		# Gneisenau
+	add_equipment_production = {
+		equipment = {
+			type = battleship_2
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.1
+		amount = 1
+	}
+}
+
+air_wings = {
+	52 = { 
+		# Jagdgeschwader 136		
+		fighter_equipment_0 =  {		# He 51
+			owner = "GER" 
+			amount = 40
+		}
+		name = "Jagdgeschwader 136"
+		# Kampfgeschwader 154	
+		tac_bomber_equipment_0 = {		# Do 23
+			owner = "GER" 
+			amount = 80
+		}
+		name = "Kampfgeschwader 154"
+	}
+
+	### VI. Luftkreiskommando -- Kiel ###
+	50 = { 
+		# Küstenfliegergruppe 106		
+		nav_bomber_equipment_1 =  {		# He 59, Do 18
+			owner = "GER" 
+			amount = 72
+		}
+		name = "Küstenfliegergruppe 106"
+		# Küstenfliegergruppe 206
+	}
+}
+
