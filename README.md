@@ -1,4 +1,2 @@
-# 000NE
-This is a mod for hearts of iron 4 that doesn't have a name yet.
-I've been working on it for like, almost a year.
-I'm putting it up here so I can work on the mod from my laptop.
+# War on Destiny
+is a modification for Hearts of Iron IV that imagines an alternate history where Herbert Hoover fell slightly differently when he was pushed to the ground by another child during his attendance at school. His spine hit a rock just right and he developed a permanent limp. Hoover walks around 50% more slowly than in the original timeline (OTL).
