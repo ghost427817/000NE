@@ -1,6 +1,45 @@
 ideas = {
 
 	country = {
+		Defense_Prussia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+					targeted_modifier = {
+						tag = POL
+						defense_bonus_against = 0.5
+					}
+			}
+
+		}
+		Kill_Prussia = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+					targeted_modifier = {
+						tag = PRE
+						attack_bonus_against = 0.5
+						defense_bonus_against = 0.25
+					}
+			}
+
+		}
 		StrikeGCE = {
 			allowed = {
 				always = yes

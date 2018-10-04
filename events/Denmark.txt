@@ -1,4 +1,4 @@
-add_namespace = denmark
+﻿add_namespace = denmark
 country_event = {
 	id = denmark.1
 	title = denmark.1.t

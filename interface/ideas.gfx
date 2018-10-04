@@ -3871,5 +3871,13 @@ spriteTypes = {
 		name = "GFX_idea_Beyond_Taxes"
 		texturefile = "gfx/interface/ideas/TaxB.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_Kill_Prussia"
+		texturefile = "gfx/interface/ideas/idea_ger_bulwark_against_bolshevism.dds"
+	}
+	spriteType = {
+		name = "Defense_Prussia"
+		texturefile = "gfx/interface/ideas/idea_ger_bulwark_against_bolshevism.dds"
+	}
 }
 }

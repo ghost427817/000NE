@@ -1617,7 +1617,6 @@ focus_tree = {
 			#grants a -10% PP cost to war goal justification
 		}
 	}
-
 	focus = {
 		id = POL_poland_first
 		icon = GFX_goal_generic_defence
@@ -1640,7 +1639,145 @@ focus_tree = {
 			#Gains the Indoctrination Modifier
 		}
 	}
+	focus = {
+		id = POL_Prussia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_polish_militarism }
+		
+		x = 4
+		y = 0
+		relative_position_id = POL_poland_first
+		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Kill_Prussia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_Prussia }
+		
+		x = 2
+		y = 1
+		relative_position_id = POL_Prussia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = { focus = POL_Treaty_Prussia }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Treaty_Prussia
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = POL_Prussia }
+		
+		x = -1
+		y = 1
+		relative_position_id = POL_Prussia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		mutually_exclusive = { focus = POL_Kill_Prussia }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Prepare_General_Prussia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_Kill_Prussia }
+		
+		x = -1
+		y = 1
+		relative_position_id = POL_Kill_Prussia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_army_leader = {
+				add_unit_leader_trait = fortress_buster
+			}
+		}
+	}
+	focus = {
+		id = POL_Prepare_Army_Prussia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_Kill_Prussia}
+		
+		x = 1
+		y = 1
+		relative_position_id = POL_Kill_Prussia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Prepare_Airforce_Prussia
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = POL_Kill_Prussia }
+		
+		x = 3
+		y = 1
+		relative_position_id = POL_Kill_Prussia
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Kill_Prussia_2
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = POL_Prepare_General_Prussia }
+		prerequisite = { focus = POL_Prepare_Army_Prussia }
+		prerequisite = { focus = POL_Prepare_Airforce_Prussia }
+		x = 0
+		y = 1
+		relative_position_id = POL_Prepare_Army_Prussia 
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = POL_ideological_fanaticism
 		icon = GFX_goal_generic_propaganda
@@ -1662,7 +1799,27 @@ focus_tree = {
 			#Same as in Generic Focus
 		}
 	}
+	focus = {
+		id = POL_cult
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_ideological_fanaticism }
+		prerequisite = { focus = POL_polish_revanchism }
 
+		x = -1
+		y = 1
+		relative_position_id = POL_ideological_fanaticism
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 	focus = {
 		id = POL_the_between_the_seas_concept
 		icon = GFX_goal_anschluss
@@ -1888,7 +2045,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_baltic_conquest
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = POL_annex_lithuania }
 
 		available = {

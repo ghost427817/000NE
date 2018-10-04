@@ -47,6 +47,9 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
+add_ideas = {
+	Defense_Prussia
+}
 
 set_politics = {
 
