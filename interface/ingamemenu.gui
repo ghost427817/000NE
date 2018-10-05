@@ -53,7 +53,7 @@ guiTypes = {
 			buttonFont = "hoi_24header"
 			clicksound = click_default
 			oversound = ui_menu_over
-			web_link = ""
+			web_link = "WarOnDestiny.miraheze.org/wiki/"
 		}
 		
 		buttonType = {
@@ -94,7 +94,7 @@ guiTypes = {
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
-			web_link = "http://www.heartsofiron4.com"
+			web_link = "https://actuallyd0ng.website"
 		}
 		ButtonType = {
 			name = "forum_button"
@@ -119,7 +119,7 @@ guiTypes = {
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://twitter.com/hoi_game"
+			web_link = "https://twitter.com/altctuallyd0ng"
 		}
 		
 		ButtonType = {

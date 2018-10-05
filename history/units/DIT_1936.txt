@@ -16,7 +16,7 @@
 }
 
 units = {
-	#Private Military Divisions
+	#militias
 	division = {
 		name = "Dithmarschen Zentralrater Roteguardisten"
 		location = 3231
@@ -29,6 +29,7 @@ units = {
 		division_template = "Militia"
 		start_equipment_factor = 5
 	}
+}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

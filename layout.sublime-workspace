@@ -411,6 +411,14 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "interface/countrypoliticsview.gui",
+			"settings":
+			{
+				"buffer_size": 25629,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -447,10 +455,22 @@
 	[
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/national_focus"
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/ideas",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/interface"
 	],
 	"file_history":
 	[
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/interface/frontendmainview.gui",
+		"/E/SteamLibrary/steamapps/common/Hearts of Iron IV/interface/frontendmainview.gfx",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history/units/DIT_1936.txt",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/ideas/goldencoast.txt",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/interface/ingamemenu.gui",
+		"/E/SteamLibrary/steamapps/workshop/content/394360/1521695605/Kaiserreich/interface/frontendgamesetupview.gui",
+		"/E/SteamLibrary/steamapps/workshop/content/394360/1521695605/Kaiserreich/interface/frontendmainview.gui",
+		"/E/SteamLibrary/steamapps/workshop/content/394360/1521695605/Kaiserreich/interface/ingamemenu.gui",
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/interface/countrypoliticsview.gui",
+		"/E/SteamLibrary/steamapps/workshop/content/394360/1521695605/Kaiserreich/interface/countrypoliticsview.gfx",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/interface/ideas.gfx",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/countries_cosmetic_l_english.yml",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history/units/GER_1936.txt",
@@ -491,7 +511,6 @@
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/parties_l_english.yml",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/events/Germany.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history/countries/DIT - Dithmarschen.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history/units/DIT_1936.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/events_l_english.yml",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/state_names_l_english.yml",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/focus_l_english.yml",
@@ -567,22 +586,13 @@
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/decisions/categories/Economic_Decision_Categories.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/history/countries/CAL - California.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/events/Spain.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/ideas/goldencoast.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/events/Golden Coast.txt",
 		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/countries/cosmetic.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/national_focus/golden_coast.txt",
-		"/E/SteamLibrary/steamapps/common/Hearts of Iron IV/common/ideas/_economic.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/events/New England.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/ideas/_economic.txt",
-		"/E/Documents/TEXT DOCUMENTS/remind.py",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/ARA_countries_cosmetic_l_english.yml",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/localisation/CAT_countries_cosmetic_l_english.yml",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/national_focus/newyork.txt",
-		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/national_focus/usa.txt"
+		"/C/Users/ghost_000/Documents/Paradox Interactive/Hearts of Iron IV/mod/000NE/common/national_focus/golden_coast.txt"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -596,6 +606,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"faction",
+			"wiki",
+			"parties"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -619,7 +632,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -635,8 +648,8 @@
 						"selection":
 						[
 							[
-								14043,
-								14043
+								271,
+								271
 							]
 						],
 						"settings":
@@ -645,7 +658,36 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 18.0,
-						"translation.y": 0.0,
+						"translation.y": 39.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "interface/countrypoliticsview.gui",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 25629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9943,
+								9948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5308.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
