@@ -3876,8 +3876,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ger_bulwark_against_bolshevism.dds"
 	}
 	spriteType = {
-		name = "Defense_Prussia"
+		name = "GFX_idea_Defense_Prussia"
 		texturefile = "gfx/interface/ideas/idea_ger_bulwark_against_bolshevism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POLFLAG"
+		texturefile = "gfx/interface/ideas/POLANDFLAG.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PREPOL"
+		texturefile = "gfx/interface/ideas/PRUPOL.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KILLPRE"
+		texturefile = "gfx/interface/ideas/CrushPruss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KILLBALT"
+		texturefile = "gfx/interface/ideas/CrushBalt.dds"
 	}
 }
 }

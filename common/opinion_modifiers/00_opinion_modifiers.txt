@@ -10,6 +10,9 @@
 
 opinion_modifiers = {
 	#MOD
+	poland_invasion = {
+		value = -100
+	}
 	gce_jer_friends = {
 		value = 30
 	}
