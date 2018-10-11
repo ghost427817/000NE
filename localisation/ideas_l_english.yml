@@ -2581,3 +2581,7 @@
  Social_Spending_4_desc:0 ""
  Defense_Prussia:0 "Prussian Defenses"
  Defense_Prussia_desc:0 "Prussia has constructed trenches, walls, fortifications, underground bunkers. Prussia's are filled with mines, its lands with barbed wire, caltrops, and its cities with workers ready to defend their home to the death. Poland failed to retake "
+ Ethnic_Cleansing_desc:0 "[From.GetName] has implemented eugenic policies to maintain a single ethnic nationality. Ranging from deportation to excecution, those not considered to be of [From.GetAdjective] stock suffer mass repression at the hands of the [From.GetAdjective] Government and paramilitary groups loyal to the [From.GetFascistParty]."
+ Ethnic_Cleansing:0 "Ethnic Cleansing"
+ PolFash:0 "Slavic Supremacy"
+ PolFash_desc:0 "The Polish Government has portrayed Germanic peoples in its borders as a fifth column seeking to restore the Prussian Empire through any means necessary, pointing at the Prussian Council Republic as the manifestation of German Communist meddling. Polish propaganda portrays the Germanic peoples as a united and barbaric force, using examples of the agressions against the small Slavic Balkan nations by the Central Powers in the First World War. 'The Slavic People must stand up against the degenerate, communist Germans and their puppets around the world,' [From.GetLeader] proclaimed at the end of his latest speech."

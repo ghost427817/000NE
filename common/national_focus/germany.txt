@@ -46,4 +46,88 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = BrotherWars #Faction with France and basically the allies
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { }
+		available = {
+		}
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			FRA = {
+				create_faction = FRA_GER_Faction
+			}
+			GER = {
+				add_to_faction = FRA_GER_Faction
+			}
+			set_rule = {
+   				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = NewTreaty #repudiate versailles and enter negotiations
+		icon = GFX_goal_generic_military_deal
+		prerequisite =  { focus = BrotherWars }
+		available = {
+		}
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#event for france and england to accept the repudiation
+		}
+	}
+	focus = {
+		id = OneReich #Negotiate with allies to reform Germany under the Reich.
+		icon = GFX_goal_generic_military_deal
+		prerequisite =  { focus = NewTreaty }
+		available = {
+		}
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#events for the entente to pledge support for the reich, and for the Republic to deny or accept Reich dominance, give cores to GER
+		}
+	}
+	focus = {
+		id = ReturnGermanTerritories #Negotiate with the holders of German terrirtories to release
+		icon = GFX_goal_generic_military_deal
+		prerequisite =  { focus = NewTreaty }
+		available = {
+		}
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#events for the countries to deny germany territories by default
+		}
+	}
 }

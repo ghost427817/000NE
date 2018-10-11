@@ -3895,5 +3895,21 @@ spriteTypes = {
 		name = "GFX_idea_KILLBALT"
 		texturefile = "gfx/interface/ideas/CrushBalt.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_poldeal"
+		texturefile = "gfx/interface/ideas/polishdeal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PolFash"
+		texturefile = "gfx/interface/ideas/POLFash.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PolCrushGer"
+		texturefile = "gfx/interface/ideas/CRUSHGER.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Ethnic_Cleansing"
+		texturefile = "gfx/interface/ideas/idea_saf_history_of_segregation.dds"
+	}
 }
 }

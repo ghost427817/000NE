@@ -1536,7 +1536,7 @@ focus_tree = {
 		id = POL_strengthen_the_polish_state
 		icon = GFX_goal_generic_demand_territory
 		
-		x = 29
+		x = 31
 		y = 0
 		cost = 10
 
@@ -1557,7 +1557,7 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = POL_strengthen_the_polish_state }
 		
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = POL_strengthen_the_polish_state
 		cost = 10
@@ -1579,7 +1579,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = POL_strengthen_the_polish_state }
 		
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = POL_strengthen_the_polish_state
 		cost = 10
@@ -1593,6 +1593,33 @@ focus_tree = {
 		completion_reward = {
 			army_experience = 20
 			add_ideas = POL_militarism_focus
+		}
+	}
+
+	focus = {
+		id = POL_integration
+		icon = GFX_idea_POLFLAG
+		prerequisite = { focus = POL_strengthen_the_polish_state }
+		
+		x = 4
+		y = 1
+		relative_position_id = POL_strengthen_the_polish_state
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			POL = {
+				add_state_core = 63
+				add_state_core = 66
+				add_state_core = 68
+				add_state_core = 762
+				add_state_core = 67
+			}
 		}
 	}
 
@@ -1619,7 +1646,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_polish_policy
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = POL_defensive_focus }
 		
 		x = 0
@@ -1632,7 +1659,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		mutually_exclusive = { focus = POL_poland_first}
 		completion_reward = {
 
 		}
@@ -1651,7 +1678,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-
+		mutually_exclusive = { focus = POL_polish_policy}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1660,9 +1687,127 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POL_the_new_lands
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_integration }
+
+		x = 11
+		y = 1
+		relative_position_id = POL_integration
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_ethnic_tensions
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = POL_the_new_lands }
+
+		x = -2
+		y = 1
+		relative_position_id = POL_the_new_lands
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_political_tensions
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_the_new_lands }
+
+		x = 2
+		y = 1
+		relative_position_id = POL_the_new_lands
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_exploit_ethnic_tensions
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = POL_ethnic_tensions }
+
+		x = -1
+		y = 1
+		relative_position_id = POL_ethnic_tensions
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { focus = POL_ease_ethnic_tensions }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_ease_ethnic_tensions
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = POL_ethnic_tensions }
+
+		x = 1
+		y = 1
+		relative_position_id = POL_ethnic_tensions
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { focus = POL_exploit_ethnic_tensions }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Fash
+		icon = GFX_ideas_POLFASH
+		prerequisite = { focus = POL_exploit_ethnic_tensions }
+
+		x = 0
+		y = 1
+		relative_position_id = POL_exploit_ethnic_tensions
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { focus = POL_ease_ethnic_tensions }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = POL_pol_power
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = POL_poland_first }
+		icon = GFX_goal_generic_intelligence_exchange
 		prerequisite = { focus = POL_polish_policy }
 		x = 2
 		y = 1
@@ -1683,6 +1828,7 @@ focus_tree = {
 		id = POL_Prussia
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = POL_polish_militarism }
+		prerequisite = { focus = POL_integration }
 		available = {
 			country_exists = PRE
 			date > 1938.1.1
@@ -1742,6 +1888,7 @@ focus_tree = {
 		id = POL_Treaty_Prussia
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = POL_Prussia }
+		prerequisite = { focus = POL_polish_policy }
 		available = {
 			country_exists = PRE
 		}
@@ -1771,6 +1918,9 @@ focus_tree = {
 		prerequisite = { focus = POL_pol_power }
 		available = {
 			country_exists = PRE
+			POL = {
+				has_government = democratic
+			}
 		}
 
 		bypass = {
@@ -1789,10 +1939,7 @@ focus_tree = {
 
 		completion_reward = {
 			effect_tooltip = {
-        			puppet_country = { 
-						target = PRE
-						transfer_troops = no
-					}
+        		puppet = PRE
 			}
 			hidden_effect = {
 				PRE = {
@@ -1808,6 +1955,9 @@ focus_tree = {
 		prerequisite = { focus = POL_Treaty_Prussia }
 		available = {
 			country_exists = PRE
+			POL = {
+				has_government = communism
+			}
 		}
 
 		bypass = {
@@ -2265,7 +2415,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Bigzemordze
-		icon = GFX_idea_KILLBALT
+		icon = GFX_idea_poldeal
 		prerequisite = { focus = POL_baltic_conquest focus = POL_the_baltic_alliance }
 
 		available = {
