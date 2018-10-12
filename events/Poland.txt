@@ -633,5 +633,86 @@ country_event = {
 		}
 		POL =  { add_opinion_modifier = { target = ROOT modifier = refused_anti_comintern_pact_opinion } }
 	}
+}
+country_event = {
+	id = poland.16
+	title = poland.16.t
+	desc = poland.16.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
 
+	option = {
+		name = poland.16.a
+		ai_chance = { factor = 0 }
+		add_manpower = 100000
+		add_stability = -0.1
+		add_popularity = {
+    		ideology = communism
+    		popularity = 0.05
+		}
+		add_popularity = {
+    		ideology = technocracy
+    		popularity = 0.05
+		}
+		add_popularity = {
+    		ideology = anarch
+    		popularity = 0.05
+		}
+		POL = {
+			country_event = { days = 5 id = poland.18 }
+		}
+	}
+	option = {
+		name = poland.16.b
+		ai_chance = { factor = 100 }
+		POL = {
+			country_event = { days = 5 id = poland.17 }
+		}
+	}
+}
+country_event = {
+	id = poland.17
+	title = poland.17.t
+	desc = poland.17.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 10 }
+		name = poland.17.a
+		add_manpower = 100000
+		add_stability = -0.1
+		set_variable = { DeportationsFailed = 1 } 
+	}
+	
+}
+country_event = {
+	id = poland.18
+	title = poland.18.t
+	desc = poland.18.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = poland.18.a
+		ai_chance = { factor = 10 }
+		add_manpower = -100000
+		add_stability = 0.1
+		add_popularity = {
+    		ideology = communism
+    		popularity = -0.05
+		}
+		add_popularity = {
+    		ideology = technocracy
+    		popularity = -0.05
+		}
+		add_popularity = {
+    		ideology = anarch
+    		popularity = -0.05
+		}
+	}
+	
 }

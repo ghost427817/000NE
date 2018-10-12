@@ -1691,13 +1691,13 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = POL_integration }
 
-		x = 11
+		x = 13
 		y = 1
 		relative_position_id = POL_integration
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 101
 		}
 		available_if_capitulated = yes
 
@@ -1710,7 +1710,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = POL_the_new_lands }
 
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = POL_the_new_lands
 		cost = 10
@@ -1722,7 +1722,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = ethnic_tensions_tt
 		}
 	}
 	focus = {
@@ -1730,13 +1730,13 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = POL_the_new_lands }
 
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = POL_the_new_lands
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 		mutually_exclusive = { }
 		available_if_capitulated = yes
@@ -1750,13 +1750,13 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = POL_ethnic_tensions }
 
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = POL_ethnic_tensions
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 101
 		}
 		mutually_exclusive = { focus = POL_ease_ethnic_tensions }
 		available_if_capitulated = yes
@@ -1770,13 +1770,13 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = POL_ethnic_tensions }
 
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = POL_ethnic_tensions
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 0
 		}
 		mutually_exclusive = { focus = POL_exploit_ethnic_tensions }
 		available_if_capitulated = yes
@@ -1786,8 +1786,48 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POL_Polonization
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = POL_ease_ethnic_tensions }
+
+		x = -1
+		y = 1
+		relative_position_id = POL_ease_ethnic_tensions
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+		mutually_exclusive = { focus = POL_Civic_Nationalism }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = POL_Civic_Nationalism
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = POL_ease_ethnic_tensions }
+
+		x = 1
+		y = 1
+		relative_position_id = POL_ease_ethnic_tensions
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+		mutually_exclusive = { focus = POL_Polonization }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = POL_Fash
-		icon = GFX_ideas_POLFASH
+		icon = GFX_idea_PolFash
 		prerequisite = { focus = POL_exploit_ethnic_tensions }
 
 		x = 0
@@ -1796,13 +1836,139 @@ focus_tree = {
 		cost = 10
 
 		ai_will_do = {
-			factor = 100
+			factor = 110
 		}
 		mutually_exclusive = { focus = POL_ease_ethnic_tensions }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = PolFash
+		}
+	}
+	focus = {
+		id = POL_Strip_Citizenship
+		icon = GFX_idea_PolCrushGer
+		prerequisite = { focus = POL_Fash }
+
+		x = -1
+		y = 1
+		relative_position_id = POL_Fash
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = POL_Deport_Non_Slav
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = POL_Strip_Citizenship }
+
+		x = -1
+		y = 1
+		relative_position_id = POL_Strip_Citizenship
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_neighbor_of = POL
+					NOT = {
+						has_government = Communism
+					}
+				}
+				country_event = {
+    				id = poland.16
+    				days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = POL_Kill_Non_Slav
+		icon = GFX_idea_Ethnic_Cleansing
+		prerequisite = { focus = POL_Deport_Non_Slav }
+		available = {
+			check_variable = { DeportationsFailed > 0 }
+		}
+		x = 1
+		y = 1
+		relative_position_id = POL_Deport_Non_Slav
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = Ethnic_Cleansing
+		}
+	}
+	focus = {
+		id = POL_Seize_German_Business
+		icon = GFX_idea_PolFash
+		prerequisite = { focus = POL_Fash }
+		x = 1
+		y = 1
+		relative_position_id = POL_Fash
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = POL_Sell_German_Business
+		icon = GFX_idea_PolFash
+		prerequisite = { focus = POL_Seize_German_Business }
+
+		x = 1
+		y = 1
+		relative_position_id = POL_Seize_German_Business
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = POL_Nationalize_German_Business }
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = POL_Nationalize_German_Business
+		icon = GFX_idea_PolFash
+		prerequisite = { focus = POL_Seize_German_Business }
+
+		x = -1
+		y = 1
+		relative_position_id = POL_Seize_German_Business
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = POL_Sell_German_Business }
+		completion_reward = {
+		
 		}
 	}
 	focus = {
