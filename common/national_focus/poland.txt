@@ -1787,7 +1787,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Polonization
-		icon = GFX_focus_generic_self_management
+		icon = GFX_idea_POLFLAG
 		prerequisite = { focus = POL_ease_ethnic_tensions }
 
 		x = -1
@@ -1807,7 +1807,7 @@ focus_tree = {
 	}
 	focus = {
 		id = POL_Civic_Nationalism
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = POL_ease_ethnic_tensions }
 
 		x = 1
@@ -1861,17 +1861,36 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			#manpower down in the german states
 		}
 	}
 	focus = {
-		id = POL_Deport_Non_Slav
-		icon = GFX_focus_CZE_german_puppet
+		id = POL_Arrest_Disloyal
+		icon = GFX_idea_ast_classify_aliens
 		prerequisite = { focus = POL_Strip_Citizenship }
 
 		x = -1
 		y = 1
 		relative_position_id = POL_Strip_Citizenship
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#stability bonus idea
+		}
+	}
+	focus = {
+		id = POL_Deport_Non_Slav
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus = POL_Arrest_Disloyal }
+
+		x = 0
+		y = 1
+		relative_position_id = POL_Arrest_Disloyal
 		cost = 10
 
 		ai_will_do = {
@@ -1901,7 +1920,7 @@ focus_tree = {
 		available = {
 			check_variable = { DeportationsFailed > 0 }
 		}
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = POL_Deport_Non_Slav
 		cost = 10
@@ -1912,7 +1931,44 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = ghettos_tt
+			#add civ and mil output bonus under "ghettos" idea
+		}
+	}
+	focus = {
+		id = POL_Death_Camps
+		icon = GFX_idea_saf_history_of_segregation_2
+		prerequisite = { focus = POL_Kill_Non_Slav}
+		x = -1
+		y = 1
+		relative_position_id = POL_Kill_Non_Slav
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
 			add_ideas = Ethnic_Cleansing
+		}
+	}
+	focus = {
+		id = POL_Work_Camps
+		icon = GFX_idea_ger_rebuild_the_nation
+		prerequisite = { focus = POL_Kill_Non_Slav}
+		x = 1
+		y = 1
+		relative_position_id = POL_Kill_Non_Slav
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#add civ and mil factories
 		}
 	}
 	focus = {
