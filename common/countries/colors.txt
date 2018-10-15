@@ -591,6 +591,46 @@ ALR = {
 	color = rgb { 166 91 91 }
 	color_ui = rgb { 166 91 91 } 	
 }
+NAT = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 50 50 50 } 	
+}
+WVG = {
+	color = rgb { 155 66 90 }
+	color_ui = rgb { 155 66 90 } 	
+}
+CSA = {
+	color = rgb { 192 192 192 }
+	color_ui = rgb { 192 192 192 } 	
+}
+ARK = {
+	color = rgb { 154 206 212 }
+	color_ui = rgb { 154 206 212 } 	
+}
+KTY = {
+	color = rgb { 255 153 255 }
+	color_ui = rgb { 255 153 255 } 	
+}
+BRI = {
+	color = rgb { 12 12 12 }
+	color_ui = rgb { 12 12 12 } 	
+}
+COR = {
+	color = rgb { 153 153 255 }
+	color_ui = rgb { 153 153 255 } 	
+}
+FWA = {
+	color = rgb { 42 76 146 }
+	color_ui = rgb { 42 76 146 }
+}
+ALG = {
+	color = rgb { 0 0 146 }
+	color_ui = rgb { 0 0 146 }
+}
+TNS = {
+	color = rgb { 51 15 0 }
+	color_ui = rgb { 15 51 0 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
