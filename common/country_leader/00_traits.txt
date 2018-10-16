@@ -422,7 +422,7 @@ leader_traits = {
 	}
 	technocrat_proselytizer = {
 		random = no
-		# Boosts Anarch
+		# Boosts technate
 		sprite = 13
 		technocracy_drift = 0.1
 		
