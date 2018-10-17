@@ -977,7 +977,7 @@ ideas = {
 				
 			}
 			
-			traits = { anarchist_insurrectionary }
+			traits = { technocrat_proselytizer }
 	
 			on_add = {
 				#country_event = political.1

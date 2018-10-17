@@ -8,7 +8,7 @@ state={
 	impassable = yes
 
 	history={
-		owner = FRA
+		owner = FWA
 		buildings = {
 			infrastructure = 0
 		}
