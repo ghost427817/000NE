@@ -49,23 +49,12 @@ set_convoys = 300
 set_politics = {
 
 	parties = {
-		neutrality = {
-			popularity = 50
-		}
-		democratic = { 
-			popularity = 20
-		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 10
+		technocracy = {
+			popularity = 100
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = technocracy
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -80,8 +69,8 @@ add_ideas = {
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
 	name = "Howard Scott"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	desc = "Scott_DESC"
+	picture = "Howard Scott.dds"
 	expire = "1965.1.1"
 	ideology = technocracy_scott
 	traits = {
