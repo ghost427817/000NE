@@ -324,3 +324,15 @@ music = {
 		}		
 	}	
 }
+music = {
+	song = "bonnie_blue"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			OR = {
+				tag = CSA tag = VIR tag = KTY tag = TNS tag = CAR tag = ARK tag = ALA tag = GRG tag = FLO tag = LOU tag = TEX tag = MIS
+			}
+		}		
+	}	
+}
