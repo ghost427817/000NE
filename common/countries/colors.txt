@@ -592,8 +592,8 @@ ALR = {
 	color_ui = rgb { 166 91 91 } 	
 }
 NAT = {
-	color = rgb { 50 50 50 }
-	color_ui = rgb { 50 50 50 } 	
+	color = rgb { 90 90 90 }
+	color_ui = rgb { 80 80 80 } 	
 }
 WVG = {
 	color = rgb { 155 66 90 }
@@ -627,9 +627,13 @@ ALG = {
 	color = rgb { 0 0 146 }
 	color_ui = rgb { 0 0 146 }
 }
+TUN = {
+	color = rgb { 0 146 146 }
+	color_ui = rgb { 0 146 146 }
+}
 TNS = {
-	color = rgb { 51 15 0 }
-	color_ui = rgb { 15 51 0 }
+	color = rgb { 30 100 100 }
+	color_ui = rgb { 30 100 100 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

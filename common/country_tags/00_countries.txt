@@ -151,5 +151,5 @@ BRI = "countries/Brittany.txt"
 COR = "countries/Corsica.txt"
 FWA = "countries/French West Africa.txt" #French West African Warlord State
 ALG = "countries/Algeria.txt" #Algeria Under French Control Warlord State
-TNS = "countries/Tennesee.txt"
+TNS = "countries/Tennessee.txt"
 TUN = "countries/Tunisia.txt"
