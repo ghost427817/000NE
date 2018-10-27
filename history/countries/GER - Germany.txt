@@ -84,7 +84,6 @@ set_politics = {
 
 
 add_ideas = {
-	sour_loser
 	general_staff
 	limited_exports
 	limited_conscription

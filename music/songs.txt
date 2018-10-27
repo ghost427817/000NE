@@ -102,9 +102,7 @@ music = {
 	
 	chance = {
 		modifier = {
-			factor = 2
-
-			has_war = no
+			factor = 3
 			OR = {
 				tag = GRG
 				tag = ALA
@@ -114,6 +112,19 @@ music = {
 				tag = LOU
 				tag = TEX
 			}
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "internationale"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			has_government = communism
 		}		
 	}	
 }
@@ -309,6 +320,18 @@ music = {
 			has_government = communism
 			has_war = no
 			any_owned_state = { is_on_continent = north_america }
+		}		
+	}	
+}
+music = {
+	song = "hymn_ne"
+	
+	chance = {
+		modifier = {
+			factor = 3
+			has_government = communism
+			has_war = no
+			tag = NEE
 		}		
 	}	
 }

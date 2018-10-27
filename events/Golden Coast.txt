@@ -93,11 +93,6 @@ country_event = {
 			date > 1937.8.14
 		}
 	}
-	immediate = {
-		MAD = {
-			transfer_state = 764
-		}
-	}
 	option = { #appease
 		name = GoldenCoast.2.a
 		ai_chance = { factor = 0 }
@@ -188,6 +183,7 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.1
 		}
+		load_oob = Antifa_GCE
 		add_stability = -0.02
 		declare_war_on = { target = MAD type = annex_everything }
 	}
@@ -380,9 +376,15 @@ country_event = {
 	}
 	fire_only_once = yes
 	option = {
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 50 }
 		name = GoldenCoast.8.a
 		set_cosmetic_tag = GCE_GFL
+		add_stability = 0.15
+	}
+	option = {
+		ai_chance = { factor = 50 }
+		name = GoldenCoast.8.b
+		set_cosmetic_tag = GCE_BCT
 		add_stability = 0.15
 	}
 }
@@ -541,5 +543,34 @@ country_event = {
 		add_stability = -0.01
 		add_manpower = -1000
 		add_ideas = StrikeGCE
+	}
+}
+country_event = {
+	id = GoldenCoast.16
+	title = GoldenCoast.16.t
+	desc = GoldenCoast.16.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = no
+	fire_only_once = yes
+	trigger = {
+		tag = GCE
+		GCE = {
+			has_idea = FreeMarket
+			has_country_leader = {
+				ruling_only = yes
+				name = "Harold Anderson"
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.16.a
+		764 = {
+			add_building_construction = {
+    			type = infrastructure
+    			level = 1
+    			instant_build = yes
+			}
+		}
 	}
 }
