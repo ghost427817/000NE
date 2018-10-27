@@ -35,5 +35,11 @@ equipments = {
 		archetype = motorized_equipment
 		priority = 30			
 	}
-
+	motorized_equipment_2 = {
+		year = 1942
+		build_cost_ic = 2.75
+		maximum_speed = 16
+		archetype = motorized_equipment
+		priority = 30			
+	}
 }

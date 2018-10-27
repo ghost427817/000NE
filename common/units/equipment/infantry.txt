@@ -1,4 +1,4 @@
-# All infantry equipment
+﻿# All infantry equipment
 
 equipments = {
 
@@ -72,6 +72,45 @@ equipments = {
 		air_attack = 0
 
 		build_cost_ic = 0.5
+	}
+
+	#automatic rifle conversions for old guns
+	infantry_weapons_upgrade_equipment = {
+		year = 1922
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_infantry_equipment	
+		is_buildable = no
+		family = infantry_equipment
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		#Misc Abilities
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 20
+		#Offensive Abilities
+		soft_attack = 4
+		
+		build_cost_ic = 0.6
+	}
+
+	infantry_weapons_upgrade_equipment_1 = {
+		year = 1922
+
+		archetype = infantry_equipment
+		family = infantry_equipment_1
+		can_convert_from = { 
+			infantry_equipment_1
+		}
+		priority = 10
+		visual_level = 0
+		soft_attack = 4
+		reliability = 0.6
 	}
 
 	# Improved weapons  ~1939

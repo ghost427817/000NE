@@ -1,4 +1,4 @@
-technologies = {
+﻿technologies = {
 	
 	@1918 = 0
 	@1936 = 2
@@ -27,6 +27,10 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
+		sub_technologies = {
+			test_upgrade_rifle
+		}
+
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
@@ -42,7 +46,22 @@ technologies = {
 			factor = 1
 		}
 	}
+	test_upgrade_rifle = {
+		enable_equipments = {
+			infantry_weapons_upgrade_equipment_1
+		}
 	
+		research_cost = 0.5
+		start_year = 1922
+		
+		ai_will_do = {
+		
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+	}
 	infantry_weapons1 = {
 
 		enable_equipments = {
@@ -231,7 +250,8 @@ technologies = {
 			}
 		}
 	}
-	
+
+
 	infantry_at = {
 
 		category_all_infantry = {
