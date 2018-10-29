@@ -28,7 +28,7 @@ technologies = {
 		}		
 
 		sub_technologies = {
-			test_upgrade_rifle
+			selfloader
 		}
 
 		research_cost = 1.5
@@ -46,7 +46,7 @@ technologies = {
 			factor = 1
 		}
 	}
-	test_upgrade_rifle = {
+	selfloader = {
 		enable_equipments = {
 			infantry_weapons_upgrade_equipment_1
 		}

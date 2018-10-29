@@ -159,5 +159,7 @@ equipments = {
 		visual_level = 0
 		soft_attack = 4
 		reliability = 0.6
+		defense = 21
+		breakthrough = 2.5
 	}
 }
