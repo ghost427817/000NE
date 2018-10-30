@@ -91,7 +91,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_no_intel_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_no_intel_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_bicycle_battalion_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_bicycle_infantry_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_guerilla_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_guerilla_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_knight_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_knight_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_knights_icon_medium_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_knight_icon.dds" noOfFrames = 2}
 	
 	spriteType = { name = "GFX_unit_modern_sp_artillery_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_super_heavy_sp_artillery_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_super_heavy_armor_icon.dds" noOfFrames = 2 }

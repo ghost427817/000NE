@@ -858,8 +858,8 @@ country_event = {
 			modifier = {
 				NOT = {
 					has_government = democratic
-					factor = 0
 				}
+				factor = 0
 			}
 		}
 		ISR = { 

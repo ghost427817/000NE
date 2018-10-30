@@ -153,3 +153,4 @@ FWA = "countries/French West Africa.txt" #French West African Warlord State
 ALG = "countries/Algeria.txt" #Algeria Under French Control Warlord State
 TNS = "countries/Tennessee.txt"
 TUN = "countries/Tunisia.txt"
+OKH = "countries/Oklahoma.txt"

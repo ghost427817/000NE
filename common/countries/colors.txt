@@ -635,6 +635,10 @@ TNS = {
 	color = rgb { 60 150 60 }
 	color_ui = rgb { 60 150 60 }
 }
+OKH = {
+	color = rgb { 190  125  60 }
+	color_ui = rgb { 190  125  50 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
