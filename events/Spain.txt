@@ -593,9 +593,7 @@ country_event = {
 	option = {
 		name = spain.13.a
 			ai_chance = { factor = 100 }
-			every_country = {
-				news_event = news.333
-			}
+			news_event = { hours = 6 id = SNews.3 }
 			set_global_flag = POR_Franco
 			POR = {
 				set_politics = { ruling_party = fascism elections_allowed = no }
@@ -613,9 +611,7 @@ country_event = {
 	option = {
 		name = spain.13.b
 			set_global_flag = POR_Communist
-			every_country = {
-				news_event = news.334
-			}
+			news_event = { hours = 6 id = SNews.4 }
 			POR = {
 				set_politics = { ruling_party = communism elections_allowed = no }
 				set_political_party = { ideology = communism popularity = 51 }
@@ -648,9 +644,7 @@ country_event = {
 
 	}
 	option = {
-		every_country = {
-			news_event = news.335
-		}
+		news_event = { hours = 6 id = SNews.5 }
 		name = spain.14.a
 		POR = {
 				start_civil_war = { ideology = communism size = 1 }
@@ -690,7 +684,7 @@ country_event = {
 	}
 	option = {
 		every_country = {
-			news_event = news.336
+			news_event = { hours = 6 id = SNews.6 }
 		}
 		name = spain.15.a
 		SPR = {

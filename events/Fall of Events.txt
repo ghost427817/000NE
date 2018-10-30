@@ -1,0 +1,46 @@
+add_namespace = Fall
+
+news_event = {
+	id = Fall.1
+	title = Fall.1.t
+	desc = Fall.1.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		764 = { is_controlled_by = NEE }
+		764 = { is_owned_by = GCE }
+		NEE = { has_war_with = GCE }
+		NOT = { has_global_flag = fall_of_hartford_nee }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_hartford_nee
+		GCE = {
+			kill_country_leader = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = Fall.1.a
+		trigger = {
+			NOT = {
+				TAG = GCE
+				TAG = NEE
+			}
+		}
+	}
+	option = {
+		name = Fall.1.b
+		trigger = { TAG = NEE }
+	}
+	option = {
+		name = Fall.1.c
+		trigger = { TAG = GCE }
+	}
+}

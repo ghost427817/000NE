@@ -1,0 +1,259 @@
+add_namespace = SNews
+#Catalonia
+news_event = {
+	id = SNews.1
+	title = SNews.1.t
+	desc = SNews.1.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		CAT = {
+			controls_state = 165
+		}
+	}
+	
+	option = {
+		name = SNews.1.a
+		trigger = {
+			TAG = SPR
+			TAG = D01
+		}
+	}
+	option = {
+		name = SNews.1.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+				TAG = D01
+			}
+		}
+	}
+	option = {
+		name = SNews.1.c
+		trigger = {
+			TAG = CAT
+		}
+	}
+}
+#aragon
+news_event = {
+	id = SNews.2
+	title = SNews.2.t
+	desc = SNews.2.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		ARA = {
+			controls_state = 166
+		}
+	}
+	
+	option = {
+		name = SNews.2.a
+		trigger = {
+			TAG = SPR
+		}
+	}
+	option = {
+		name = SNews.2.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+				TAG = D01
+				TAG = ARA
+				TAG = CAT
+			}
+		}
+	}
+	option = {
+		name = SNews.2.c
+		trigger = {
+			TAG = CAT
+			TAG = ARA
+		}
+	}
+	option = {
+		name = SNews.2.e
+		trigger = {
+			TAG = D01
+		}
+	}
+}
+#Portugal helps franco
+news_event = {
+	id = SNews.3
+	title = SNews.3.t
+	desc = SNews.3.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SNews.3.a
+		trigger = {
+			TAG = SPR
+		}
+	}
+	option = {
+		name = SNews.3.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+				TAG = D01
+				TAG = ARA
+				TAG = CAT
+			}
+		}
+	}
+	option = {
+		name = SNews.3.c
+		trigger = {
+			TAG = CAT
+			TAG = ARA
+		}
+	}
+	option = {
+		name = SNews.3.e
+		trigger = {
+			TAG = D01
+			TAG = POR
+		}
+	}
+	option = {
+		name = SNews.3.f
+		trigger = {
+			TAG = ENG
+		}
+	}
+}
+#portugal communist
+news_event = {
+	id = SNews.4
+	title = SNews.4.t
+	desc = SNews.4.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SNews.4.a
+		trigger = {
+			TAG = SPR
+			TAG = POR
+		}
+	}
+	option = {
+		name = SNews.4.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+				TAG = D01
+				TAG = ARA
+				TAG = CAT
+			}
+		}
+	}
+	option = {
+		name = SNews.4.c
+		trigger = {
+			TAG = CAT
+			TAG = ARA
+		}
+	}
+	option = {
+		name = SNews.4.e
+		trigger = {
+			TAG = D01
+			
+		}
+	}
+	option = {
+		name = SNews.4.f
+		trigger = {
+			TAG = ENG
+		}
+	}
+}
+#portugal communist
+news_event = {
+	id = SNews.5
+	title = SNews.5.t
+	desc = SNews.5.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SNews.5.a
+		trigger = {
+			TAG = SPR
+			TAG = D02
+		}
+	}
+	option = {
+		name = SNews.5.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+				TAG = D01
+				TAG = ARA
+				TAG = CAT
+			}
+		}
+	}
+	option = {
+		name = SNews.5.c
+		trigger = {
+			TAG = CAT
+			TAG = ARA
+		}
+	}
+	option = {
+		name = SNews.5.e
+		trigger = {
+			TAG = D01
+			TAG = POR
+		}
+	}
+	option = {
+		name = SNews.5.f
+		trigger = {
+			TAG = ENG
+		}
+	}
+}
+news_event = {
+	id = SNews.6
+	title = SNews.6.t
+	desc = SNews.6.d
+	picture = GFX_news_event_032
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = SNews.6.a
+		trigger = {
+			TAG = SPR
+		}
+	}
+	option = {
+		name = SNews.6.b
+		trigger = {
+			NOT = {
+				TAG = SPR
+			}
+		}
+	}
+}
