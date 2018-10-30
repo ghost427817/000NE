@@ -56,7 +56,7 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_logistics_company_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/support_unit_logistics_company_icon.dds" noOfFrames = 2 }	
 	spriteType = { name = "GFX_unit_bicycle_battalion_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_bicycle_infantry_icon.dds" noOfFrames = 2 }	
 	spriteType = { name = "GFX_unit_guerilla_icon_medium"								textureFile = "gfx/interface/counters/divisions_large/unit_guerilla_icon.dds" noOfFrames = 2 }	
-	spriteType = { name = "GFX_unit_knight_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_knight_icon.dds" noOfFrames = 2 }	
+	spriteType = { name = "GFX_unit_knights_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_knight_icon.dds" noOfFrames = 2 }	
 
 	####################################################
 	### Small images for DIVISIONS (On-map-counters) ###
