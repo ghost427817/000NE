@@ -152,6 +152,21 @@ if = {
 		autonomous_state = autonomy_colony
 		freedom_level = 0.35
 	}
+	set_autonomy = {
+		target = TNS
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = KTY
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = FOR
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
 	else = {
 		puppet = NYC
 		puppet = PHI
@@ -166,6 +181,9 @@ if = {
 		puppet = FLO
 		puppet = MIS
 		puppet = ARK
+		puppet = TNS
+		puppet = KTY
+		puppet = FOR
 	}
 }
 
