@@ -82,6 +82,9 @@ default = no
 					}
 				}
 			}
+			ALS = {
+				set_cosmetic_tag = ALS_subject
+			}
 		}
 	}
 	focus = {
