@@ -1,4 +1,4 @@
-add_namespace = SNews
+﻿add_namespace = SNews
 #Catalonia
 news_event = {
 	id = SNews.1

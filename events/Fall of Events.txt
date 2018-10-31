@@ -1,4 +1,4 @@
-add_namespace = Fall
+﻿add_namespace = Fall
 
 news_event = {
 	id = Fall.1
@@ -14,7 +14,7 @@ news_event = {
 		NEE = { has_war_with = GCE }
 		NOT = { has_global_flag = fall_of_hartford_nee }
 	}
-	
+	fire_only_once = yes
 	immediate = {
 		set_global_flag = fall_of_hartford_nee
 		GCE = {
