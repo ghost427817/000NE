@@ -154,4 +154,4 @@ ALG = "countries/Algeria.txt" #Algeria Under French Control Warlord State
 TNS = "countries/Tennessee.txt"
 TUN = "countries/Tunisia.txt"
 OKH = "countries/Oklahoma.txt"
-QBC = "countires/Quebec.txt"
+QBC = "countries/Quebec.txt"
