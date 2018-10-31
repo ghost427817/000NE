@@ -639,6 +639,10 @@ OKH = {
 	color = rgb { 190  125  60 }
 	color_ui = rgb { 190  125  50 }
 }
+QBC = {
+	color = rgb { 153  255  255 }
+	color_ui = rgb { 153  255  255 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

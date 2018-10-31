@@ -3,7 +3,7 @@ country_event = {
 	id = denmark.1
 	title = denmark.1.t
 	desc = denmark.1.d
-	picture = GFX_report_militia
+	picture = GFX_report_event_soviet_soldiers
 	
 	trigger = {
 		original_tag = DEN
@@ -14,7 +14,9 @@ country_event = {
 	fire_only_once = yes
 	
 	mean_time_to_happen = {days = 1}
-
+	immediate = {
+		news_event = { hours = 6 id = denmark.4 }
+	}
 	option = {  #war
 		name = denmark.1.a
 		ai_chance = { factor = 99 }
@@ -35,7 +37,7 @@ country_event = {
 	id = denmark.2
 	title = denmark.2.t
 	desc = denmark.2.d
-	picture = GFX_report_militia
+	picture = GFX_report_event_soviet_soldiers
 	
 	trigger = {
 		has_global_flag = FunnyDith
@@ -58,5 +60,70 @@ country_event = {
     			type = annex_everything
 			}
 		}
+	}
+}
+country_event = {
+	id = denmark.3
+	title = denmark.3.t
+	desc = denmark.3.d
+	picture = GFX_report_event_soviet_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		original_tag = DEN
+		country_exists = DIT
+		country_exists = DEN
+		DEN = {
+			has_civil_war = no
+			has_war = no
+		}
+		DIT = {
+			has_civil_war = no
+			has_war = no
+		}
+		NOT = {
+			DEN = { has_war_with = DIT }
+		}
+	}
+	immediate = {
+		news_event = { hours = 6 id = denmark.5 }
+	}
+	option = {
+		name = denmark.3.a
+		DEN = {
+			annex_country = {
+    			target = DIT
+    			transfer_troops = no
+			}
+			add_manpower = -1000
+			add_timed_idea = {
+   				idea = Political_Repression
+    			days = 90
+			}
+		}
+	}
+}
+news_event = {
+	id = denmark.4
+	title = denmark.4.t
+	desc = denmark.4.d
+	picture = GFX_news_event_generic_rally
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = denmark.4.a
+	}
+}
+news_event = {
+	id = denmark.5
+	title = denmark.5.t
+	desc = denmark.5.d
+	picture = GFX_news_event_generic_sign_treaty3
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = denmark.5.a
 	}
 }

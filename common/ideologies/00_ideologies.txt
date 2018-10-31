@@ -172,6 +172,7 @@ ideologies = {
 		
 		modifiers = {
 			justify_war_goal_when_in_major_war_time = -0.99
+			annex_cost_factor = -0.5
 		}
 
 		ai_fascist = yes # uses the fascist AI behaviour
@@ -209,7 +210,7 @@ ideologies = {
 		rules = {
 			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = yes
+			can_puppet = no
 		}
 		
 		modifiers = {
@@ -222,7 +223,10 @@ ideologies = {
 	neutrality = {
 	
 		types = {
-		
+			
+			monarchy = {
+			}
+
 			despotism  = {
 			}
 			

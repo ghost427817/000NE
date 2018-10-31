@@ -4,7 +4,7 @@
 
 add_namespace = generic
 
-# President dies
+# influencing poltics
 country_event = {
 	id = generic.1
 	title = generic.1.t
@@ -1281,4 +1281,18 @@ country_event = {
 			}
 		}
 	}	
+}
+#leader killed
+country_event = {
+	id = generic.19
+	title = generic.19.t
+	desc = generic.19.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.1.a
+		kill_country_leader = yes
+	}
 }

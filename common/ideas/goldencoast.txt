@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+		Political_Repression = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly = 0.030
+				MONTHLY_POPULATION = -0.05
+			}
+		}
 		Ethnic_Cleansing = {
 			allowed = {
 				always = yes
