@@ -1292,7 +1292,31 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = generic.1.a
+		name = generic.19.a
 		kill_country_leader = yes
+	}
+}
+country_event = {
+	id = generic.20
+	title = generic.20.t
+	desc = generic.20.d
+	picture = GFX_report_event_hartford_yeeted
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.20.a
+	}
+}
+news_event = {
+	id = generic.21
+	title = generic.21.t
+	desc = generic.21.d
+	picture = GFX_news_event_nuke_hartford
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.21.a
 	}
 }
