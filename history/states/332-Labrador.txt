@@ -1,17 +1,17 @@
+
 state={
 	id=332
 	name="STATE_332"
-	
-	state_category = wasteland
 
 	history={
 		owner = ENG
 		buildings = {
 			infrastructure = 1
-
 			12503 = {
 				naval_base = 1
+
 			}
+
 		}
 		add_core_of = CAN
 
@@ -22,4 +22,5 @@ state={
 	}
 	manpower=22179
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
