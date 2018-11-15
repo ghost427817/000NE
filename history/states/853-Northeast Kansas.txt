@@ -14,6 +14,7 @@ state={
 		add_core_of = NAT
 
 	}
+	state_category = city
 	manpower=998
 	buildings_max_level_factor=1.000
 }

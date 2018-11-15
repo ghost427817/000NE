@@ -12,6 +12,7 @@ state={
 		add_core_of = ARK
 
 	}
-	manpower=0
+	manpower=10000
+	state_category = city
 	buildings_max_level_factor=1.000
 }

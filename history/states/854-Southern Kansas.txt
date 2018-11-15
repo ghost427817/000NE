@@ -1,11 +1,10 @@
-
 state={
-	id=383
-	name="STATE_383"
-	resources={
-		oil=30.000
+	id=854
+	name="STATE_854"
+	provinces={
+		4586 4740 10340 
 	}
-
+	manpower=5885
 	history={
 		owner = NAT
 		buildings = {
@@ -17,11 +16,6 @@ state={
 		add_core_of = NAT
 
 	}
-
-	provinces={
-		1352 4811 7834 7892 9802
-	}
-	manpower=1880998
+	state_category = city
 	buildings_max_level_factor=1.000
-	state_category=city
 }

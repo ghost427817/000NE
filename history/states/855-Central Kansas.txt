@@ -1,15 +1,13 @@
-
 state={
-	id=383
-	name="STATE_383"
-	resources={
-		oil=30.000
+	id=855
+	name="STATE_855"
+	provinces={
+		4814 12024 
 	}
-
 	history={
 		owner = NAT
 		buildings = {
-			infrastructure = 4
+			infrastructure = 8
 			arms_factory = 1
 			industrial_complex = 1
 
@@ -17,11 +15,7 @@ state={
 		add_core_of = NAT
 
 	}
-
-	provinces={
-		1352 4811 7834 7892 9802
-	}
-	manpower=1880998
+	manpower=54454
+	state_category = metropolis
 	buildings_max_level_factor=1.000
-	state_category=city
 }
