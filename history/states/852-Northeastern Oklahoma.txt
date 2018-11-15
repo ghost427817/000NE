@@ -4,6 +4,20 @@ state={
 	provinces={
 		1806 2043 
 	}
-	manpower=0
+	history={
+		owner = OKH
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = OKH
+		victory_points = {
+			1806 1 
+		}
+
+	}
+	manpower=20000
 	buildings_max_level_factor=1.000
+	state_category=city
 }

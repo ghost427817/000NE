@@ -336,6 +336,21 @@ music = {
 	}	
 }
 music = {
+	song = "Time Forward"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = communism
+				has_government = technocracy
+			}
+			has_war = no
+			tag = SOV
+		}		
+	}	
+}
+music = {
 	song = "OldmanRiver"
 	
 	chance = {

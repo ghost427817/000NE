@@ -15,20 +15,13 @@ state={
 
 		}
 		add_core_of = NAT
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-
-			}
-
-		}
 
 	}
 
 	provinces={
 		1352 4586 4740 4811 4814 7834 7892 9802 10340 12024 
 	}
-	manpower=1880998
+	manpower=1880000
 	buildings_max_level_factor=1.000
 	state_category=city
 }

@@ -4,6 +4,23 @@ state={
 	provinces={
 		1453 7524 7552 
 	}
-	manpower=0
+	state_category = megalopolis
+	history={
+		owner = LOU
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 3
+			7552 = {
+				naval_base = 5
+
+			}
+		}
+		add_core_of = LOU
+		victory_points = {
+			7552 10 
+		}
+
+	}
+	manpower=1101592
 	buildings_max_level_factor=1.000
 }
