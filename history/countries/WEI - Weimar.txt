@@ -77,7 +77,15 @@ set_politics = {
 	elections_allowed = yes
 
 }
-
+create_country_leader = {
+	name = "Heinrich Brüning"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "Bruning.dds"
+	expire = "1956.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}
 
 
 }

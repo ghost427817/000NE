@@ -42,9 +42,9 @@ bookmarks = {
 			focuses = {
 			}
 		}
-		"NYC"={
-			history = "NYC_GATHERING_STORM_DESC"
-			ideology = democratic
+		"POL"={
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 				
 			}
@@ -81,24 +81,6 @@ bookmarks = {
 			focuses = {
 				MormonPrefocus
 				ExpandMorm
-			}
-		}
-		"CAL"={
-			history = "CAL_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-			}
-		}
-		"TEX"={
-			history = "TEX_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
 			}
 		}
 		"---"={
