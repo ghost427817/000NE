@@ -55,7 +55,7 @@ guiTypes = {
 			name = "chart_explanation"
 			position = { x = 95 y = 46 }
 			
-			size = { width = 435 height = 170 }
+			size = { width = 445 height = 375 }
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
 			
@@ -67,9 +67,9 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = 260 y = 184 }
+				position = { x = 176 y = 240 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 230 height = 25 }
+				slotsize = { width = 230 height = 17 }
 				format = "UPPER_LEFT"
 			}
 		}

@@ -77,10 +77,10 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 	NaughtyWorkers
+	Crumbling_Giant
 }
 
 set_cosmetic_tag = USA_FED
-create_faction = United_States
 
 # DIPLOMACY
 if = {

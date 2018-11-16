@@ -3915,5 +3915,9 @@ spriteTypes = {
 		name = "GFX_idea_Political_Repression"
 		texturefile = "gfx/interface/ideas/idea_ger_bulwark_against_bolshevism.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_Crumbling_Giant"
+		texturefile = "gfx/interface/ideas/Crumbling_Giant.dds"
+	}
 }
 }

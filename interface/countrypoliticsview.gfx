@@ -379,9 +379,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/technocracy_group.dds"
 	}
 	spriteType = {
-		name = "GFX_nazbol_group"
-		texturefile = "gfx/interface/ideologies/nazbol_group.dds"
-		legacy_lazy_load = no
+		name = "GFX_ideology_USA_democratic_group"
+		texturefile = "gfx/interface/ideologies/federalist_group.dds"
 	}
 
 	spriteType = {

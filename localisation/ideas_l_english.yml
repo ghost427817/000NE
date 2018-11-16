@@ -2589,3 +2589,5 @@
  PolFash_desc:0 "The Polish Government has portrayed Germanic peoples in its borders as a fifth column seeking to restore the Prussian Empire through any means necessary, pointing at the Prussian Council Republic as the manifestation of German Communist meddling. Polish propaganda portrays the Germanic peoples as a united and barbaric force, using examples of the agressions against the small Slavic Balkan nations by the Central Powers in the First World War. 'The Slavic People must stand up against the degenerate, communist Germans and their puppets around the world,' [From.GetLeader] proclaimed at the end of his latest speech."
  Political_Repression:0 "Political Repression"
  Political_Repression_desc:0 "[From.GetName] has decided to repress those it considers politically un-[From.GetAdjective]. From mass-excecutions, to lengthy prison sentences, [From.GetName] maintains order with an iron fist."
+ Crumbling_Giant:0 "Crumbling Giant"
+ Crumbling_Giant_desc:0 "[From.GetNameDef] is on the brink of collapse. It is only a matter of time before it crumbles to the ashes of history."
