@@ -35,6 +35,8 @@ autonomy_state = {
 			limit = { has_dlc = "Waking the Tiger" }
 			NOT = { OVERLORD = { original_tag = JAP } }
 			NOT = { OVERLORD = { original_tag = MAN } }
+			NOT = { OVERLORD = { original_tag = USA } }
+			NOT = { OVERLORD = { has_government = technocracy } }
 		}
 	}
 	

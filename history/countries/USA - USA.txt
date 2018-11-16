@@ -110,62 +110,62 @@ if = {
 	set_autonomy = {
 		target = TEX
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = OKH
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = CAR
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = ALA
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = GRG
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = LOU
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = FLO
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = MIS
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = ARK
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = TNS
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = KTY
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	set_autonomy = {
 		target = FOR
 		autonomous_state = autonomy_us_state
-		freedom_level = 0.35
+		freedom_level = 0.6
 	}
 	else = {
 		puppet = NYC

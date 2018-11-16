@@ -60,6 +60,26 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_autonomy_us_state_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_us_state.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_US_territory_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_us_territory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_sector_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_sector.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_subsector_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_subsector.dds"
+	}
+
+	spriteType = {
 		name = "GFX_autonomy_colony_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_colony_icon.dds"
 	}

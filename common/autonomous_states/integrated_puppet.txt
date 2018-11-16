@@ -40,6 +40,8 @@ autonomy_state = {
 		if = {
 			limit = { has_dlc = "Death or Dishonor" }
 			NOT = { has_government = fascism }
+			NOT = { OVERLORD = { original_tag = USA } }
+			NOT = { OVERLORD = { has_government = technocracy } }
 		}
 	}
 	
