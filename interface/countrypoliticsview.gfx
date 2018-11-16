@@ -382,6 +382,14 @@ spriteTypes = {
 		name = "GFX_ideology_USA_democratic_group"
 		texturefile = "gfx/interface/ideologies/federalist_group.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_NEE_communism_group"
+		texturefile = "gfx/interface/ideologies/worker_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_POL_neutrality_group"
+		texturefile = "gfx/interface/ideologies/bbwr_group.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_unknown"

@@ -1826,6 +1826,44 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POL_Round_Up_UKR
+		icon = GFX_idea_CrushUKR
+		prerequisite = { focus = POL_Polonization focus = POL_Civic_Nationalism }
+
+		x = 0
+		y = 1
+		relative_position_id = POL_Polonization
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = POL_Round_Up_BEL
+		icon = GFX_idea_CrushBEL
+		prerequisite = { focus = POL_Polonization focus = POL_Civic_Nationalism  }
+
+		x = 0
+		y = 1
+		relative_position_id = POL_Civic_Nationalism
+		cost = 10
+
+		ai_will_do = {
+			factor = 110
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	focus = {
 		id = POL_Fash
 		icon = GFX_idea_PolFash
 		prerequisite = { focus = POL_exploit_ethnic_tensions }

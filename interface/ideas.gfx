@@ -3919,5 +3919,13 @@ spriteTypes = {
 		name = "GFX_idea_Crumbling_Giant"
 		texturefile = "gfx/interface/ideas/Crumbling_Giant.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CrushUKR"
+		texturefile = "gfx/interface/ideas/CrushUKR.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CrushBEL"
+		texturefile = "gfx/interface/ideas/CrushBEL.dds"
+	}
 }
 }
