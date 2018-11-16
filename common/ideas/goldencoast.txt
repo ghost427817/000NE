@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+		Alliance_of_circumstance = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				ai_get_ally_desire_factor = -1000
+			}
+		}
 		Crumbling_Giant = {
 			allowed = {
 				always = yes
