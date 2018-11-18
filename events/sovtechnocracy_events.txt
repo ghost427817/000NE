@@ -1,0 +1,23 @@
+add_namespace = sovtechnocracy
+
+##Event: Test
+country_event = {
+ id = sovtechnocracy.1
+ title = sovtechnocracy.1.title
+ desc = sovtechnocracy.1.desc
+ picture = GFX_report_event_stalin_01
+ fire_only_once = yes
+ major = yes
+	mean_time_to_happen = { days = 1}
+	option = {
+		name = sovtechnocracy.1.a
+		ai_chance = { factor = 50}
+		add_political_power = 25
+	}
+	option = {
+		name = sovtechnocracy.1.b
+		ai_chance = { factor = 50}
+		add_political_power = -25
+	}
+}
+
