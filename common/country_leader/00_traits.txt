@@ -931,8 +931,27 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
-	tank_manufacturer = {
+
+	motorized_manufacturer = { 
+		random = no
+		#sov technocracy focus
+
+		equipment_bonus = {
+			motorized_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tank_manufacturer = { #equipment_bonus = {
+					motorized_equipment = {
+						build_cost_ic = -0.1 instant = yes
+					}
+				}
 		random = no
 		#generic
 

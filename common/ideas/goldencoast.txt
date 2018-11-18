@@ -1,7 +1,22 @@
 ideas = {
 
 	country = {
-		Alliance_of_circumstance_War = {
+	MotorizationBureau = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			traits = {
+				motorized_manufacturer
+			}
+		}
+		Alliance_of_circumstance_War = { 
 			allowed = {
 				always = yes
 			}

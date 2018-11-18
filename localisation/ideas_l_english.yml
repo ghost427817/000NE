@@ -2593,3 +2593,7 @@
  Crumbling_Giant_desc:0 "[From.GetNameDef] is on the brink of collapse. It is only a matter of time before it crumbles to the ashes of history."
  Alliance_of_circumstance_War:0 "Alliance of Circumstance"
  Alliance_of_circumstance_War_desc:0 "Normally, these nations would not be fighting side by side. But they have found a mutual foe and bonded over it."
+ MotorizationBureau:0 "[From.GetAdjective] Central Motorization Bureau"
+ MotorizationBureau_desc:0 "[From.GetNameDef] has begun motorizing its armed forces. To expedite this, a special bureau has been established to oversee the transition. The bureau works closely with vehicle factories, setting up quotas and shifting resources, to ensure mass motorization."
+ motorized_manufacturer:0 "Motorized Manufacturer"
+ motorized_manufacturer_desc:0 "This manufacturer makes cars."

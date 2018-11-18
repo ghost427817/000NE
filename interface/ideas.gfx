@@ -3931,5 +3931,9 @@ spriteTypes = {
 		name = "GFX_idea_Alliance_of_circumstance_War" 
 		texturefile = "gfx/interface/ideas/idea_generic_deal_with_the_devil2.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_MotorizationBureau" 
+		texturefile = "gfx/interface/ideas/Motorized.dds"
+	}
 }
 }

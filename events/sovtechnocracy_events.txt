@@ -1,4 +1,4 @@
-add_namespace = sovtechnocracy
+﻿add_namespace = sovtechnocracy
 
 ##Event: Test
 country_event = {
