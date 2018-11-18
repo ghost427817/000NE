@@ -2524,7 +2524,9 @@ focus_tree = {
 					}
 					LIT = {
 						country_event = { id = baltic.8 days = 1 }
-						set_country_flag = angry_at_poland
+					}
+					189 = {
+						set_state_flag = angry_at_poland
 					}
 				}
 				#Sends event to lithuania to reform commonwealth
@@ -2671,11 +2673,11 @@ focus_tree = {
 					target = LAT
 				}
 			}
-			EST = {
-				set_country_flag = angry_at_poland
+			12 = {
+				set_state_flag = angry_at_poland
 			}
-			LAT = {
-				set_country_flag = angry_at_poland
+			13 = {
+				set_state_flag = angry_at_poland
 			}
 		}
 	}

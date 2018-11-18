@@ -728,6 +728,7 @@ country_event = {
 		}
 		date > 1939.1.1
 	}
+	fire_only_once = yes
 	picture = GFX_report_event_polish_tanks_01
 	immediate = {
 		if = {
@@ -1198,11 +1199,12 @@ country_event = {
 			create_faction = "Anti-Polish Liberation Front"
 			add_to_faction = UKR
 			add_to_faction = BLR
+			add_ideas = Alliance_of_circumstance_War
 		}
 		if = {
 			limit = {
-				LIT = {
-					has_country_flag = angry_at_poland
+				189 = {
+					has_state_flag = angry_at_poland
 				}
 			}
 			POL = {
@@ -1214,11 +1216,14 @@ country_event = {
 			PRE = {
 				add_to_faction = LIT
 			}
+			LIT = {
+				add_ideas = Alliance_of_circumstance_War
+			}
 		}
 		if = {
 			limit = {
-				LAT = {
-					has_country_flag = angry_at_poland
+				12 = {
+					has_state_flag = angry_at_poland
 				}
 			}
 			POL = {
@@ -1230,11 +1235,14 @@ country_event = {
 			PRE = {
 				add_to_faction = LAT
 			}
+			LAT = {
+				add_ideas = Alliance_of_circumstance_War
+			}
 		}
 		if = {
 			limit = {
-				EST = {
-					has_country_flag = angry_at_poland
+				13 = {
+					has_state_flag = angry_at_poland
 				}
 			}
 			POL = {
@@ -1251,11 +1259,13 @@ country_event = {
 			set_politics = {
 				ruling_party = communism
 			}
+			add_ideas = Alliance_of_circumstance_War
 		}
 		BLR = {
 			set_politics = {
 				ruling_party = communism
 			}
+			add_ideas = Alliance_of_circumstance_War
 		}
 	}
 

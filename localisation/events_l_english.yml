@@ -3230,3 +3230,6 @@
  denmark.5.a:0 "Interesting."
  generic.19.t:0 "[ROOT.GetLeader] dies!"
  generic.19.d:0 "Rest in peace, [ROOT.GetLeader]"
+ Faction.1.t:0 "Alliance Ended"
+ Faction.1.d:0 "Our alliance was not built to last. We were there to help one another against our mutual foe, nothing greater. It is not with dissapointment that we say goodbye to our former allies, but with understanding."
+ Faction.1.a:0 "Very well."

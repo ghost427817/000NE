@@ -2591,3 +2591,5 @@
  Political_Repression_desc:0 "[From.GetName] has decided to repress those it considers politically un-[From.GetAdjective]. From mass-excecutions, to lengthy prison sentences, [From.GetName] maintains order with an iron fist."
  Crumbling_Giant:0 "Crumbling Giant"
  Crumbling_Giant_desc:0 "[From.GetNameDef] is on the brink of collapse. It is only a matter of time before it crumbles to the ashes of history."
+ Alliance_of_circumstance_War:0 "Alliance of Circumstance"
+ Alliance_of_circumstance_War_desc:0 "Normally, these nations would not be fighting side by side. But they have found a mutual foe and bonded over it."

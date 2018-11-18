@@ -202,7 +202,7 @@ create_country_leader = {
 	desc = "POLITICS_HOOVER_DESC"
 	picture = "Portrait_USA_Herbert_Hoover.dds"
 	expire = "1943.1.1"
-	ideology = conservatism
+	ideology = federalism
 	traits = {
 	}
 }

@@ -378,6 +378,14 @@ spriteTypes = {
 		name = "GFX_ideology_technocracy_group"
 		texturefile = "gfx/interface/ideologies/technocracy_group.dds"
 	}
+	#spriteType = {
+	#	name = "GFX_ideology_USA_federalism_group" #testing to see if this works #It doesn't :( Can only put nation tags for ideologies not sub ideologies
+	#	texturefile = "gfx/interface/ideologies/federalist_group.dds"
+	#}
+	#spriteType = { #maybe cosmetic tags work? #nope
+	#	name = "GFX_ideology_USA_FED_democratic_group"
+	#	texturefile = "gfx/interface/ideologies/bbwr_group.dds"
+	#}
 	spriteType = {
 		name = "GFX_ideology_USA_democratic_group"
 		texturefile = "gfx/interface/ideologies/federalist_group.dds"
