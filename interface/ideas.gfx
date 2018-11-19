@@ -3933,7 +3933,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_MotorizationBureau" 
-		texturefile = "gfx/interface/ideas/Motorized.dds"
+		texturefile = "gfx/interface/ideas/Motorized.dds" #gfx/interface/goals/GFX_shocktanks.tga
+	}
+	spriteType = {
+		name = "SOV_shock_tanks" 
+		texturefile = "gfx/interface/goals/GFX_shocktanks.tga"
 	}
 }
 }
