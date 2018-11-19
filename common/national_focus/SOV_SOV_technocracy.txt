@@ -4541,7 +4541,7 @@ technology = heavy_fighter3
  } 
 
  } 
-
+}
 #Focus for Increase Production
 focus = { 
 id = SOV_increaseproduction
