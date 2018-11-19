@@ -224,22 +224,6 @@ ai_will_do = {
 
  } 
 
-#Focus for Invasion
-focus = { 
-id = SOV_invasion
-icon = GFX_goal_unknown
-x = 81
-y = 24
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = SOV_operationdanube } 
-mutually_exclusive = { focus = SOV_pragueredspring } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
 #Focus for Continue Collectivization
 focus = { 
 id = SOV_continuecollectivization
@@ -689,6 +673,7 @@ x = 26
 y = 20
 cost = 10
 available_if_capitulated = yes 
+mutually_exclusive = { focus = SOV_turnablindeye } 
 prerequisite = { focus = SOV_purgetheparty } 
 ai_will_do = { 
  factor = 1
@@ -706,7 +691,6 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = SOV_purgetheparty } 
 mutually_exclusive = { focus = SOV_ruthlessprosecution } 
-mutually_exclusive = { focus = SOV_ } 
 ai_will_do = { 
  factor = 1
  } 
@@ -3437,9 +3421,9 @@ ai_will_do = {
  }
 available = { 
 OR = {
-has_completed_focus = SOV_the_kirov_constitution
+has_completed_focus = SOV_thekirovconstitution
 
-has_completed_focus = SOV_rebuild_the_union
+has_completed_focus = SOV_rebuildtheunion
 }
  } 
 
@@ -4194,11 +4178,11 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-= {
-name = industrial_bonus
-bonus = 0.5
+
+add_tech_bonus = {
+ bonus = 0.5 
 uses = 1
-category = radar
+category = radar_tech
 }
  } 
 
@@ -4457,8 +4441,8 @@ uses = 1
 category = air_doctrine
  } 
 
- } 
-
+ }
+}
 #Focus for Strategic Bombing
 focus = { 
 id = SOV_strategicbombing
@@ -4482,7 +4466,7 @@ technology = strategic_bomber3
  } 
 
  } 
-
+}
 #Focus for Fill the Skies
 focus = { 
 id = SOV_filltheskies
@@ -4499,8 +4483,7 @@ completion_reward = {
 add_ideas = SOV_fill_the_skies
  } 
 
- } 
-
+ }
 #Focus for Develope Bombercraft
 focus = { 
 id = SOV_developebombercraft
@@ -7154,6 +7137,20 @@ ai_will_do = {
  } 
 
  } 
+#Focus for Invasion
+focus = { 
+id = SOV_invasion
+icon = GFX_goal_unknown
+x = 81
+y = 24
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = SOV_operationdanube } 
+mutually_exclusive = { focus = SOV_pragueredspring } 
+ai_will_do = { 
+ factor = 1
+ } 
 
+ } 
 #End of focuses 
  }

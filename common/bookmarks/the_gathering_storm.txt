@@ -14,9 +14,7 @@ bookmarks = {
 				NEWarTorn
 			}
 			focuses = {
-				NEE_Trot
-				NEE_Devst
-				NEE_Deng
+				
 			}
 		}
 		"USA"={

@@ -642,6 +642,7 @@
  DES_communism_party_long:0 "United Order of the Workers of Deseret"
  DES_communism_party:0 "UOWD"
  DES_neutrality_party:0 "TPLDS"
+ DES_neutrality_party_desc:0 "Theodemocracy"
  DES_neutrality_party_long:0 "Theodemocratic Party of the Latter Day Saints"
  #Virginia
  VIR_fascism_party_long:0 "Nation of Virginia"

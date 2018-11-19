@@ -952,7 +952,7 @@ leader_traits = {
 
 		equipment_bonus = {
 			armor = {
-				speed = 0.05
+				maximum_speed = 0.05
 			}
 		}
 		
