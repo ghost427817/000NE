@@ -1,0 +1,44 @@
+add_namespace = nee
+country_event = {
+	id = nee.1
+	title = nee.1.t
+	desc = nee.1.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nee.1.a
+		set_variable = { nedebate = 1 }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {
+		name = nee.1.b
+		set_variable = { nedebate = 2 }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+	option = {
+		name = nee.1.c
+		set_variable = { nedebate = 3 }
+		ai_chance = { 
+			factor = 33
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}

@@ -4664,10 +4664,9 @@ prerequisite = { focus = SOV_supportequipment }
 ai_will_do = { 
  factor = 1
  } 
-complete_tooltip = { 
-2x Nuclear Research Bonus
- } 
+
 completion_reward = { 
+custom_effect_tooltip = tt_theatombomb
 add_tech_bonus = {
 name = nuclear_bonus
 bonus = 0.5

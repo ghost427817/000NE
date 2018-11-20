@@ -1,0 +1,135 @@
+focus_tree = {
+	id = 'New England'
+	country = {
+		factor=0
+		modifier = {
+			add = 10
+			tag = NEE
+		}
+	}
+	default = no
+#	focus = {
+#		id = NEE_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	focus = {
+		id = NEE_Debate
+		icon = GFX_ideology_NEE_communism_group
+		x = 3
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+			NEE = {
+				country_event = nee.1
+			}
+		}
+	}
+	focus = {
+		id = NEE_THD
+		icon = GFX_THD
+		prerequisite = { focus = NEE_Debate }
+		mutually_exclusive = { focus = NEE_Representation  }
+		x = -2
+		y = 1
+		relative_position_id = NEE_Debate
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = {
+   				nedebate = 1
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = NEE_Representation
+		icon = GFX_Representation
+		prerequisite = { focus = NEE_Debate }
+		mutually_exclusive = { focus = NEE_THD }
+		x = 2
+		y = 1
+		relative_position_id = NEE_Debate
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = {
+   				nedebate = 2
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	
+}
