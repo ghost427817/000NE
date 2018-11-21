@@ -1,5 +1,5 @@
 focus_tree = {
-	id = 'New England'
+	id = "New England"
 	country = {
 		factor=0
 		modifier = {
@@ -129,6 +129,127 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+	focus = {
+		id = NEE_National_Self_Determination
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = NEE_Representation }
+		mutually_exclusive = { focus = NEE_Individual_Liberty }
+		x = 0
+		y = 1
+		relative_position_id = NEE_Representation
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = {
+   				nedebate = 2
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = NEE_Individual_Liberty
+		icon = GFX_Intercom
+		prerequisite = { focus = NEE_THD }
+		mutually_exclusive = { focus = NEE_National_Self_Determination }
+		x = 0
+		y = 1
+		relative_position_id = NEE_THD
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = {
+   				nedebate = 2
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = NEE_Question_Leadership
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = NEE_Individual_Liberty focus = NEE_National_Self_Determination }
+		x = 2
+		y = 1
+		relative_position_id = NEE_Individual_Liberty
+		dynamic = yes
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = {
+   				nedebate = 2
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					check_variable = {
+						nedebate = 1
+					}
+				}
+				set_party_name = { 
+    				ideology = communism
+    				long_name = NEE_THD_communism_party_long
+    				name = NEE_THD_communism_party
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						nedebate = 2
+					}
+				}
+				set_party_name = { 
+    				ideology = communism
+    				long_name = NEE_REP_communism_party_long
+    				name = NEE_REP_communism_party
+				}
+			}
 		}
 	}
 	

@@ -74,8 +74,18 @@ set_convoys = 26
 
 create_country_leader = {
 	name = "Supreme Council"
-	desc = "POLITICS_KING_ZOG_DESC"
+	desc = "POLITICS_Council_DESC"
 	picture = "Portrait_Supreme_Council.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Intercommunal Congress"
+	desc = "POLITICS_Council_DESC"
+	picture = "Portrait_Intercommunal_Congress.dds"
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
@@ -126,8 +136,8 @@ create_corps_commander = {
 	skill = 4
 }
 create_corps_commander = {
-	name = "Sean"
-	picture = "Portrait_Sean.dds"
+	name = "Wendy"
+	picture = "Portrait_D0NG.dds"
 	traits = { 
 		politically_connected
 		infantry_officer

@@ -1,4 +1,4 @@
-add_namespace = nee
+﻿add_namespace = nee
 country_event = {
 	id = nee.1
 	title = nee.1.t
