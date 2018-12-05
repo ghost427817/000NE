@@ -12935,3 +12935,31 @@ news_event = {
 		name = news.334.a
 	}
 }
+news_event = {
+	id = news.335 #return of confederacy
+	title = news.335.t
+	desc = news.335.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.334.a
+	}
+}
+news_event = {
+	id = news.336 #FROM joins confederacy
+	title = news.336.t
+	desc = news.336.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.334.a
+	}
+}
