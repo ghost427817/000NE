@@ -1,5 +1,5 @@
 ﻿add_namespace = nee
-country_event = {
+country_event = { #Debate
 	id = nee.1
 	title = nee.1.t
 	desc = nee.1.d
@@ -30,15 +30,58 @@ country_event = {
 			}
 		}
 	}
+}
+country_event = { #Coup
+	id = nee.2
+	title = nee.2.t
+	desc = nee.2.d
+	picture = GFX_report_militia
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
 	option = {
-		name = nee.1.c
-		set_variable = { nedebate = 3 }
+		name = nee.2.a
+		hidden_effect = {
+			news_event = { id = news.334 }
+		}
+	}
+}
+country_event = { #Coup or debate
+	id = nee.3
+	title = nee.3.t
+	desc = nee.3.d
+	picture = GFX_report_militia
+	
+	trigger = {
+		date > 1936.1.1
+	}
+	fire_only_once = yes
+
+	option = {
+		name = nee.3.a
+		set_variable = { necoup = 1 } #debate
 		ai_chance = { 
-			factor = 33
+			factor = 50
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+
+	}
+	option = {
+		name = nee.3.b
+		set_variable = { necoup = 2 } #coup
+		ai_chance = { 
+			factor = 50
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
 			}
 		}
+
+
 	}
 }

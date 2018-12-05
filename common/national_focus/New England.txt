@@ -50,7 +50,7 @@ focus_tree = {
 		icon = GFX_ideology_NEE_communism_group
 		x = 3
 		y = 0
-		cost = 10
+		cost = 1
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 10
@@ -59,10 +59,100 @@ focus_tree = {
 				is_historical_focus_on = yes
 			}
 		}
+		mutually_exclusive = { focus = NEE_Coup }
+		available = {
+			check_variable = {
+   				necoup = 1
+			}
+		}
 		completion_reward = {
 			NEE = {
 				country_event = nee.1
 			}
+		}
+	}
+	focus = {
+		id = NEE_Coup
+		icon = GFX_ideology_communism_group
+		x = 8
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = NEE_Debate }
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		available = {
+			check_variable = {
+   				necoup = 2
+			}
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = NEE_Vanguard
+		icon = GFX_idea_home_of_revolution
+		prerequisite = { focus = NEE_Coup }
+		mutually_exclusive = { focus = NEE_Lib }
+		x = -1
+		y = 1
+		relative_position_id = NEE_Coup
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			load_focus_tree = NEE_Vanguard_Tree
+		}
+	}
+	focus = {
+		id = NEE_Lib
+		icon = GFX_idea_generic_democratic_drift_bonus
+		prerequisite = { focus = NEE_Coup }
+		mutually_exclusive = { focus = NEE_Vanguard  }
+		x = 1
+		y = 1
+		relative_position_id = NEE_Coup
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			load_focus_tree = NEE_Liberal_Tree
 		}
 	}
 	focus = {
@@ -74,7 +164,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NEE_Debate
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -107,7 +197,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NEE_Debate
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -128,7 +218,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+	
 		}
 	}
 	focus = {
@@ -173,7 +263,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NEE_THD
 
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -205,7 +295,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = NEE_Individual_Liberty
 		dynamic = yes
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -244,10 +334,29 @@ focus_tree = {
 						nedebate = 2
 					}
 				}
-				set_party_name = { 
-    				ideology = communism
-    				long_name = NEE_REP_communism_party_long
-    				name = NEE_REP_communism_party
+				NEE = {
+					retire_country_leader = yes
+					set_party_name = { 
+    					ideology = communism
+    					long_name = NEE_REP_communism_party_long
+    					name = NEE_REP_communism_party
+					}
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = NEE_REP
+				}
+				MNE = {
+					transfer_state = 826
+				}
+				VMT = {
+					transfer_state = 766
+				}
+				NHA = {
+					transfer_state = 767
+				}
+				NEE = {
+					puppet = MNE
+					puppet = VMT
+					puppet = NHA
 				}
 			}
 		}

@@ -643,6 +643,30 @@ QBC = {
 	color = rgb { 153  255  255 }
 	color_ui = rgb { 153  255  255 }
 }
+CTC = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
+MCH = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
+RHD = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
+NHA = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
+VMT = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
+MNE = {
+	color = rgb { 0 83 61 }
+	color_ui = rgb { 123 37 40 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }

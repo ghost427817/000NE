@@ -1,0 +1,67 @@
+focus_tree = {
+	id = "NEE_Liberal_Tree"
+	country = {
+		factor=0
+	}
+	default = no
+#	focus = {
+#		id = NEE_Liberal_
+#		icon = GFX_
+#		prerequisite = { focus = }
+#		mutually_exclusive = { focus =  }
+#		x = -3
+#		y = 0
+#		relative_position_id =
+#
+#		cost = 10
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#
+#		available = {
+#
+#		}
+#		
+#		bypass = {
+#
+#		}
+#
+#		cancel_if_invalid = yes
+#		continue_if_invalid = no
+#		available_if_capitulated = no
+#
+#		complete_tooltip = {
+#
+#		}
+#
+#		completion_reward = {
+#
+#		}
+#	}
+
+
+	focus = {
+		id = NEE_Liberal_Opener
+		icon = GFX_ideology_NEE_communism_group
+		x = 3
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+		mutually_exclusive = { }
+		available = {
+	
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+}

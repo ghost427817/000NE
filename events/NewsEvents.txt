@@ -12921,3 +12921,17 @@ news_event = {
 		}
 	}
 }
+news_event = {
+	id = news.334
+	title = news.334.t
+	desc = news.334.desc
+	picture = GFX_news_event_generic_sign_treaty3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.334.a
+	}
+}
