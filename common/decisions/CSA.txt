@@ -1,0 +1,176 @@
+CSA_restoration_category = {
+	Encourage_CSA = {
+		icon = generic_form_nation
+
+		allowed = {
+			tag = VIR
+			has_war = no
+		}
+
+		available = {
+			tag = VIR
+		}
+
+		visible = {
+            always = yes
+		}
+		cost = 15
+		days_re_enable = 5
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				NOT = {
+					ALA = {
+						has_country_flag = CSA_Support
+					}
+					TNS = {
+						has_country_flag = CSA_Support
+					}
+					ARK = {
+						has_country_flag = CSA_Support
+					}
+					FLO = {
+						has_country_flag = CSA_Support
+					}
+					GRG = {
+						has_country_flag = CSA_Support
+					}
+					KTY = {
+						has_country_flag = CSA_Support
+					}
+					LOU = {
+						has_country_flag = CSA_Support
+					}	
+					MIS = {
+						has_country_flag = CSA_Support
+					}
+				}
+			}
+		}
+		complete_effect = {
+				ALA = {
+					set_country_flag = CSA_Support
+				}
+				TNS = {
+					set_country_flag = CSA_Support
+				}
+				ARK = {
+					set_country_flag = CSA_Support
+				}
+				FLO = {
+					set_country_flag = CSA_Support
+				}
+				GRG = {
+					set_country_flag = CSA_Support
+				}
+				KTY = {
+					set_country_flag = CSA_Support
+				}
+				LOU = {
+					set_country_flag = CSA_Support
+				}	
+				MIS = {
+					set_country_flag = CSA_Support
+				}
+		}
+	}
+	Restore_CSA = {
+		icon = generic_form_nation
+
+		allowed = {
+			tag = VIR
+			has_war = no
+		}
+
+		available = {
+			tag = VIR
+		}
+
+		visible = {
+            always = yes
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				AND = {
+					ALA = {
+						has_country_flag = CSA_Support
+					}
+					TNS = {
+						has_country_flag = CSA_Support
+					}
+					ARK = {
+						has_country_flag = CSA_Support
+					}
+					FLO = {
+						has_country_flag = CSA_Support
+					}
+					GRG = {
+						has_country_flag = CSA_Support
+					}
+					KTY = {
+						has_country_flag = CSA_Support
+					}
+					LOU = {
+						has_country_flag = CSA_Support
+					}	
+					MIS = {
+						has_country_flag = CSA_Support
+					}
+				}
+			}
+		}
+		complete_effect = {
+			ALA = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			TNS = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			ARK = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			FLO = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			GRG = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			KTY = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+			LOU = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}	
+			MIS = {
+				country_event = {
+   					id = csa.2
+    				hours = 6
+				}
+			}
+		}
+	}
+}

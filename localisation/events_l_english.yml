@@ -3253,3 +3253,5 @@
  news.336.t:0 "[FROM.GetNameDef] joins the C.S.A."
  news.336.desc:0 "[FROM.GetLeader] has announced the [FROM.GetAdjective] people's committment to the restoration of America and Her Christian values, and that [FROM.GetName] will be the next state to join the Confederacy."
  news.336.a:0 "They seek strength in numbers..."
+ Encourage_CSA:0 "Encourage Confederate Support"
+ Encourage_CSA_desc:0 "A random country will be given a flag"

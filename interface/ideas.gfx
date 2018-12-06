@@ -3939,5 +3939,9 @@ spriteTypes = {
 		name = "SOV_shock_tanks" 
 		texturefile = "gfx/interface/goals/GFX_shocktanks.tga"
 	}
+	spriteType = {
+		name = "GFX_CSA_Generic" 
+		texturefile = "gfx/interface/ideas/CSAlegacy.dds"
+	}
 }
 }
