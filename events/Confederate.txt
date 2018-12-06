@@ -1,4 +1,4 @@
-###################
+﻿###################
 #   CSA EVENTS    #
 ###################
 add_namespace = csa
@@ -59,7 +59,10 @@ country_event = { #JOIN CSA?
 			annex_country = {
    				target = ROOT
     			transfer_troops = yes
-			}
+		}
+		CSA = {
+			change_tag_from = ROOT
+		}
 			if = {
 					limit = { VIR = { exists = yes } }
 					CSA = {

@@ -1,4 +1,4 @@
-capital = 357
+﻿capital = 357
 
 OOB = "MNE_1936"
 

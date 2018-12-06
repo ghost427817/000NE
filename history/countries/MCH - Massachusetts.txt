@@ -1,4 +1,4 @@
-capital = 715
+﻿capital = 715
 
 OOB = "CTC_1936"
 
