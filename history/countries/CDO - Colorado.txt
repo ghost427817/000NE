@@ -1,4 +1,4 @@
-capital = 370
+﻿capital = 370
 
 oob = "MIS_1936"
 

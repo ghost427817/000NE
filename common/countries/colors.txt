@@ -667,6 +667,70 @@ MNE = {
 	color = rgb { 0 83 61 }
 	color_ui = rgb { 123 37 40 }
 }
+NVD = {
+	color = rgb { 216 190 126 }
+	color_ui = rgb { 216 190 126 }
+}
+ARZ = {
+	color = rgb { 164 192 189 }
+	color_ui = rgb { 164 192 189 }
+}
+NEM = {
+	color = rgb { 184 174 190 }
+	color_ui = rgb { 184 174 190 }
+}
+UTH = {
+	color = rgb { 198 151 151 }
+	color_ui = rgb { 198 151 151 }
+}
+IHO = {
+	color = rgb { 198 151 182 }
+	color_ui = rgb { 198 151 182 }
+}
+MTA = {
+	color = rgb { 235 230 198 }
+	color_ui = rgb { 235 230 198 }
+}
+WYM = {
+	color = rgb { 100 138 163 }
+	color_ui = rgb { 100 138 163 }
+}
+CDO = {
+	color = rgb { 65 71 197 }
+	color_ui = rgb { 65 71 197 }
+}
+DKT = {
+	color = rgb { 77 111 76 }
+	color_ui = rgb { 77 111 76 }
+}
+NBS = {
+	color = rgb { 171 194 208 }
+	color_ui = rgb { 171 194 208 }
+}
+MST = {
+	color = rgb { 208 171 186 }
+	color_ui = rgb {  208 171 186 }
+}
+IWA = {
+	color = rgb { 204 94 138 }
+	color_ui = rgb {  204 94 138 }
+}
+MSR = {
+	color = rgb { 94 169 204 }
+	color_ui = rgb { 94 169 204 }
+}
+WCN = {
+	color = rgb { 255 207 92 }
+	color_ui = rgb { 255 207 92 }
+}
+INA = {
+	color = rgb { 181 114 73 }
+	color_ui = rgb { 181 114 73 }
+}
+ILI = {
+	color = rgb { 73 181 139 }
+	color_ui = rgb { 73 181 139 }
+}
 D01 = {
 	color = rgb { 200 100 31 }
 	color_ui = rgb { 245 123 38 }
