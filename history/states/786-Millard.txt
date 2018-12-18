@@ -5,9 +5,9 @@ state={
 		10651 12573 12699 
 	}
 	history={
-		owner = USA
+		owner = UTH
 		add_core_of = DES
-		add_core_of = USA
+		add_core_of = UTH
 		victory_points = {
 			12699 1 
 		}

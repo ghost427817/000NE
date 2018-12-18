@@ -6,12 +6,12 @@ state={
 		850 
 	}
 	history={
-		owner = USA
+		owner = ARZ
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = USA
+		add_core_of = ARZ
 	}
 	manpower=43557
 	buildings_max_level_factor=1.000

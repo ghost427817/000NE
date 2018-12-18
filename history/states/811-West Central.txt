@@ -5,9 +5,9 @@ state={
 		868 1658 7684 
 	}
 	history={
-		owner = USA
+		owner = CDO
 		add_core_of = DES
-		add_core_of = USA
+		add_core_of = CDO
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

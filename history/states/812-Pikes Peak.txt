@@ -5,9 +5,9 @@ state={
 		1809 1827 10588 
 	}
 	history={
-		owner = USA
+		owner = CDO
 		add_core_of = DES
-		add_core_of = USA
+		add_core_of = CDO
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

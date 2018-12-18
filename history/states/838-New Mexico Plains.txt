@@ -5,11 +5,11 @@ state={
 		10867 12720 
 	}
 	history={
-		owner = USA
+		owner = NEM
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = USA
+		add_core_of = NEM
 
 	}
 	manpower=105829

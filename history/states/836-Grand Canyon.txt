@@ -7,12 +7,12 @@ state={
 		aluminium=2.000
 	}
 	history={
-		owner = USA
+		owner = ARZ
 		buildings = {
 			infrastructure = 4
 
 		}
-		add_core_of = USA
+		add_core_of = ARZ
 	}
 	provinces={
 		6897 7821 10573 12765 

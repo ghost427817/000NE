@@ -9,11 +9,11 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = MTA
 		buildings = {
 			infrastructure = 4
 		}
-		add_core_of = USA
+		add_core_of = MTA
 		victory_points = {
 			4860 1 
 		}

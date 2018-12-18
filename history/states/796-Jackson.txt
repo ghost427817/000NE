@@ -5,9 +5,9 @@ state={
 		12651 
 	}
 	history={
-		owner = USA
+		owner = WYM
 		add_core_of = DES
-		add_core_of = USA
+		add_core_of = WYM
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
