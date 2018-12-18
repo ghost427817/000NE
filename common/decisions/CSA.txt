@@ -173,4 +173,91 @@ CSA_restoration_category = {
 			}
 		}
 	}
+	RELEASE_TEST = {
+		icon = generic_form_nation
+
+		allowed = {
+			tag = VIR
+			has_war = no
+		}
+
+		available = {
+			tag = VIR
+		}
+
+		visible = {
+            always = yes
+		}
+		complete_effect = {
+			set_autonomy = {
+   			 	target = MIS
+    			autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+   			 	target = TEX
+    			autonomy_state = autonomy_free
+			}
+			set_autonomy = {
+   			 	target = LOU
+    			autonomy_state = autonomy_free
+			}
+		}
+	}
+}
+CSA_category = {
+	CSA_CORE = {
+		icon = generic_form_nation
+
+		allowed = {
+			tag = CSA
+			has_war = no
+		}
+
+		available = {
+			tag = CSA
+		}
+
+		visible = {
+            always = yes
+		}
+		complete_effect = {
+			CSA = {
+				add_state_core = 801
+				add_state_core = 823
+				add_state_core = 825
+				add_state_core = 821
+				add_state_core = 822
+				add_state_core = 362
+				add_state_core = 840
+				add_state_core = 368
+				add_state_core = 363
+				add_state_core = 364
+				add_state_core = 365
+				add_state_core = 369
+				add_state_core = 365
+				add_state_core = 366
+				add_state_core = 367
+				add_state_core = 370
+				add_state_core = 372
+				add_state_core = 845
+				add_state_core = 371
+				add_state_core = 844
+				add_state_core = 843
+				add_state_core = 375
+				add_state_core = 831
+				add_state_core = 832
+				add_state_core = 829
+				add_state_core = 827
+				add_state_core = 828
+				add_state_core = 849
+				add_state_core = 374
+				add_state_core = 842
+				add_state_core = 841
+				add_state_core = 372
+				add_state_core = 830
+				add_state_core = 850
+				add_state_core = 852
+			}
+		}
+	}
 }

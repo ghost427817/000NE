@@ -41,6 +41,10 @@ focus_tree = {
 			set_politics = {
 				ruling_party = fascism
 			}
+			set_autonomy = {
+    			target = VIR
+    			autonomy_state = autonomy_free
+			}
 		}
 	}
 	focus = {

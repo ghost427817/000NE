@@ -11,4 +11,21 @@ CSA_restoration_category = {
 			has_country_flag = VIR_CSA
 		}
 	}
+	visible = {
+		original_tag = VIR
+         VIR = {
+			has_country_flag = VIR_CSA
+		}
+	}
+}
+CSA_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = CSA
+		
+	}
+	visible = {
+		tag = CSA
+	}
 }

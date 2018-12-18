@@ -10,11 +10,9 @@ country_event = { #West Virginia Seceedes
 	picture = GFX_news_event_soldiers_marching
 	
 	trigger = {
-		TAG = WVG
-		OR = {
-			VIR = {
-				has_completed_focus = CSA_Start
-			}
+		tag = VIR
+		VIR = {
+			has_completed_focus = CSA_Start
 		}
 	}
 
@@ -26,12 +24,12 @@ country_event = { #West Virginia Seceedes
 		WGV = {
 			transfer_state = 839
 			transfer_state = 825
+			transfer_state = 824
+			transfer_state = 823
 		}
-		VIR = {
-			declare_war_on = {
-    			target = WVG
-   			 	type = annex_everything
-			}
+		declare_war_on = {
+    		target = WGV
+   			 type = annex_everything
 		}
 	}
 }

@@ -595,7 +595,7 @@ NAT = {
 	color = rgb { 90 90 90 }
 	color_ui = rgb { 80 80 80 } 	
 }
-WVG = {
+WGV = {
 	color = rgb { 155 66 90 }
 	color_ui = rgb { 155 66 90 } 	
 }
