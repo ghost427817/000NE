@@ -67,7 +67,6 @@ ideas = {
 			
 			traits = { prince_of_terror }
 		}
-	}
 
 		SOV_alexey_rykov = { #Politburo / Liadov
 			
@@ -84,7 +83,6 @@ ideas = {
 
 			traits = { infrastructural_visionary }
 		}
-	}
 
 		SOV_nikolay_shvernik = { #Central Comitee
 			
@@ -96,7 +94,6 @@ ideas = {
 			
 			traits = { union_leader }
 		}
-	}
 
 		SOV_arseny_zverev = { #Central Comitee
 			
@@ -108,7 +105,6 @@ ideas = {
 			
 			traits = { financial_expert }
 		}
-	}
 
 		SOV_maxim_litvinov = { #Central Comitee / Liadov
 			
@@ -125,9 +121,8 @@ ideas = {
 			
 			traits = { smooth_talking_charmer }
 		}
-	}
 
-	SOV_ivan_teodorovich = { #Libtard
+		SOV_ivan_teodorovich = { #Libtard
 			
 			picture = SOV_ivan_teodorovich
 			
@@ -142,9 +137,8 @@ ideas = {
 			
 			traits = { liberal_landreformer }
 		}
-	}
 
-	SOV_christian_rakovsky = { #Trotskyite
+		SOV_christian_rakovsky = { #Trotskyite
 			
 			picture = SOV_christian_rakovsky
 			
@@ -159,9 +153,8 @@ ideas = {
 			
 			traits = { liberal_landreformer }
 		}
-	}
 
-	SOV_hryhoriy_hrynko = { #Trotskyite
+		SOV_hryhoriy_hrynko = { #Trotskyite
 			
 			picture = SOV_hryhoriy_hrynko
 			
@@ -176,9 +169,8 @@ ideas = {
 			
 			traits = { popular_administrator }
 		}
-	}
 
-	SOV_valery_mezhlauk = { #Technocrat
+		SOV_valery_mezhlauk = { #Technocrat
 			
 			picture = SOV_valery_mezhlauk
 			
@@ -191,11 +183,10 @@ ideas = {
 				NOT = { has_country_flag = purged_mezhlauk }
 			}
 			
-			traits = { industrialiser }
+				traits = { industrialiser }
 		}
-	}
 
-	SOV_pyotr_kryuchkov = { #Technocrat
+		SOV_pyotr_kryuchkov = { #Technocrat
 			
 			picture = SOV_pyotr_kryuchkov
 			
@@ -211,13 +202,29 @@ ideas = {
 			traits = { backroom_backstabber }
 		}
 	}
-
+}
 
 #New Ideas
 
 
 ideas = {
 	country = {
+		MotorizationBureau = { 
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			traits = {
+				motorized_manufacturer
+			}
+		}
+
 		SOV_fill_the_skies = {
 		
 			removal_cost = -1
@@ -237,7 +244,7 @@ ideas = {
 					}
 				}
 			}
-	country = {
+		}
 		SOV_armed_forces_expansion = {
 		
 			removal_cost = -1
@@ -254,8 +261,6 @@ ideas = {
 				conscription = 0.02
 			}
 		}
-	}
-	country = {
 		SOV_shock_tanks = {
 	
 			removal_cost = -1
@@ -276,8 +281,6 @@ ideas = {
 				}
 			}
 		}
-	}
-	country = {
 		SOV_officer_training = {
 		
 			removal_cost = -1
@@ -296,8 +299,6 @@ ideas = {
 				max_planning = 0.2
 			}
 		}
-	}
-	country = {
 		SOV_air-sea_coord = {
 
 			equipment_bonus = {

@@ -1,60 +1,6 @@
 ideas = {
 
 	country = {
-		SOV_fill_the_skies = { 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-		}
-		SOV_officer_training = { 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-		}
-		SOV_shock_tanks = { 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			traits = {
-				shock_tank_manufacturer
-			}
-		}
-		MotorizationBureau = { 
-			allowed = {
-				always = yes
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			traits = {
-				motorized_manufacturer
-			}
-		}
 		Alliance_of_circumstance_War = { 
 			allowed = {
 				always = yes
