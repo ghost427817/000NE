@@ -576,6 +576,90 @@ leader_traits = {
 		}
 	}
 
+	# new stuff starts here
+
+	industrialiser = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.15
+		production_speed_infrastructure_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hobby_cook = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = 0.05
+		stability_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	popular_administrator = {
+		sprite = 10
+		random = yes
+		political_power_factor = 0.10
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	militarist = {
+		sprite = 10
+		random = yes
+		army_org_factor = 0.05
+		war_support_factor = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	union_leader = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	infrastructural_visionary = {
+		sprite = 10
+		random = yes
+		research_time_factor = -0.02
+		production_speed_buildings_infrastructure = 0.10
+		production_speed_buildings_radar = 0.10
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	liberal_landreformer = {
+		sprite = 10
+		random = yes
+		min_export = 0.10
+		global_building_slots_factor = 0.10
+		MONTHLY_POPULATION = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+# new stuff ends here
+
 	financial_expert = {
 		sprite = 10
 		random = yes

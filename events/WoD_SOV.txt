@@ -1,0 +1,2298 @@
+# Great Purge - Begins
+country_event = {
+	id = WoD_soviet.1
+	title = WoD_soviet.1.t
+	desc = WoD_soviet.1.d
+	picture = GFX_report_event_soviet_purge_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = WoD_soviet.1.a
+		complete_national_focus = SOV_crisisinthetroika
+		hidden_effect = {
+			set_country_flag = {
+				flag = SOV_purge value = 0
+			}
+		}
+	}
+}
+
+# Great Purge - The Trotskyites
+country_event = {
+	id = WoD_soviet.2
+	title = WoD_soviet.2.t
+	desc = WoD_soviet.2.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.2.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_christian_rakovsky
+		set_country_flag = purged_rakovsky
+		hidden_effect = {
+			remove_ideas = SOV_christian_rakovsky
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.2.b
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_hryhoriy_hrynko
+		set_country_flag = purged_hrynko
+		hidden_effect = {
+			remove_ideas = SOV_hryhoriy_hrynko
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+		}
+		name = soviet.2.c
+		
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+
+# Great Purge - The possible Liberals
+country_event = {
+	id = WoD_soviet.3
+	title = WoD_soviet.3.t
+	desc = WoD_soviet.3.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.3.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_ivan_teodorovich
+		set_country_flag = purged_teodorovich
+		hidden_effect = {
+			remove_ideas = SOV_ivan_teodorovich
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.3.b
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev
+		set_country_flag = purged_khrushchev
+		hidden_effect = {
+			remove_ideas = nikita_khrushchev
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = soviet.3.c
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+# Great Purge - The Technocrats
+country_event = {
+	id = WoD_soviet.4
+	title = WoD_soviet.4.t
+	desc = WoD_soviet.4.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.4.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_valery_mezhlauk
+		set_country_flag = purged_mezhlauk
+		hidden_effect = {
+			remove_ideas = SOV_valery_mezhlauk
+		}
+		hidden_effect = {
+		modify_country_flag = { 
+			flag = SOV_purge value = 1
+		 	} 
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.4.b
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_pyotr_kryuchkov
+		set_country_flag = purged_kryuchkov
+		hidden_effect = {
+			remove_ideas = SOV_pyotr_kryuchkov
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			} 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = soviet.4.c
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+# Great Purge - In the Military/The Generals
+country_event = {
+	id = WoD_soviet.5
+	title = WoD_soviet.5.t
+	desc = WoD_soviet.5.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 20
+		}
+		name = WoD_soviet.5.a
+		set_country_flag = purge_mil1_a
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = mikhail_tukhachevsky
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = alexander_yegorov
+		show_ideas_tooltip = vasily_blucher
+		remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+		custom_effect_tooltip = soviet.27_tt
+		hidden_effect = {
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 75
+		}
+		name = WoD_soviet.5.b
+		set_country_flag = purge_mil1_b
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = semyon_timoshenko
+		show_ideas_tooltip = kliment_voroshilov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = konstantin_rokossovsky
+		remove_unit_leader = 405 #kliment_voroshilov, field marshal
+		remove_unit_leader = 402 #konstantin_rokossovsky, general
+		remove_unit_leader = 404 #semyon_timoshenko, general
+		custom_effect_tooltip = soviet.27_tt
+		hidden_effect = {
+			remove_ideas = semyon_timoshenko
+			remove_ideas = kliment_voroshilov
+			remove_ideas = konstantin_rokossovsky
+		}	
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = WoD_soviet.5.c
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+# Great Purge - In the Military/ Navy and Airforce
+country_event = {
+	id = WoD_soviet.6
+	title = WoD_soviet.6.t
+	desc = WoD_soviet.6.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 20
+		}
+		name = WoD_soviet.6.a
+		set_country_flag = purge_mil2_a
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = pyotr_smirnov
+		show_ideas_tooltip = mikhail_frinovsky
+		custom_effect_tooltip = soviet.27_tt
+		set_country_flag = v
+		hidden_effect = {
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 75
+		}
+		name = WoD_soviet.6.b
+		set_country_flag = purge_mil2_b
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = ivan_yumashev
+		show_ideas_tooltip = vladimir_kasatonov
+		remove_unit_leader = 403 #vladimir_kasatonov, naval commander
+		custom_effect_tooltip = soviet.27_tt
+		hidden_effect = {
+			remove_ideas = ivan_yumashev
+			remove_ideas = vladimir_kasatonov
+		}	
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = WoD_soviet.6.c
+		}
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+
+# Great Purge - Liadov Question
+country_event = {
+	id = WoD_soviet.7
+	title = WoD_soviet.7.t
+	desc = WoD_soviet.7.d
+	picture = GFX_report_event_stalin_propaganda
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 45
+		}
+			name = WoD_soviet.7.a
+			set_country_flag = nopurge_liadov
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 45
+		}
+		name = WoD_soviet.7.b
+		set_country_flag = purged_liadov
+		add_stability = -0.02
+		add_popularity = { 
+			ideology = technocracy popularity = -0.05
+		}
+		hidden_effect = {
+			create_country_leader = {
+			name = "The Dweika"
+			desc = "POLITICS_THE_DWEIKA_DESC"
+			picture = "Portrait_SOV_Dweika.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			}
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = soviet.7.c
+		set_country_flag = purged_liadov
+		add_stability = -0.05
+		add_popularity = { 
+			ideology = technocracy popularity = -0.05
+		}
+		hidden_effect = {
+			create_country_leader = {
+			name = "The Dweika"
+			desc = "POLITICS_THE_DWEIKA_DESC"
+			picture = "Portrait_SOV_Dweika.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			}
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 4
+			  } 
+		}
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+
+# Great Purge - In the Party/Trial of the 21
+country_event = {
+	id = WoD_soviet.8
+	title = WoD_soviet.8.t
+	desc = WoD_soviet.8.d
+	picture = GFX_report_event_stalin_propaganda
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 50
+		}
+		name = WoD_soviet.8.a
+		set_country_flag = purge_2_group_a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = SOV_nikolai_yezhov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = yakov_smushkevich
+		show_ideas_tooltip = pavel_rychagov
+		show_ideas_tooltip = alexander_novikov
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = gordey_levchenko
+		remove_unit_leader = 406 #gordey_levchenko, naval commander
+		custom_effect_tooltip = soviet.27_tt
+		hidden_effect = {
+			remove_ideas = SOV_nikolai_yezhov
+			remove_ideas = yakov_smushkevich
+			remove_ideas = pavel_rychagov
+			remove_ideas = alexander_novikov
+			remove_ideas = gordey_levchenko
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 45
+		}
+		name = WoD_soviet.8.b
+		set_country_flag = purge_2_group_b
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = nikolay_kuznetsov
+		custom_effect_tooltip = remove_chief_of_airforce
+		show_ideas_tooltip = konstantin_vershinin
+		custom_effect_tooltip = remove_military_high_command
+		show_ideas_tooltip = sergei_khudyakov
+		show_ideas_tooltip = aleksandr_vasilevsky
+		remove_unit_leader = 407 #aleksandr_vasilevsky, general
+		custom_effect_tooltip = soviet.27_tt
+		hidden_effect = {
+			remove_ideas = nikolay_kuznetsov
+			remove_ideas = konstantin_vershinin
+			remove_ideas = sergei_khudyakov
+			remove_ideas = aleksandr_vasilevsky
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = WoD_soviet.8.c
+
+		custom_effect_tooltip = soviet.27_tt2
+	}
+}
+
+# Great Purge - In the Republics 1
+country_event = {
+	id = WoD_soviet.9
+	title = WoD_soviet.9.t
+	desc = WoD_soviet.9.d
+	picture = GFX_report_event_stalin_propaganda
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.9.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = mikhail_kalinin
+		set_country_flag = purged_chervyakov
+		hidden_effect = {
+			remove_ideas = mikhail_kalinin
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.9.b
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev
+		set_country_flag = purged_beria
+		hidden_effect = {
+			remove_ideas = nikita_khrushchev
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = soviet.9.c
+
+		}
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.9.e
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = mikhail_kalinin
+		set_country_flag = purged_chervyakov
+		hidden_effect = {
+			remove_ideas = mikhail_kalinin
+		}
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikita_khrushchev
+		set_country_flag = purged_beria
+		hidden_effect = {
+			remove_ideas = nikita_khrushchev
+		}
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 2
+			  } 
+		}
+	}
+}
+
+# Great Purge - In the Republics 2
+country_event = {
+	id = WoD_soviet.10
+	title = WoD_soviet.10.t
+	desc = WoD_soviet.10.d
+	picture = GFX_report_event_stalin_propaganda
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.10.a
+		set_country_flag = v
+		set_country_flag = no_purge_kontorin
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.10.b
+		set_country_flag = purged_kontorin
+		set_country_flag = no_purge_xojayev
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 1
+			  } 
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		name = soviet.10.c
+		set_country_flag = no_purge_xojayev
+		set_country_flag = no_purge_kontorin
+		}
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
+	}
+	option = { # Leave for now
+		ai_chance = {
+			factor = 30
+		}
+		name = WoD_soviet.10.e
+		set_country_flag = purged_xojayev
+		set_country_flag = purged_kontorin
+		add_stability = -0.05
+		hidden_effect = {
+			 modify_country_flag = { 
+			 	flag = SOV_purge value = 2
+			  } 
+		}
+	}
+}
+
+# Troika Breakup 1 "Prepare the Stalin Memorial"
+country_event = {
+	id = WoD_soviet.11
+	title = WoD_soviet.11.t
+	desc = WoD_soviet.11.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1935.1.15
+	}
+	option = {
+		name = WoD_soviet.11.a
+		ai_chance = {
+			factor = 40
+		}
+		country_event = { 
+			days = 18 id = WoD_soviet.12
+		}
+	}
+	option = {
+		name = WoD_soviet.11.b
+		ai_chance = {
+			factor = 50
+		}
+		country_event = { 
+			days = 18 id = WoD_soviet.13
+		}
+	}
+	option = {
+		name = WoD_soviet.11.c
+		ai_chance = {
+			factor = 10
+		}
+		country_event = { 
+			days = 18 id = WoD_soviet.14
+		}
+	}
+}
+
+# The Stalin Memorial Spectatcle"
+country_event = {
+	id = WoD_soviet.12
+	title = WoD_soviet.12.t
+	desc = WoD_soviet.12.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.11.a
+		add_political_power = 40
+	}
+}
+
+# The Stalin Memorial Humble"
+country_event = {
+	id = WoD_soviet.13
+	title = WoD_soviet.13.t
+	desc = WoD_soviet.13.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.13.a
+		add_stability = 0.05
+	}
+}
+
+# The Stalin Memorial Chaos"
+country_event = {
+	id = WoD_soviet.14
+	title = WoD_soviet.14.t
+	desc = WoD_soviet.14.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.11.a
+		add_political_power = -75
+		add_stability = -0.10
+	}
+}
+
+# Troika Breakup 2 "Marxist Biology"
+country_event = {
+	id = WoD_soviet.15
+	title = WoD_soviet.15.t
+	desc = WoD_soviet.15.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	mean_time_to_happen = {
+		days = 45
+	}
+	option = {
+		name = WoD_soviet.15.a
+		ai_chance = {
+			factor = 75
+		}
+		add_political_power = -25
+	}
+	option = {
+		name = WoD_soviet.15.b
+		ai_chance = {
+			factor = 25
+		}
+		add_popularity = { 
+			ideology = technocracy
+			popularity = 0.05 
+		}
+	}
+}
+
+# Troika Breakup 3 "Attack on Yakovlev"
+country_event = {
+	id = WoD_soviet.16
+	title = WoD_soviet.16.t
+	desc = WoD_soviet.16.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	mean_time_to_happen = {
+		days = 90
+	}
+	option = {
+		name = WoD_soviet.16.a
+		add_stability = -0.07
+		country_event = { 
+			days = 4 id = soviet.17
+		}
+	}
+}
+
+# Troika Breakup 4 "Yakovlev Investigation"
+country_event = {
+	id = WoD_soviet.17
+	title = WoD_soviet.17.t
+	desc = WoD_soviet.17.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.17.a
+		country_event = { 
+			days = 4 id = soviet.18
+		}
+		country_event = { 
+			days = 7 id = soviet.19
+		}
+	}
+}
+
+# Troika Breakup 5 "The Party's Letter"
+country_event = {
+	id = WoD_soviet.18
+	title = WoD_soviet.18.t
+	desc = WoD_soviet.18.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.18.a
+	}
+}
+
+# Troika Breakup 6 "Connections to Alexinsky"
+country_event = {
+	id = WoD_soviet.19
+	title = WoD_soviet.19.t
+	desc = WoD_soviet.19.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.19.a
+		country_event = { 
+			days = 7 id = soviet.20
+		}
+	}
+}
+
+# Troika Breakup 7 "Connections to Liadov?"
+country_event = {
+	id = WoD_soviet.20
+	title = WoD_soviet.20.t
+	desc = WoD_soviet.20.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.20.a
+		country_event = { 
+			days = 2 id = soviet.21
+		}
+	}
+}
+
+# Troika Breakup 8 "Confrontation"
+country_event = {
+	id = WoD_soviet.21
+	title = WoD_soviet.21.t
+	desc = WoD_soviet.21.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.21.a
+		country_event = { 
+			days = 7 id = WoD_soviet.1
+		}
+	}
+}
+
+# TT_Alliance "The Algiers Conference"
+country_event = {
+	id = WoD_soviet.22
+	title = WoD_soviet.22.t
+	desc = WoD_soviet.22.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1936.4.20
+	}
+	option = {
+		name = WoD_soviet.22.a
+	}
+}
+
+# TT_Alliance "The Algiers Conference"
+news_event = {
+	id = WoD_soviet.23
+	major = yes
+	title = WoD_soviet.23.t
+	desc = WoD_soviet.23.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1936.4.20
+	}
+	option = {
+		name = WoD_soviet.23.a
+	}
+}
+
+# Enemies Everywhere "Enemies Everywhere"
+country_event = {
+	id = WoD_soviet.24
+	title = WoD_soviet.24.t
+	desc = WoD_soviet.24.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		date > 1936.4.20
+	}
+	option = {
+		name = WoD_soviet.24.a
+		hidden_effect = {
+			if = {# Purge 0-6 Civil war 7-14 18th Party Congress
+				limit = { 
+					has_country_flag = SOV_purge value = 0
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 1
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 2
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 3
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 4
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 5
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+				limit = { 
+					has_country_flag = SOV_purge value = 6
+				}
+				complete_national_focus = SOV_endofanera
+				country_event = {
+					days = 1 
+					id = WoD_soviet.28
+				}
+				country_event = {
+					days = 1 
+					id = WoD_soviet.29
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 7
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 8
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 9
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 10
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 11
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 12
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 13
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+			if = {
+					has_country_flag = SOV_purge value = 14
+				}
+				complete_national_focus = SOV_constantvigilance
+				country_event = {
+					days = 1 
+					id = WoD_soviet.27
+				}
+			}
+		}
+	}
+}
+
+WoD_soviet.29
+
+# The Valerian Coup "Kalinin steps in"
+country_event = {
+	id = WoD_soviet.25
+	title = WoD_soviet.25.t
+	desc = WoD_soviet.25.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = SOV_purge value > 14
+	}
+	option = {
+		name = WoD_soviet.25.a
+		create_country_leader = {
+			name = "Pavel "Valerian" Lebedev-Polianski"
+			desc = "POLITICS_PAVEL_VALERIAN_DESC"
+			picture = "Portrait_Valerian.tga"
+			expire = "1965.1.1"
+			ideology = technocracy
+			traits = { }
+		}
+		set_politics = {
+			ruling_party = technocracy
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = technocracy popularity = 0.20
+		}
+		country_event = {
+			days = 7 
+			id = WoD_soviet.26
+		}
+		complete_national_focus = SOV_kalininstepsin
+		set_country_flag = valeriantransition
+		clr_country_flag = SOV_purge
+	}
+}
+
+# The Valerian Coup "The Valerian Transition"
+country_event = {
+	id = WoD_soviet.26
+	title = WoD_soviet.26.t
+	desc = WoD_soviet.26.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.26.a
+		complete_national_focus = SOV_thevaleriantransition
+	}
+}
+
+# 18th Party Congress Preperation
+country_event = {
+	id = WoD_soviet.27
+	title = WoD_soviet.27.t
+	desc = WoD_soviet.27.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.27.a
+		country_event = { 
+			days = 7 id = soviet.34
+		}
+	}
+}
+
+### Landing at Leningrad ###
+country_event = {
+	id = WoD_soviet.28
+	title = WoD_soviet.28.t
+	desc = WoD_soviet.28.d
+	picture = jack
+
+	is_triggered_only = yes
+
+	option = {
+		name = WoD_soviet.28.a
+		ai_chance = { factor = 100 }
+		add_popularity = { 
+			ideology = technocracy popularity = -0.3 
+		}
+		SCA = {
+			transfer_state = 195
+			transfer_state = 208
+			transfer_state = 209
+			transfer_state = 210
+			transfer_state = 263
+			transfer_state = 244
+			transfer_state = 264
+			transfer_state = 216
+			transfer_state = 215
+			transfer_state = 213
+			if = {# check for if coalition happened or not
+				limit = { 
+					not = {
+						has_country_flag = purged_chervyakov 
+					}
+				}
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 397
+				transfer_state = 262
+			}
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 209
+			add_state_core = 210
+			add_state_core = 263
+			add_state_core = 244
+			add_state_core = 264
+			add_state_core = 216
+			add_state_core = 215
+			add_state_core = 213
+			if = {# check for if coalition happened or not
+				limit = { 
+					not = {
+						has_country_flag = purged_chervyakov 
+					}
+				}
+				add_state_core = 351
+				add_state_core = 214
+				add_state_core = 397
+				add_state_core = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_kontorin
+					}
+				}
+				add_state_core = 246
+				add_state_core = 207
+				add_state_core = 206
+				add_state_core = 204
+			}
+			hidden_effect = {
+				SOV = { 
+					SCA = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 10000 
+					producer = SOV 
+				}
+			}
+		}
+		add_stability = 0.10
+		add_war_support = 0.20
+		add_manpower = -100000
+		set_country_flag = technocrats_rose_up
+		USA = { 
+			country_event = { 
+				id = WoD_soviet.30
+				days = 1 
+			} 
+		}
+	}
+	option = {
+		name = WoD_soviet.28.b
+		ai_chance = { factor = 0 }
+		add_popularity = { 
+			ideology = technocracy popularity = -0.3 
+		}
+		SCA = {
+			transfer_state = 195
+			transfer_state = 208
+			transfer_state = 209
+			transfer_state = 210
+			transfer_state = 263
+			transfer_state = 244
+			transfer_state = 264
+			transfer_state = 216
+			transfer_state = 215
+			transfer_state = 213
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_chervyakov 
+					}
+				}
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 397
+				transfer_state = 262
+			}
+			add_state_core = 195
+			add_state_core = 208
+			add_state_core = 209
+			add_state_core = 210
+			add_state_core = 263
+			add_state_core = 244
+			add_state_core = 264
+			add_state_core = 216
+			add_state_core = 215
+			add_state_core = 213
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_chervyakov 
+					}
+				}
+				add_state_core = 351
+				add_state_core = 214
+				add_state_core = 397
+				add_state_core = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_kontorin
+					}
+				}
+				add_state_core = 246
+				add_state_core = 207
+				add_state_core = 206
+				add_state_core = 204
+			}
+			hidden_effect = {
+				SOV = { 
+					SCA = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 10000 
+					producer = SOV 
+				}
+			}
+		}
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_manpower = -100000
+		set_country_flag = technocrats_rose_up
+		}
+	}
+}
+
+
+### March on Moscow ###
+country_event = {
+	id = WoD_soviet.29
+	title = WoD_soviet.29.t
+	desc = WoD_soviet.29.d
+	picture = jack
+
+	is_triggered_only = yes
+
+	option = {
+		name = WoD_soviet.29.a
+		ai_chance = { factor = 100 }
+		SCT = {
+			transfer_state = 217
+			transfer_state = 245
+			transfer_state = 265
+			transfer_state = 239
+			transfer_state = 260
+			transfer_state = 238
+			transfer_state = 401
+			transfer_state = 235
+			transfer_state = 237
+			transfer_state = 236
+			transfer_state = 232
+			transfer_state = 407
+			transfer_state = 406
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_xojayev
+					}
+				}
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 397
+				transfer_state = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_beria
+					}
+				}
+				transfer_state = 233
+				transfer_state = 231
+				transfer_state = 230
+				transfer_state = 229
+			}
+			add_state_core = 217
+			add_state_core = 245
+			add_state_core = 265
+			add_state_core = 239
+			add_state_core = 260
+			add_state_core = 238
+			add_state_core = 401
+			add_state_core = 235
+			add_state_core = 237
+			add_state_core = 236
+			add_state_core = 232
+			add_state_core = 407
+			add_state_core = 406
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_beria
+					}
+				}
+				add_state_core = 351
+				add_state_core = 214
+				add_state_core = 397
+				add_state_core = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_xojayev
+					}
+				}
+				add_state_core = 233
+				add_state_core = 231
+				add_state_core = 230
+				add_state_core = 229
+			}
+			hidden_effect = {
+				SOV = { 
+					SCT = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 10000 
+					producer = SOV 
+				}
+			}
+		}
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_manpower = -100000
+		set_country_flag = trots_rose_up
+		USA = { 
+			country_event = { 
+				id = WoD_soviet.30
+				days = 1 
+			} 
+		}
+	}
+	option = {
+		name = WoD_soviet.29.b
+		ai_chance = { factor = 100 }
+		SCT = {
+			transfer_state = 217
+			transfer_state = 245
+			transfer_state = 265
+			transfer_state = 239
+			transfer_state = 260
+			transfer_state = 238
+			transfer_state = 401
+			transfer_state = 235
+			transfer_state = 237
+			transfer_state = 236
+			transfer_state = 232
+			transfer_state = 407
+			transfer_state = 406
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_xojayev
+					}
+				}
+				transfer_state = 351
+				transfer_state = 214
+				transfer_state = 397
+				transfer_state = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_beria
+					}
+				}
+				transfer_state = 233
+				transfer_state = 231
+				transfer_state = 230
+				transfer_state = 229
+			}
+			add_state_core = 217
+			add_state_core = 245
+			add_state_core = 265
+			add_state_core = 239
+			add_state_core = 260
+			add_state_core = 238
+			add_state_core = 401
+			add_state_core = 235
+			add_state_core = 237
+			add_state_core = 236
+			add_state_core = 232
+			add_state_core = 407
+			add_state_core = 406
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_beria
+					}
+				}
+				add_state_core = 351
+				add_state_core = 214
+				add_state_core = 397
+				add_state_core = 262
+			}
+			if = {
+				limit = { 
+					not = {
+						has_country_flag = purged_xojayev
+					}
+				}
+				add_state_core = 233
+				add_state_core = 231
+				add_state_core = 230
+				add_state_core = 229
+			}
+			hidden_effect = {
+				SOV = { 
+					SCT = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 10000 
+					producer = SOV 
+				}
+			}
+		}
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_manpower = -100000
+		set_country_flag = trots_rose_up
+		USA = { 
+			country_event = { 
+				id = WoD_soviet.30
+				days = 1 
+			} 
+		}
+	}
+			change_tag_from = USA
+		}
+		add_stability = 0.10
+		add_war_support = 0.20
+		add_manpower = -100000
+	}
+}
+
+# Civil war Soviet Victory
+country_event = {
+	id = WoD_soviet.31
+	title = WoD_soviet.31.t
+	desc = WoD_soviet.31.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+		195 = { #Leningrad
+			is_controlled_by = SOV
+		}
+		217 = { Stalingrad
+			is_controlled_by = SOV
+		}
+		217 = { #Leningrad
+			is_owned_by = SOV
+		}
+		217 = { #Stalingrad
+			is_owned_by = SOV
+		}
+	}
+
+	option = {
+		name = WoD_soviet.32.a
+		clr_country_flag = trots_rose_up
+		clr_country_flag = technocrats_rose_up
+		set_country_flag = chairman_kaganovich
+		complete_national_focus = SOV_ourdarkesthour
+		set_province_name = { id = 3529 name = "Leningrad"}
+		set_province_name = { id = 3151 name = "Stalingrad"}
+	}
+}
+
+
+# Kaganovich Emergency Council
+country_event = {
+	id = WoD_soviet.32
+	title = WoD_soviet.32.t
+	desc = WoD_soviet.32.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+		has_country_flag = trots_rose_up
+		has_country_flag = technocrats_rose_up
+	}
+
+	option = {
+		name = WoD_soviet.32.a
+		complete_national_focus = SOV_chairmankaganovich
+		create_country_leader = {
+			name = "Lazar Kaganovich"
+			desc = "LAZAR_KAGANOVICH_DESC"
+			picture = "Portrait_Kaganovich.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+	}
+}
+
+## Ukranian Fascists rise up ###
+country_event = {
+	id = WoD_soviet.33
+	title = WoD_soviet.33.t
+	desc = WoD_soviet.33.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+
+	option = {
+		name = WoD_soviet.33.a
+		ai_chance = { factor = 100 }
+		UKR = {
+			transfer_state = 201
+			transfer_state = 198
+
+			add_state_core = 201
+			add_state_core = 198
+
+			}
+			hidden_effect = {
+				SOV = { 
+					UKR = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 1000 
+					producer = SOV 
+				}
+			}
+		}
+		add_manpower = -10000
+		set_country_flag = ukranians_rose_up
+		USA = { 
+			country_event = { 
+				id = WoD_soviet.30
+				days = 1 
+			} 
+		}
+	}
+	option = {
+		name = WoD_soviet.33.b
+		ai_chance = { factor = 0 }
+		change_tag_from = UKR
+		UKR = {
+			transfer_state = 201
+			transfer_state = 198
+
+			add_state_core = 201
+			add_state_core = 198
+
+			}
+			hidden_effect = {
+				SOV = { 
+					UKR = { 
+						transfer_technology = yes 
+					} 
+				}
+				#load_oob = "USA_civil_war_csa_army"
+				add_equipment_to_stockpile = { 
+					type = infantry_equipment_1 
+					amount = 1000 
+					producer = SOV 
+				}
+			}
+		}
+		add_manpower = -10000
+		set_country_flag = ukranians_rose_up
+		USA = { 
+			country_event = { 
+				id = WoD_soviet.30
+				days = 1 
+			} 
+		}
+	}
+}
+
+# 18th Party Congress Beginning
+country_event = {
+	id = WoD_soviet.34
+	title = WoD_soviet.34.t
+	desc = WoD_soviet.34.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.34.a
+		country_event = { 
+			days = 2 id = soviet.35
+		}
+	}
+}
+
+# 18th Party Congress Report of the Central Comitee
+country_event = {
+	id = WoD_soviet.35
+	title = WoD_soviet.35.t
+	desc = WoD_soviet.35.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.35.a
+		country_event = { 
+			days = 2 id = soviet.36
+		}
+	}
+}
+
+# 18th Party Congress Report of the Delegation to the Comintern
+country_event = {
+	id = WoD_soviet.36
+	title = WoD_soviet.36.t
+	desc = WoD_soviet.36.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.36.a
+		country_event = { 
+			days = 2 id = soviet.37
+		}
+	}
+}
+
+# 18th Party Congress Report on the 2nd 5-year Plan and the National Economy
+country_event = {
+	id = WoD_soviet.37
+	title = WoD_soviet.37.t
+	desc = WoD_soviet.37.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.37.a
+		if = {
+			limit = {
+				has_country_flag = purged_liadov
+			}
+			country_event = { 
+				days = 2 id = soviet.38
+		}
+		if = {
+			limit = {
+				has_country_flag = nopurge_liadov
+			}
+			country_event = { 
+			days = 2 id = soviet.XX
+			}
+		}
+	}
+}
+
+# 18th Party Congress Election of the Commision in Charge of the CPSU Programm / No Liadov
+country_event = {
+	id = WoD_soviet.38
+	title = WoD_soviet.38.t
+	desc = WoD_soviet.38.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.38.a
+		show_ideas_tooltip = SOV_andrey_andreyev
+		hidden_effect = {
+			add_ideas = SOV_andrey_andreyev
+		}
+		country_event = { 
+			days = 1 id = soviet.39
+		}
+	}
+	option = {
+		name = WoD_soviet.38.b
+		show_ideas_tooltip = SOV_anastas_mikoyan
+		hidden_effect = {
+			add_ideas = SOV_anastas_mikoyan
+		}
+		country_event = { 
+			days = 1 id = soviet.39
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / Central Comitee / No Liadov
+country_event = {
+	id = WoD_soviet.39
+	title = WoD_soviet.39.t
+	desc = WoD_soviet.39.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.39.a
+		show_ideas_tooltip = SOV_nikolay_shvernik
+		hidden_effect = {
+			add_ideas = SOV_nikolay_shvernik
+		}
+		country_event = { 
+			days = 1 id = soviet.40
+		}
+	}
+	option = {
+		name = WoD_soviet.39.b
+		show_ideas_tooltip = SOV_arseny_zverev
+		hidden_effect = {
+			add_ideas = SOV_arseny_zverev
+		}
+		country_event = { 
+			days = 1 id = soviet.40
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / Politburo / No Liadov
+country_event = {
+	id = WoD_soviet.40
+	title = WoD_soviet.40.t
+	desc = WoD_soviet.40.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.40.a
+		show_ideas_tooltip = SOV_nikolai_bulganin
+		hidden_effect = {
+			add_ideas = SOV_nikolai_bulganin
+		}
+		country_event = { 
+			days = 1 id = soviet.41
+		}
+	}
+	option = {
+		name = WoD_soviet.40.b
+		show_ideas_tooltip = SOV_lazar_kaganovich
+		hidden_effect = {
+			add_ideas = SOV_lazar_kaganovich
+		}
+		country_event = { 
+			days = 1 id = soviet.41
+		}
+	}
+}
+
+
+# 18th Party Congress Election to Central Organs of the Party / General Secretary / No Liadov
+country_event = {
+	id = WoD_soviet.41
+	title = WoD_soviet.41.t
+	desc = WoD_soviet.41.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.41.a
+		set_country_flag = chairman_molotov
+		create_country_leader = {
+			name = "Vyacheslav Molotov"
+			desc = "VYACHESLAV_MOLOTOV_DESC"
+			picture = "Portrait_Molotov.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			complete_national_focus = SOV_chairmanmolotov
+		}
+		country_event = { 
+			days = 1 id = soviet.42
+		}
+	}
+	option = {
+		name = WoD_soviet.41.b
+		create_country_leader = {
+		set_country_flag = chairman_kirov
+			name = "Sergey Kirov"
+			desc = "SERGEY_KIROV_DESC"
+			picture = "Portrait_Kirov.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			complete_national_focus = SOV_chairmankirov
+		}
+		country_event = { 
+			days = 1 id = soviet.42
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / The End Kirov/Molotov
+country_event = {
+	id = WoD_soviet.42
+	title = WoD_soviet.42.t
+	desc = WoD_soviet.42.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.42.a
+	}
+}
+
+# 18th Party Congress Election of the Commision in Charge of the CPSU Programm / Liadov
+country_event = {
+	id = WoD_soviet.43
+	title = WoD_soviet.43.t
+	desc = WoD_soviet.43.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.43.a
+		show_ideas_tooltip = SOV_andrey_andreyev
+		hidden_effect = {
+			add_ideas = SOV_andrey_andreyev
+		}
+		country_event = { 
+			days = 1 id = soviet.44
+		}
+	}
+	option = {
+		name = WoD_soviet.43.b
+		show_ideas_tooltip = SOV_anastas_mikoyan
+		hidden_effect = {
+			add_ideas = SOV_anastas_mikoyan
+		}
+		country_event = { 
+			days = 1 id = soviet.44
+		}
+	}
+	option = {
+		name = WoD_soviet.43.c
+		show_ideas_tooltip = SOV_maria_andreyeva
+		hidden_effect = {
+			add_ideas = SOV_maria_andreyeva
+		}
+		add_popularity = { 
+			ideology = technocracy popularity = 0.05
+		}
+		country_event = { 
+			days = 1 id = soviet.44
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / Central Comitee / Liadov
+country_event = {
+	id = WoD_soviet.44
+	title = WoD_soviet.44.t
+	desc = WoD_soviet.44.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.44.a
+		show_ideas_tooltip = SOV_nikolay_shvernik
+		hidden_effect = {
+			add_ideas = SOV_nikolay_shvernik
+		}
+		country_event = { 
+			days = 1 id = soviet.45
+		}
+	}
+	option = {
+		name = WoD_soviet.44.b
+		show_ideas_tooltip = SOV_arseny_zverev
+		hidden_effect = {
+			add_ideas = SOV_arseny_zverev
+		}
+		country_event = { 
+			days = 1 id = soviet.45
+		}
+	}
+	option = {
+		name = WoD_soviet.44.c
+		show_ideas_tooltip = SOV_maxim_litvinov
+		hidden_effect = {
+			add_ideas = SOV_maxim_litvinov
+		}
+		add_popularity = { 
+			ideology = technocracy popularity = 0.05
+		}
+		country_event = { 
+			days = 1 id = soviet.45
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / Politburo / Liadov
+country_event = {
+	id = WoD_soviet.45
+	title = WoD_soviet.45.t
+	desc = WoD_soviet.45.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.45.a
+		show_ideas_tooltip = SOV_nikolai_bulganin
+		hidden_effect = {
+			add_ideas = SOV_nikolai_bulganin
+		}
+		country_event = { 
+			days = 1 id = soviet.46
+		}
+	}
+	option = {
+		name = WoD_soviet.45.b
+		show_ideas_tooltip = SOV_lazar_kaganovich
+		hidden_effect = {
+			add_ideas = SOV_lazar_kaganovich
+		}
+		country_event = { 
+			days = 1 id = soviet.46
+		}
+	}
+	option = {
+		name = WoD_soviet.45.c
+		show_ideas_tooltip = SOV_alexey_rykov
+		hidden_effect = {
+			add_ideas = SOV_alexey_rykov
+		}
+		add_popularity = { 
+			ideology = technocracy popularity = 0.05
+		}
+		country_event = { 
+			days = 1 id = soviet.46
+		}
+	}
+}
+
+
+# 18th Party Congress Election to Central Organs of the Party / General Secretary / Liadov
+country_event = {
+	id = WoD_soviet.46
+	title = WoD_soviet.46.t
+	desc = WoD_soviet.46.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.46.a
+		create_country_leader = {
+			name = "Vyacheslav Molotov"
+			desc = "VYACHESLAV_MOLOTOV_DESC"
+			picture = "Portrait_Molotov.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			complete_national_focus = SOV_chairmanmolotov
+		country_event = { 
+			days = 1 id = soviet.47
+		}
+	}
+	option = {
+		name = WoD_soviet.46.b
+		create_country_leader = {
+			name = "Sergey Kirov"
+			desc = "SERGEY_KIROV_DESC"
+			picture = "Portrait_Kirov.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+			complete_national_focus = SOV_chairmankirov
+		country_event = { 
+			days = 1 id = soviet.47
+		}
+	}
+	option = {
+		name = WoD_soviet.46.b
+		set_politics = {
+			ruling_party = technocracy
+			last_election = "1936.3.16"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Martyn Liadov"
+			desc = "MARTYN_LIADOV_DESC"
+			picture = "Portrait_Liadov.tga"
+			expire = "1965.1.1"
+			ideology = communism
+			traits = { }
+		}
+		complete_national_focus = SOV_chairmanliadov
+		set_party_name = {
+			ideology = technocracy
+			name = SOV_liadov_technocracy_party
+		}
+		hidden_effect = {
+			set_cosmetic_tag = SOVLiadov #Uses Standard Soviet Flag
+		}
+		complete_national_focus = SOV_chairmanliadov
+		set_country_flag = chairman_liadov
+		country_event = { 
+			days = 1 id = soviet.47
+		}
+	}
+}
+
+# 18th Party Congress Election to Central Organs of the Party / The End Liadov
+country_event = {
+	id = WoD_soviet.47
+	title = WoD_soviet.47.t
+	desc = WoD_soviet.47.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.47.a
+	}
+}
+
+# Removing Liadovs Cosmetic tag
+country_event = {
+	id = WoD_soviet.48
+	title = WoD_soviet.48.t
+	desc = WoD_soviet.48.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+		has_country_flag = chairman_liadov
+		OR = {
+			has_government = communism
+			has_government = fascism
+			has_government = democratic
+			has_government = anarch
+			has_government = neutrality
+		}
+	}
+	option = {
+		name = WoD_soviet.48.a
+		hidden_effect = {
+			clr_cosmetic_tag = SOVLiadov
+			clr_country_flag = chairman_liadov
+		}
+	}
+}
+
+
+
+
+
+# Civil War End TT Victory
+country_event = {
+	id = WoD_soviet.50
+	title = WoD_soviet.50.t
+	desc = WoD_soviet.50.d
+	picture = GFX_report_event_stalin_propaganda
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+	option = {
+		name = WoD_soviet.50.a
+		complete_national_focus = SOV_victoryoverthesoviets
+	}
+}

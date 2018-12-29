@@ -1,0 +1,315 @@
+#New Guys
+
+
+ideas = {
+	political_advisor = {
+
+		SOV_andrey_andreyev = { #Commision in Charge of the CPSU Programm
+			
+			picture = SOV_andrey_andreyev
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { industrialiser }
+		}
+
+		SOV_anastas_mikoyan = { #Commision in Charge of the CPSU Programm
+			
+			picture = SOV_anastas_mikoyan
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { hobby_cook }
+		}
+		SOV_maria_andreyeva = { #Commision in Charge of the CPSU Programm / Liadov
+			
+			picture = SOV_maria_andreyeva
+			
+			available = 
+			{
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_liadov }
+			}
+
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { popular_administrator }
+		}
+		SOV_nikolai_bulganin = { #Politburo
+			
+			picture = SOV_nikolai_bulganin
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { militarist }
+		}
+
+		SOV_lazar_kaganovich = { #Politburo
+			
+			picture = SOV_lazar_kaganovich
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = 
+			{
+				NOT = { has_country_flag = chairman_kaganovich }
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+
+		SOV_alexey_rykov = { #Politburo / Liadov
+			
+			picture = SOV_alexey_rykov
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_liadov }
+			}
+
+			traits = { infrastructural_visionary }
+		}
+	}
+
+		SOV_nikolay_shvernik = { #Central Comitee
+			
+			picture = SOV_nikolay_shvernik
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { union_leader }
+		}
+	}
+
+		SOV_arseny_zverev = { #Central Comitee
+			
+			picture = SOV_arseny_zverev
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { financial_expert }
+		}
+	}
+
+		SOV_maxim_litvinov = { #Central Comitee / Liadov
+			
+			picture = SOV_maxim_litvinov
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_liadov }
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+	}
+
+	SOV_ivan_teodorovich = { #Libtard
+			
+			picture = SOV_ivan_teodorovich
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_teodorovich }
+			}
+			
+			traits = { liberal_landreformer }
+		}
+	}
+
+	SOV_christian_rakovsky = { #Trotskyite
+			
+			picture = SOV_christian_rakovsky
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_rakovsky }
+			}
+			
+			traits = { liberal_landreformer }
+		}
+	}
+
+	SOV_hryhoriy_hrynko = { #Trotskyite
+			
+			picture = SOV_hryhoriy_hrynko
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_hrynko }
+			}
+			
+			traits = { popular_administrator }
+		}
+	}
+
+	SOV_valery_mezhlauk = { #Technocrat
+			
+			picture = SOV_valery_mezhlauk
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_mezhlauk }
+			}
+			
+			traits = { industrialiser }
+		}
+	}
+
+	SOV_pyotr_kryuchkov = { #Technocrat
+			
+			picture = SOV_pyotr_kryuchkov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+				NOT = { has_country_flag = chairman_kaganovich }
+				NOT = { has_country_flag = purged_kryuchkov }
+			}
+			
+			traits = { backroom_backstabber }
+		}
+	}
+
+
+#New Ideas
+
+
+ideas = {
+	country = {
+		SOV_fill_the_skies = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				equipment_bonus = {
+					light_fighter = {
+						build_cost_ic = -0.1 instant = yes
+					}
+				}
+			}
+	country = {
+		SOV_armed_forces_expansion = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+
+			modifier = {
+				conscription = 0.02
+			}
+		}
+	}
+	country = {
+		SOV_shock_tanks = {
+	
+			removal_cost = -1
+		
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes	
+			}
+
+			modifier = {
+				category_all_armor = {
+					breakthrough = 0.10
+				}
+				army_speed_factor = 0.05
+				army_armor_speed_factor = 0.05
+				}
+			}
+		}
+	}
+	country = {
+		SOV_officer_training = {
+		
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes	
+			}
+
+			modifier = {
+				army_org_Factor = 0.1
+				planning_speed = 0.25
+				max_planning = 0.2
+			}
+		}
+	}
+	country = {
+		SOV_air-sea_coord = {
+
+			equipment_bonus = {
+				naval_bomber = {
+					air_range = 0.10
+					instant = yes
+				}
+			}
+			modifier = {
+				naval_strike_attack_factor = 0.02
+				naval_strike_targetting_factor = 0.02
+				naval_strike_agility_factor = 0.02
+			}
+		}
+	}
