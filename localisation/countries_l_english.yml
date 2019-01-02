@@ -153,6 +153,8 @@
  POL_neutrality_ADJ:0 "Polish"
  POL_autonomy_sector:0 "Sector Poland"
  POL_autonomy_subsector:0 "Subsector Poland"
+ POL_SOV_technocracy_autonomy_sector:0 "Sector Zapadnya"
+ POL_SOV_technocracy_autonomy_subsector:0 "Subsector Zapadnya"
  AUS_fascism:0 "Deutschsozialen Austria"
  AUS_fascism_DEF:0 "Deutschsozialen Austria"
  AUS_neutrality:0 "Austria"

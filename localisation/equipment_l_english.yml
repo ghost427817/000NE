@@ -1801,7 +1801,8 @@
  YUG_modern_tank_equipment_1:0 "Projekat Igman"
  YUG_modern_tank_equipment_1_short:0 "Igman"
  
-
+ teletank_light_armor:0 "Teletank"
+ teletank_light_armor_short:0 "Teletank"
  gw_tank_equipment:0 "Great War Tank"
  gw_tank_equipment_short:0 "Great War Tank"
  gw_tank_equipment_desc:0 "Tanks in World War I were developed separately and simultaneously by the United Kingdom and France as a means to break the deadlock of trench warfare on the Western Front. The name Tank was adopted by the British during the early stages of their development, as a security measure to conceal their purpose. Early tanks were armed with machineguns and small cannons, moved slowly, and were armored only enough to stop small arms fire."
@@ -1814,6 +1815,8 @@
  SWE_gw_tank_equipment_short:0 "Strv m/21"
  SOV_gw_tank_equipment:0 "T-18"
  SOV_gw_tank_equipment_short:0 "T-18"
+ SOV_teletank_light_armor:0 "TT-26"
+ SOV_teletank_light_armor_short:0 "TT-26"
  ITA_gw_tank_equipment:0 "Fiat 3000"
  ITA_gw_tank_equipment_short:0 "Fiat 3000"
  FRA_gw_tank_equipment:0 "Renault FT-17"

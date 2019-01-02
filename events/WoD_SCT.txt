@@ -1,5 +1,5 @@
-#SCT Events
-
+﻿#SCT Events
+add_namespace = WoD_sct
 # Civil war TT Victory
 country_event = {
 	id = WoD_sct.1
@@ -63,11 +63,11 @@ country_event = {
 		}
 		change_tag_from = SOV
 		hidden_effect = {
-			SCT = { 
-				SOV = { 
-					transfer_technology = yes 
-				} 
-			}
+			#SCT = { 
+			#	SOV = { 
+		#			transfer_technology = yes 
+			#	} 
+			#}
 			SOV = { 
 				country_event = { 
 					days = 5 id = soviet.50

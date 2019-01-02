@@ -178,6 +178,68 @@ ideas = {
 				communism_acceptance = 85
 			}
 		}
+
+		reactionary_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				neutrality_drift = 0.1
+				neutrality_acceptance = 85
+			}
+		}
+
+		anarchist_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = anarch
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				anarch_drift = 0.1
+				anarch_acceptance = 85
+			}
+		}
+		technocratic_influence = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = technocracy
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				technocracy_drift = 0.1
+				technocracy_acceptance = 85
+			}
+		}
 		democratic_influence = {
 			
 			

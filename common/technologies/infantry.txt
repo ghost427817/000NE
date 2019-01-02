@@ -1614,6 +1614,7 @@ technologies = {
 			bicycle_battalion
 		}		
 	}
+	######### OHIO ####
 	armored_infantry = {
 		
 		allow = {
@@ -1625,6 +1626,20 @@ technologies = {
 
 		enable_subunits = {
 			knights
+		}		
+	}
+	######## Guerilla
+	irregular_infantry = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			guerilla
 		}		
 	}
 }

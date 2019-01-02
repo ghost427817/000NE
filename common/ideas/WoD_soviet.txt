@@ -237,12 +237,8 @@ ideas = {
 				always = yes
 			}
 
-			modifier = {
-				equipment_bonus = {
-					light_fighter = {
-						build_cost_ic = -0.1 instant = yes
-					}
-				}
+			traits = {
+				fighter_spam_manufacturer
 			}
 		}
 		SOV_armed_forces_expansion = {
@@ -261,24 +257,19 @@ ideas = {
 				conscription = 0.02
 			}
 		}
-		SOV_shock_tanks = {
-	
-			removal_cost = -1
-		
+		SOV_shock_tanks = { 
 			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				always = yes	
+				always = yes
 			}
 
-			modifier = {
-				category_all_armor = {
-					breakthrough = 0.10
-				}
-				army_speed_factor = 0.05
-				army_armor_speed_factor = 0.05
-				}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			traits = {
+				shock_tank_manufacturer
 			}
 		}
 		SOV_officer_training = {

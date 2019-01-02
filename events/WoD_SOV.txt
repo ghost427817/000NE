@@ -1,4 +1,5 @@
-# Great Purge - Begins
+﻿# Great Purge - Begins
+add_namespace = WoD_soviet
 country_event = {
 	id = WoD_soviet.1
 	title = WoD_soviet.1.t

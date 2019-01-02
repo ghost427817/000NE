@@ -1,8 +1,8 @@
-#SCT Events
-
+﻿#SCT Events
+add_namespace = WoD_sca
 # Civil war TT Victory
 country_event = {
-	id = WoD_sct.1
+	id = WoD_sca.1
 	title = WoD_sct.1.t
 	desc = WoD_soviet.1.d
 	picture = GFX_report_event_stalin_propaganda
@@ -45,7 +45,7 @@ country_event = {
 			}
 		}
 	}
-
+	fire_only_once = yes
 	option = {
 		name = WoD_sct.1.a
 		complete_national_focus = SOV_victoryoverthesoviets
@@ -62,13 +62,13 @@ country_event = {
 			} 
 		}
 		change_tag_from = SOV
-		hidden_effect = {
-			SCT = { 
-				SOV = { 
-					transfer_technology = yes 
-				} 
-			}
-		}
+		#hidden_effect = {
+		#	SCT = { 
+		#		SOV = { 
+		#			transfer_technology = yes  #WE NEED THE hoi4transfertechsegen.py
+		#		} 
+		#	}
+		#}
 	}
 }
 
@@ -81,6 +81,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 7
 	} 
+	fire_only_once = yes
 	option = {
 		ai_chance = {
 			factor = 100
