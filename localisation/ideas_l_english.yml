@@ -2597,3 +2597,5 @@
  MotorizationBureau_desc:0 "[From.GetNameDef] has begun motorizing its armed forces. To expedite this, a special bureau has been established to oversee the transition. The bureau works closely with vehicle factories, setting up quotas and shifting resources, to ensure mass motorization."
  motorized_manufacturer:0 "Motorized Manufacturer"
  motorized_manufacturer_desc:0 "This manufacturer makes cars."
+ AwaitElection:0 "Awaiting Election"
+ AwaitElection_desc:0 "The people of [From.GetNameDef] are awaiting an election. If they don't get one soon, they'll make sure they do on their own."

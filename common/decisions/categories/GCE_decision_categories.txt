@@ -1,0 +1,37 @@
+#######
+#GCE##
+######
+
+Peter_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = GCE
+		GCE = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson" 
+			}
+		}
+	}
+	visible = {
+		original_tag = GCE
+         GCE = {
+			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson" 
+			}
+		}
+	}
+}
+GCE_category = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = GCE
+		
+	}
+	visible = {
+		tag = GCE
+	}
+}

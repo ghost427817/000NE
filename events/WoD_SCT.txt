@@ -6,7 +6,7 @@ country_event = {
 	title = WoD_sct.1.t
 	desc = WoD_soviet.1.d
 	picture = GFX_report_event_stalin_propaganda
-
+	fire_only_once = yes
 	trigger = {
 		195 = { #Leningrad
 			OR = {
@@ -83,6 +83,10 @@ country_event = {
 	title = WoD_sct.2.t
 	desc = WoD_soviet.2.d
 	picture = GFX_report_event_stalin_propaganda
+	fire_only_once = yes
+	trigger = {
+		tag = SCT
+	}
 	mean_time_to_happen = {
 		days = 7
 	} 

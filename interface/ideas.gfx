@@ -3943,5 +3943,9 @@ spriteTypes = {
 		name = "GFX_CSA_Generic" 
 		texturefile = "gfx/interface/ideas/CSAlegacy.dds"
 	}
+	spriteType = {
+		name = "GFX_NE_Dominion" 
+		texturefile = "gfx/interface/ideas/NE_dominion.dds"
+	}
 }
 }

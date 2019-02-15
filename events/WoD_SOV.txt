@@ -7,13 +7,13 @@ country_event = {
 	picture = GFX_report_event_soviet_purge_speech
 	
 	is_triggered_only = yes
-	
+	fire_only_once = yes
 	option = {
 		name = WoD_soviet.1.a
 		complete_national_focus = SOV_crisisinthetroika
 		hidden_effect = {
 			set_country_flag = {
-				flag = SOV_purge value = 0
+				flag = SOV_purge #value = 0
 			}
 		}
 	}
@@ -45,7 +45,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -62,7 +62,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -103,7 +103,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -120,7 +120,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -163,7 +163,7 @@ country_event = {
 		}
 		hidden_effect = {
 		modify_country_flag = { 
-			flag = SOV_purge value = 1
+			flag = SOV_purge #value = 1
 		 	} 
 		}
 	}
@@ -180,7 +180,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			} 
 		}
 	}
@@ -230,7 +230,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -256,7 +256,7 @@ country_event = {
 		}	
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -303,7 +303,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -324,7 +324,7 @@ country_event = {
 		}	
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -337,9 +337,8 @@ country_event = {
 			}
 		}
 		name = WoD_soviet.6.c
-		}
-		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
 	}
+		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
 }
 
 
@@ -363,7 +362,6 @@ country_event = {
 			name = WoD_soviet.7.a
 			set_country_flag = nopurge_liadov
 		}
-	}
 	option = { # Leave for now
 		ai_chance = {
 			factor = 45
@@ -380,13 +378,13 @@ country_event = {
 			desc = "POLITICS_THE_DWEIKA_DESC"
 			picture = "Portrait_SOV_Dweika.tga"
 			expire = "1965.1.1"
-			ideology = communism
+			ideology = stalinism
 			traits = { }
 			}
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -410,13 +408,13 @@ country_event = {
 			desc = "POLITICS_THE_DWEIKA_DESC"
 			picture = "Portrait_SOV_Dweika.tga"
 			expire = "1965.1.1"
-			ideology = communism
+			ideology = stalinism
 			traits = { }
 			}
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 4
+			 	flag = SOV_purge #value = 4
 			  } 
 		}
 		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
@@ -466,7 +464,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -493,7 +491,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -537,7 +535,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -554,7 +552,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -570,7 +568,6 @@ country_event = {
 
 		}
 		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
-	}
 	option = { # Leave for now
 		ai_chance = {
 			factor = 30
@@ -590,7 +587,7 @@ country_event = {
 		}
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 2
+			 	flag = SOV_purge #value = 2
 			  } 
 		}
 	}
@@ -618,7 +615,7 @@ country_event = {
 		set_country_flag = no_purge_kontorin
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -631,7 +628,7 @@ country_event = {
 		set_country_flag = no_purge_xojayev
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 1
+			 	flag = SOV_purge #value = 1
 			  } 
 		}
 	}
@@ -648,7 +645,6 @@ country_event = {
 		set_country_flag = no_purge_kontorin
 		}
 		# Will look into this later 	custom_effect_tooltip = soviet.27_tt2
-	}
 	option = { # Leave for now
 		ai_chance = {
 			factor = 30
@@ -659,7 +655,7 @@ country_event = {
 		add_stability = -0.05
 		hidden_effect = {
 			 modify_country_flag = { 
-			 	flag = SOV_purge value = 2
+			 	flag = SOV_purge #value = 2
 			  } 
 		}
 	}
@@ -752,9 +748,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.11.a
 		add_political_power = -75
@@ -771,9 +764,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	mean_time_to_happen = {
 		days = 45
 	}
@@ -805,9 +795,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	mean_time_to_happen = {
 		days = 90
 	}
@@ -829,9 +816,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.17.a
 		country_event = { 
@@ -852,9 +836,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.18.a
 	}
@@ -869,9 +850,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.19.a
 		country_event = { 
@@ -889,9 +867,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.20.a
 		country_event = { 
@@ -909,9 +884,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.21.a
 		country_event = { 
@@ -928,11 +900,7 @@ country_event = {
 	picture = GFX_report_event_stalin_propaganda
 
 	is_triggered_only = yes
-	
-	trigger = {
-		tag = SOV
-		date > 1936.4.20
-	}
+
 	option = {
 		name = WoD_soviet.22.a
 	}
@@ -948,10 +916,6 @@ news_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-		date > 1936.4.20
-	}
 	option = {
 		name = WoD_soviet.23.a
 	}
@@ -966,16 +930,12 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-		date > 1936.4.20
-	}
 	option = {
 		name = WoD_soviet.24.a
 		hidden_effect = {
 			if = {# Purge 0-6 Civil war 7-14 18th Party Congress
 				limit = { 
-					has_country_flag = SOV_purge value = 0
+					has_country_flag = SOV_purge #value = 0
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -989,7 +949,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 1
+					has_country_flag = SOV_purge #value = 1
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1003,7 +963,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 2
+					has_country_flag = SOV_purge #value = 2
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1017,7 +977,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 3
+					has_country_flag = SOV_purge #value = 3
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1031,7 +991,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 4
+					has_country_flag = SOV_purge #value = 4
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1045,7 +1005,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 5
+					has_country_flag = SOV_purge #value = 5
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1059,7 +1019,7 @@ country_event = {
 			}
 			if = {
 				limit = { 
-					has_country_flag = SOV_purge value = 6
+					has_country_flag = SOV_purge #value = 6
 				}
 				complete_national_focus = SOV_endofanera
 				country_event = {
@@ -1072,7 +1032,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 7
+					has_country_flag = SOV_purge #value = 7
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1081,7 +1041,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 8
+					has_country_flag = SOV_purge #value = 8
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1090,7 +1050,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 9
+					has_country_flag = SOV_purge #value = 9
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1099,7 +1059,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 10
+					has_country_flag = SOV_purge #value = 10
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1108,7 +1068,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 11
+					has_country_flag = SOV_purge #value = 11
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1117,7 +1077,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 12
+					has_country_flag = SOV_purge #value = 12
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1126,7 +1086,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 13
+					has_country_flag = SOV_purge #value = 13
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1135,7 +1095,7 @@ country_event = {
 				}
 			}
 			if = {
-					has_country_flag = SOV_purge value = 14
+					has_country_flag = SOV_purge #value = 14
 				}
 				complete_national_focus = SOV_constantvigilance
 				country_event = {
@@ -1158,10 +1118,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-		has_country_flag = SOV_purge value > 14
-	}
 	option = {
 		name = WoD_soviet.25.a
 		create_country_leader = {
@@ -1198,9 +1154,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.26.a
 		complete_national_focus = SOV_thevaleriantransition
@@ -1216,9 +1169,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.27.a
 		country_event = { 
@@ -1625,8 +1575,9 @@ country_event = {
 	title = WoD_soviet.31.t
 	desc = WoD_soviet.31.d
 	picture = GFX_report_event_stalin_propaganda
-
+	fire_only_once = yes
 	trigger = {
+		tag = SOV
 		195 = { #Leningrad
 			is_controlled_by = SOV
 		}
@@ -1767,9 +1718,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.34.a
 		country_event = { 
@@ -1787,9 +1735,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.35.a
 		country_event = { 
@@ -1807,9 +1752,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.36.a
 		country_event = { 
@@ -1827,9 +1769,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.37.a
 		if = {
@@ -1859,9 +1798,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.38.a
 		show_ideas_tooltip = SOV_andrey_andreyev
@@ -1892,10 +1828,7 @@ country_event = {
 	picture = GFX_report_event_stalin_propaganda
 
 	is_triggered_only = yes
-	
-	trigger = {
-		tag = SOV
-	}
+
 	option = {
 		name = WoD_soviet.39.a
 		show_ideas_tooltip = SOV_nikolay_shvernik
@@ -1926,10 +1859,7 @@ country_event = {
 	picture = GFX_report_event_stalin_propaganda
 
 	is_triggered_only = yes
-	
-	trigger = {
-		tag = SOV
-	}
+
 	option = {
 		name = WoD_soviet.40.a
 		show_ideas_tooltip = SOV_nikolai_bulganin
@@ -1962,9 +1892,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.41.a
 		set_country_flag = chairman_molotov
@@ -2008,9 +1935,6 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = SOV
-	}
 	option = {
 		name = WoD_soviet.42.a
 	}

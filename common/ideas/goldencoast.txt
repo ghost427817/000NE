@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+		AwaitElection = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = -0.05
+				stability_factor = -0.3
+			}
+		}
 		Alliance_of_circumstance_War = { 
 			allowed = {
 				always = yes

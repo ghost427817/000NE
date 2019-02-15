@@ -76,57 +76,56 @@ country_event = {
 		kill_country_leader = yes
 	}
 }
-country_event = {
-	id = GoldenCoast.2
-	title = GoldenCoast.2.t
-	desc = GoldenCoast.2.d
-	picture = GFX_report_event_fascist_speech
+#country_event = {
+#	id = GoldenCoast.2 
+#	title = GoldenCoast.2.t
+#	desc = GoldenCoast.2.d
+#	picture = GFX_report_event_fascist_speech
 
-	is_triggered_only = no
-	fire_only_once = yes
-	trigger = {
-		tag = GCE
-		AND = {
-			764 = { is_controlled_by = MAD }
-			}
-		AND = {
-			date > 1937.8.14
-		}
-	}
-	option = { #appease
-		name = GoldenCoast.2.a
-		ai_chance = { factor = 0 }
-		add_political_power = -50
-		add_stability = 0.02
-		765 = { set_demilitarized_zone = no }
-		add_popularity = { 
-			ideology = fascism
-			popularity = 0.1
-		}
-		add_popularity = { 
-			ideology = democratic
-			popularity = 0.15
-		}
-		add_ideas = {
-			GCEric_Killingly
-		}
-		add_timed_idea = { 
-			idea = fash_gc 
-			days = 365 
-		}
-		GCE = { transfer_state = 764 }
-	}
-	option = { #step down
-		ai_chance = { factor = 0 }
-		name = GoldenCoast.2.b
-		set_capital = 764
-		765 = { 
-			set_demilitarized_zone = no
-		}
-		set_politics = { 
-			ruling_party = fascism
-			elections_allowed = no
-		}
+#	is_triggered_only = no
+#	fire_only_once = yes
+#	trigger = {
+#		tag = GCE
+#		AND = {
+#			764 = { is_controlled_by = MAD }
+#			}
+#		AND = {
+#			date > 1937.8.14
+#		}
+#	}
+#	option = { #appease
+#		name = GoldenCoast.2.a
+#		ai_chance = { factor = 0 }
+#		add_political_power = -50
+#		add_stability = 0.02
+#		765 = { set_demilitarized_zone = no }
+#		add_popularity = { 
+#			ideology = fascism
+#			popularity = 0.1
+#		}
+#		add_popularity = { 
+#			ideology = democratic
+#			popularity = 0.15
+#		}
+#		add_ideas = {
+#			GCEric_Killingly
+#		}
+#		add_timed_idea = { 
+#			idea = fash_gc 
+#			days = 365 
+##		GCE = { transfer_state = 764 }
+#	}
+	#option = { #step down
+	#	ai_chance = { factor = 0 }
+	#	name = GoldenCoast.2.b
+	#	set_capital = 764
+	#	765 = { 
+	#		set_demilitarized_zone = no
+	#	}
+	#	set_politics = { 
+		#	ruling_party = fascism
+	#		elections_allowed = no
+	#	}
 		#division_template = {
 		#	name = "Pineshirts"
 		#	regiments = { 
@@ -151,57 +150,57 @@ country_event = {
 		#	starting_experience_factor = 5.0
 		#}
 	#}
-		add_manpower = 60000
-		GCE = { transfer_state = 764 }
-	}
-	option = { #step down
-		ai_chance = { factor = 100 }
-		name = GoldenCoast.2.i
-		765 = { 
-			set_demilitarized_zone = no
-		}
-		MAD = {
-			change_tag_from = GCE
-		}
-	}
-	option = { #communist help
-		ai_chance = { factor = 0 }
-		name = GoldenCoast.2.c
-		add_popularity = { 
-			ideology = fascism
-			popularity = -0.2
-		}
-		add_popularity = { 
-			ideology = democratic
-			popularity = -0.2
-		}
-		add_popularity = { 
-			ideology = communism
-			popularity = 0.1
-		}
-		add_popularity = { 
-			ideology = neutrality
-			popularity = 0.1
-		}
-		load_oob = Antifa_GCE
-		add_stability = -0.02
-		declare_war_on = { target = MAD type = annex_everything }
-	}
-	option = { #peter goes it alone
-		ai_chance = { factor = 0 }
-		name = GoldenCoast.2.e
-		add_popularity = { 
-			ideology = fascism
-			popularity = -0.2
-		}
-		add_popularity = { 
-			ideology = democratic
-			popularity = -0.05
-		}
-		add_stability = -0.01
-		declare_war_on = { target = MAD type = annex_everything }
-	}
-	}
+	#	add_manpower = 60000
+	#	GCE = { transfer_state = 764 }
+#	}
+	#option = { #step down
+	#	ai_chance = { factor = 100 }
+	#	name = GoldenCoast.2.i
+	#	765 = { 
+	#		set_demilitarized_zone = no
+	#	}
+#		MAD = {
+	#		change_tag_from = GCE
+	#	}
+#	}
+#	option = { #communist help
+	#	ai_chance = { factor = 0 }
+#		name = GoldenCoast.2.c
+	#	add_popularity = { 
+#			ideology = fascism
+#			popularity = -0.2
+#		}
+#		add_popularity = { 
+#			ideology = democratic
+#			popularity = -0.2
+#		}
+#		add_popularity = { 
+#			ideology = communism
+#			popularity = 0.1
+#		}
+#		add_popularity = { 
+#			ideology = neutrality
+#			popularity = 0.1
+#		}
+#		load_oob = Antifa_GCE
+#		add_stability = -0.02
+#		declare_war_on = { target = MAD type = annex_everything }
+#	}
+#	option = { #peter goes it alone
+#		ai_chance = { factor = 0 }
+#		name = GoldenCoast.2.e
+#		add_popularity = { 
+#			ideology = fascism
+#			popularity = -0.2
+#		}
+#		add_popularity = { 
+#			ideology = democratic
+#			popularity = -0.05
+#		}
+#		add_stability = -0.01
+#		declare_war_on = { target = MAD type = annex_everything }
+#	}
+#}
 country_event = {
 	id = GoldenCoast.3
 	title = GoldenCoast.3.t
@@ -259,6 +258,9 @@ country_event = {
 		name = GoldenCoast.4.a
 		kill_country_leader = yes
 		set_global_flag = Duff_Dead
+		GCE = {
+			add_ideas = AwaitElection
+		}
 	}
 }
 country_event = {
@@ -570,6 +572,71 @@ country_event = {
     			type = infrastructure
     			level = 1
     			instant_build = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = GoldenCoast.17
+	title = GoldenCoast.17.t
+	desc = GoldenCoast.17.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.17.a
+		hidden_effect = {
+			random_list = { 
+				70 = {
+					country_event = GoldenCoast.18 #Event describing death of peter and beginning of civil war 
+   					#kill_country_leader = yes
+   					#remove_unit_leader = 69420
+   					remove_idea = AwaitElection
+   					start_civil_war = {
+   						ideology = communism
+   						size = 1
+   						only_own_territory = no
+   						capital = 9850
+   						states = { 
+    					    765 
+   						}
+					}
+				}
+				30 = {
+					country_event = GoldenCoast.19 #Event letting player hold elections
+
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = { factor = 100 }
+		name = GoldenCoast.17.b
+		hidden_effect = {
+			random_list = { 
+				70 = {
+					country_event = GoldenCoast.20 #Event describing military killing people
+					add_manpower = -10000
+   					#kill_country_leader = yes
+   					#remove_unit_leader = 69420
+   					remove_ideas = AwaitElection
+   					
+				}
+				30 = {
+					country_event = GoldenCoast.21 #Other states rise up agains the military killing
+					add_manpower = -20000
+					start_civil_war = {
+   						ideology = communism
+   						size = 0.5
+   						only_own_territory = yes
+   						capital = 9850
+   						states = { 
+    					    764 763 
+   						}
+					}
+				}
 			}
 		}
 	}

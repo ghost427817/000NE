@@ -386,7 +386,7 @@ focus_tree = {
  	}
 	focus = {
 		id = NewFlag
-		icon = GFX_idea_Goodflag
+		icon = GFX_idea_Goodflag #GFX_NE_Dominion
 		ai_will_do = { factor = 50 } 
  		x = 0
  		y = 1
@@ -405,5 +405,46 @@ focus_tree = {
 			country_event = GoldenCoast.8
 		}
  	}
-	
+ 	focus = {
+		id = NE_JER_Conquest
+		icon = GFX_NE_Dominion
+		ai_will_do = { factor = 50 } 
+ 		x = -1
+ 		y = 1
+ 		mutually_exclusive = { focus = NE_JER_Friendship}
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		relative_position_id = NewFlag
+		prerequisite = { focus = NewFlag }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			country_event = GoldenCoast.8
+		}
+ 	}
+	focus = {
+		id = NE_JER_Friendship
+		icon = GFX_idea_NJ
+		ai_will_do = { factor = 50 } 
+ 		x = 1
+ 		y = 1
+ 		mutually_exclusive = { focus = NE_JER_Conquest}
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		relative_position_id = NewFlag
+		prerequisite = { focus = NewFlag }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			country_event = GoldenCoast.8
+		}
+ 	}
 }
