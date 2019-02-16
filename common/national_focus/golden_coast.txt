@@ -423,7 +423,11 @@ focus_tree = {
 		cost = 10  
 		available_if_capitulated = yes  
 		completion_reward = {
-			country_event = GoldenCoast.8
+			GCE = {
+				add_state_core = 788
+				add_state_core = 799
+				add_state_core = 359
+			}
 		}
  	}
 	focus = {
@@ -444,7 +448,50 @@ focus_tree = {
 		cost = 10  
 		available_if_capitulated = yes  
 		completion_reward = {
-			country_event = GoldenCoast.8
+			create_faction = NETO
+			GCE = { add_to_faction = JER }
+		}
+ 	}
+focus = {
+		id = NE_Nationalize_Military
+		icon = GFX_focus_generic_military_mission
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		mutually_exclusive = { focus = NE_Retain_Privatize }
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		relative_position_id = NE_JER_Conquest
+		prerequisite = { focus = NE_JER_Friendship focus = NE_JER_Conquest }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			
+		}
+ 	}
+focus = {
+		id = NE_Retain_Privatize
+		icon = GFX_goal_generic_military_sphere
+		ai_will_do = { factor = 50 } 
+ 		x = 0
+ 		y = 1
+ 		mutually_exclusive = { focus = NE_Nationalize_Military }
+ 		available = {
+ 			has_country_leader = {
+				ruling_only = yes
+				name = "Peter Anderson"
+			}
+		}
+		relative_position_id = NE_JER_Friendship
+		prerequisite = { focus = NE_JER_Friendship focus = NE_JER_Conquest }
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			
 		}
  	}
 }
