@@ -383,6 +383,26 @@ focus_tree = {
 			
 		}
  	}
+	#NE foci
+ 	focus = {
+		id = Horse
+		icon = GFX_goal_generic_alliance
+		ai_will_do = { factor = 30 } 
+ 		x = 5
+ 		y = 3
+ 		mutually_exclusive = { }
+ 		prerequisite = { focus = WarlordPen } 
+ 		prerequisite = { focus = WarlordVir }
+ 		available = { 
+ 			has_army_manpower = { size > 125000 }
+ 			OHI = { has_completed_focus = DealWithCommunists }
+		}
+		cost = 10  
+		available_if_capitulated = yes  
+		completion_reward = {
+			
+		}
+ 	}
  	focus = {
 		id = WarlordPen
 		icon = GFX_idea_PENWarlord
@@ -438,26 +458,6 @@ focus_tree = {
 		}
  	}
  	
- 	#NE foci
- 	focus = {
-		id = Horse
-		icon = GFX_goal_generic_alliance
-		ai_will_do = { factor = 30 } 
- 		x = 5
- 		y = 3
- 		mutually_exclusive = { }
- 		prerequisite = { focus = WarlordPen } 
- 		prerequisite = { focus = WarlordVir }
- 		available = { 
- 			has_army_manpower = { size > 125000 }
- 			OHI = { has_completed_focus = DealWithCommunists }
-		}
-		cost = 10  
-		available_if_capitulated = yes  
-		completion_reward = {
-			
-		}
- 	}
  	focus = {
 		id = SupportCom
 		icon = GFX_focus_NEE_VolBrigEngRep

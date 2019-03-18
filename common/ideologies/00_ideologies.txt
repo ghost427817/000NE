@@ -77,6 +77,12 @@ ideologies = {
 			
 			anarchist_communism = {
 			}
+			
+			progressivism = {
+			}
+
+			religious_communism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -100,6 +106,8 @@ ideologies = {
 			can_puppet = yes
 		}
 		
+		can_host_government_in_exile = yes
+
 		modifiers = {
 			puppet_cost_factor = -0.3
 		}
@@ -195,6 +203,9 @@ ideologies = {
 			}
 			
 			rexism = {
+			}
+
+			islamofascism = {
 			}
 		}
 		

@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
-	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	name = "Paul McNutt"
+	desc = "lmao that's really his name"
+	picture = "gfx/leaders/INA/PaulMcNutt.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

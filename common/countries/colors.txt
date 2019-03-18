@@ -468,8 +468,8 @@ KOR = {
 	color_ui = rgb { 255 248 229 }	
 }
 ISR = {
-	color = rgb { 152  130  191 }
-	color_ui = rgb { 152  130  191 }
+	color = rgb { 223 175 194 }
+	color_ui = rgb { 223 175 194 }
 }
 NEE = {
 	color = rgb { 0 83 61 }
@@ -730,6 +730,14 @@ INA = {
 ILI = {
 	color = rgb { 73 181 139 }
 	color_ui = rgb { 73 181 139 }
+}
+KRD = {
+	color = rgb { 206 204 0 }
+	color_ui = rgb { 206 204 0 }
+}
+SUD = {
+	color = rgb { 55 49 28 }
+	color_ui = rgb { 55 49 28 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

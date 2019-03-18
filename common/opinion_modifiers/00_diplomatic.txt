@@ -1,5 +1,9 @@
 opinion_modifiers = {
 	
+	refused_naval_treaty = {
+		value = -75
+	}
+	
 	faction_traitor = {
 		value = -75
 	}

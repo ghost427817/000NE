@@ -15,31 +15,31 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 55
+			popularity = 29
 		}
 
 		fascism = {
-			popularity = 45
+			popularity = 1
 		}
 		
 		communism = {
-			popularity = 0
+			popularity = 70
 			#banned = yes
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Philip La Follette"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/WCN/PhilipLaFollette.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = progressivism
 	traits = {
 		#
 	}

@@ -167,6 +167,76 @@ if = {
 		autonomous_state = autonomy_us_state
 		freedom_level = 0.6
 	}
+	set_autonomy = {
+		target = INA
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = ILI
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = IWA
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = DKT
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = WYM
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = NBS
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = CDO
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = NEM
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = MTA
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = IHO
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = UTH
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = NVD
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = ARZ
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
+	set_autonomy = {
+		target = MSR
+		autonomous_state = autonomy_us_state
+		freedom_level = 0.6
+	}
 	else = {
 		puppet = NYC
 		puppet = PHI

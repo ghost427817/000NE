@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Henry Blood"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/UTH/HenryBlood.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

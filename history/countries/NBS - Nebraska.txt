@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Roy Cochran"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/NBS/RoyCochran.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

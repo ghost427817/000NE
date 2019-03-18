@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Richard Kirman"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/NVD/RichardKirman.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

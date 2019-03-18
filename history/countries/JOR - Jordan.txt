@@ -1,0 +1,99 @@
+﻿capital = 455
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 90
+		}
+		
+		communism = {
+			popularity = 5
+			banned = yes #default is no
+		}
+		
+		neutrality = { 
+			popularity = 5
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_cosmetic_tag = AHW_JOR
+
+create_country_leader = {
+	name = "Hashim Kheir"
+	desc = ""
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_2.dds"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Saeed Ahmadi"
+	desc = ""
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_fascism1.dds"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Abd al-Qadir al-Husayni"
+	desc = "al-Husayni is the general secretary of the Palestine Arab Party. He leads the Army of the Holy War, a massive pogromist organization, against the Pan-Semitic Union"
+	picture = "gfx/leaders/JOR/Abd al-Qadir al-Husayni.dds"
+	ideology = islamofascism
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Abdullah bin al-Hussein"
+	desc = ""
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_land_3.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fu'ad Nassar"
+	desc = ""
+	picture = "gfx/leaders/JOR/Portrait_Arabia_Generic_navy_2.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+create_field_marshal = {
+	name = "Abd al-Qadir al-Husayni"
+	picture = "Abd al-Qadir al-Husayni.dds"
+	traits = {  politically_connected }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

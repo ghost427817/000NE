@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Elmer Holt"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/MTA/ElmerHolt.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

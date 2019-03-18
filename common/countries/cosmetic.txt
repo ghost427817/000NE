@@ -164,6 +164,7 @@ MAN_restored = {
 }
 JAP_showa_restoration = {
     color = rgb { 230 230 230 }
+    color_ui = rgb { 230 230 230 }
 }
 
 GER_greater_german_reich = {
@@ -175,35 +176,58 @@ CHI_warlord_PRC = {
     color = rgb { 245 12 55 }
     color_ui = rgb { 178 34 60 }
 }
+
 GCE_KIL = {
 	color = rgb { 255 255 255 }
 	color_ui = rgb { 255 255 255 }
 }
+
 GCE_GFL = {
     color = rgb { 109  165  255 }
     color_ui = rgb { 109  165  255 }
 }
+
 NYC_ENG = {
     color = rgb { 255  137  137 }
     color_ui = rgb { 255  137  137 }
 }
+
 MAD_AUG = {
     color = rgb { 255  102  137 }
     color_ui = rgb { 255  102  102 }
 }
+
 CAT_CNT = {
     color = rgb { 255  102  137 }
     color_ui = rgb { 255  102  102 }
 }
+
 NYC_NEW = {
     color = rgb { 191  89  0 }
     color_ui = rgb { 255  102  102 }
 }
+
 ARA_CNT = {
     color = rgb { 201  94  62 }
     color_ui = rgb { 255  195  0 }
 }
+
 SPR_IBE = {
     color = rgb { 51  0  102 }
     color_ui = rgb { 51  0  102 } 
+}
+
+CHI_YHQ = {
+    color = rgb { 237 152 18 }
+    color_ui = rgb { 224 139 5 }
+}
+
+PRC_YHQ = {
+    color = rgb { 245 12 55 }
+    color_ui = rgb { 178 34 60 }
+}
+
+AHW_JOR = {
+    color = rgb { 51 55 28 }
+    color_ui = rgb { 51 55 28 }
 }

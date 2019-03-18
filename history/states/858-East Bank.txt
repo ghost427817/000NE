@@ -1,0 +1,26 @@
+
+state={
+	id=858
+	name="STATE_858"
+	manpower = 932000
+	
+	state_category = rural
+
+	history={
+		owner = ISR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			7151 1 
+		}
+
+		add_core_of = ISR
+		add_core_of = JOR
+	}
+
+	provinces={
+		7151 7170 10089
+	}
+}

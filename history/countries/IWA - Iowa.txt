@@ -35,9 +35,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Clyde Herring"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/IWA/ClydeHerring.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {

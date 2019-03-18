@@ -2,13 +2,13 @@ on_actions = {
 	# country 
 	on_new_term_election = {
 		random_events = {
-			100 = usa.6
-			100 = usa.7
-			100 = usa.8
-			100 = usa.9
-			100 = usa.10
-			100 = usa.11
-			100 = usa.12
+			#100 = usa.6
+			#100 = usa.7
+			#100 = usa.8
+			#100 = usa.9
+			#100 = usa.10
+			#100 = usa.11
+			#100 = usa.12
 		}
 		random_events = {
 			100 = spain.9
@@ -371,35 +371,6 @@ on_actions = {
 	#FROM is war target
 	on_declare_war = {
 		effect = {
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							has_idea = american_protection_drift_democratic
-							has_idea = american_protection_drift_communism
-							has_idea = american_protection_drift_fascism
-							has_idea = american_protection_defence_democratic
-							has_idea = american_protection_defence_communism
-							has_idea = american_protection_defence_fascism
-						}
-					}
-					NOT = { 
-						tag = USA
-						is_in_faction_with = USA # I guess USA will not go to war with someone they are in faction with
-						has_war_with = USA
-						#USA = { has_war_with = FROM } Should USA enforce peace in a nation it is already at war with?
-					}
-					OR = {
-						has_idea = american_protection_drift_democratic
-						has_idea = american_protection_drift_communism
-						has_idea = american_protection_drift_fascism
-						has_idea = american_protection_defence_democratic
-						has_idea = american_protection_defence_communism
-						has_idea = american_protection_defence_fascism
-					}
-				}				
-				FROM = { country_event = { id = usa.16 days = 1 } }
-			}
 
 			## Soviet defensive war while having purge penalty
 			if = {
@@ -485,31 +456,6 @@ on_actions = {
 				}
 				FROM = {
 					country_event = { id = germany.84 days = 1 }
-				}
-			}
-
-			#Remove MEFO bills if Germany goes to war
-			if = {
-				limit = {
-					ROOT = { original_tag = GER }
-					ROOT = { GER_has_mefo_bills = yes }
-					NOT = { FROM = { original_tag = GER } } # Don't remove it from Fascist Germany if they start the civil war
-				}
-				ROOT = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
-				}
-			}
-
-			#Remove MEFO bills if Germany is declared war on
-			if = {
-				limit = {
-					FROM = { original_tag = GER }
-					FROM = { GER_has_mefo_bills = yes }
-				}
-				FROM = {
-					GER_remove_mefo_bills = yes
-					set_country_flag = mefo_bills_removed_through_war
 				}
 			}
 
@@ -864,7 +810,11 @@ on_actions = {
 	#Not run on a specific country.
 	on_startup = {
 		effect = {
-			
+			NEE = { 
+				country_event = { 
+					id = nee.1
+				}
+			}
 		}
 	}
 	

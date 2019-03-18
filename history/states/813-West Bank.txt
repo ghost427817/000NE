@@ -5,7 +5,7 @@ state={
 		1086 
 	}
 	history={
-		owner = ENG
+		owner = ISR
 		add_core_of = ISR
 		add_core_of = PAL
 		buildings = {

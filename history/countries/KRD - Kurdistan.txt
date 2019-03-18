@@ -1,0 +1,75 @@
+﻿capital = 421
+
+oob = "IRQ_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	CAS1 = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 70
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 30
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Mahmoud Barzani"
+	desc = "POLITICS_GHAZI_I_DESC"
+	picture = "MahmoudBarzani.dds"
+	expire = "1965.1.1"
+	ideology = monarchy
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Qazi Muhammad"
+	desc = "POLITICS_GHAZI_I_DESC"
+	picture = "QaziMuhammad.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Mustafa Barzani"
+	picture = "MustafaBarzani.dds"
+	traits = { defensive_doctrine politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

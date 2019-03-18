@@ -15,31 +15,31 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 55
+			popularity = 35
 		}
 
 		fascism = {
-			popularity = 45
+			popularity = 5
 		}
 		
 		communism = {
-			popularity = 0
-			#banned = yes
+			popularity = 60
+			#banned = no
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 create_country_leader = {
-	name = "Placeholder"
+	name = "Hjalmar Petersen"
 	desc = "POLITICS_White"
-	picture = "gfx/leaders/placeholder/placeholder.dds"
+	picture = "gfx/leaders/MST/HjalmarPetersen.dds"
 	expire = "1965.1.1"
-	ideology = liberalism
+	ideology = progressivism
 	traits = {
 		#
 	}

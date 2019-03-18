@@ -1,0 +1,21 @@
+state={
+	id=860
+	name="STATE_860"
+	manpower = 132110
+	
+	state_category = wasteland
+
+	history={
+		owner = KRD
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = KRD
+
+	}
+
+
+	provinces={
+		901 6883 1549 10882 1578 1606 1634 
+	}
+}

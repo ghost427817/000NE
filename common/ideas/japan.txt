@@ -327,7 +327,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_time_factor = 0.05
+				research_speed_factor = 0.05
 				production_speed_industrial_complex_factor = -0.1
 			}
 		}
@@ -352,7 +352,7 @@ ideas = {
 				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.35
 				justify_war_goal_time = -0.2
-				research_time_factor = 0.10
+				research_speed_factor = 0.10
 				production_speed_industrial_complex_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -399,7 +399,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
-				research_time_factor = 0.05
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -1167,7 +1167,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
 
@@ -1236,7 +1236,7 @@ ideas = {
 					limit = {
 						has_DLC = "Waking the Tiger"
 					}
-					has_completed_focus = JAP_the_unthinkable_option
+					
 				}
 			}
 			allowed = {
@@ -1265,7 +1265,7 @@ ideas = {
 					limit = {
 						has_DLC = "Waking the Tiger"
 					}
-					has_completed_focus = JAP_strengthen_civilian_government
+					
 				}
 			}
 			
@@ -1386,7 +1386,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = JAP_army_expansion
+				
 			}
 			
 			traits = { army_chief_drill_3 }
@@ -1683,7 +1683,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = JAP_supremacy_of_the_battlefleet
+				
 			}
 
 			cost = 75
@@ -1759,7 +1759,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = JAP_agility_focus
+				
 			}
 			
 			research_bonus = {
@@ -1780,7 +1780,7 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = JAP_range_focus
+				
 			}
 						
 			research_bonus = {
