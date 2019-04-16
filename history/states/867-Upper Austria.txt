@@ -1,0 +1,29 @@
+
+state={
+	id=867
+	name="STATE_867"
+	manpower = 75377
+	
+	state_category = city
+	
+	resources={
+		steel=5 # was: 8
+		aluminium=1 # was: 1
+	}
+
+	history={
+		owner = CZE
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+		}
+		
+		add_core_of = AUS
+
+		
+	}
+
+	provinces={
+		6552 6723 732
+	}
+}

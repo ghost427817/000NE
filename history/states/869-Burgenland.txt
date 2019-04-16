@@ -1,0 +1,24 @@
+
+state={
+	id=869
+	name="STATE_869"
+	manpower =25983
+	
+	state_category = large_city
+	
+	history={
+		owner = HUN
+		
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = AUS
+		add_core_of = HUN
+
+		
+	}
+
+	provinces={
+		686 3700 9661 11630 9646 6672 665 
+	}
+}

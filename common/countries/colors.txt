@@ -736,8 +736,12 @@ KRD = {
 	color_ui = rgb { 206 204 0 }
 }
 SUD = {
-	color = rgb { 55 49 28 }
+	color = rgb { 95 49 28 }
 	color_ui = rgb { 55 49 28 }
+}
+LGS = {
+	color = rgb { 205 205 255 }
+	color_ui = rgb { 255 255 255 }
 }
 D01 = {
 	color = rgb { 200 100 31 }

@@ -42,6 +42,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+set_cosmetic_tag = SSR_KRD
+
 create_country_leader = {
 	name = "Mahmoud Barzani"
 	desc = "POLITICS_GHAZI_I_DESC"

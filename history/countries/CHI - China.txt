@@ -16,8 +16,6 @@ set_technology = {
 }
 
 
-save_global_event_target_as = WTT_current_china_leader
-
 set_convoys = 40
 
 
@@ -30,7 +28,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 90
+			popularity = 0
 		}
 		
 		communism = {
@@ -39,11 +37,11 @@ set_politics = {
 		}
 		
 		neutrality = { 
-			popularity = 10
+			popularity = 100
 		}
 	}
 	
-	ruling_party = communism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -58,6 +56,17 @@ create_country_leader = {
 	ideology = despotism
 	traits = {
 		generallissimo
+	}
+}
+
+create_country_leader = {
+	name = "Aisin Gioro Puyi"
+	
+	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	expire = "1960.1.1"
+	ideology = despotism
+	traits = {
+		warrior_code
 	}
 }
 

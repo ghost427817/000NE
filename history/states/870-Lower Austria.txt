@@ -1,0 +1,23 @@
+
+state={
+	id=870
+	name="STATE_870"
+	manpower =25983
+	
+	state_category = city
+	
+	history={
+		owner = CZE
+		
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AUS
+
+		
+	}
+
+	provinces={
+		6739 3718 9527
+	}
+}

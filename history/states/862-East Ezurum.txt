@@ -1,0 +1,20 @@
+
+state={
+	id=862
+	name="STATE_862"
+	manpower = 523537
+	state_category = rural
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = TUR
+		add_core_of = ARM
+	}
+
+	provinces={
+		652 11880 13121 7470 4583 12376 11853
+	}
+}

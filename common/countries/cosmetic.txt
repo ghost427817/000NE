@@ -231,3 +231,8 @@ AHW_JOR = {
     color = rgb { 51 55 28 }
     color_ui = rgb { 51 55 28 }
 }
+
+SSR_KRD = {
+    color = rgb { 125 13 24 }
+    color_ui = rgb { 163 17 31 }
+}
