@@ -1,0 +1,72 @@
+focus_tree = { 
+id = Rhineland
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = RHI 
+} 
+} 
+#Focus for Foreign Equipment
+focus = { 
+id = RHI_foreignequipment
+icon = GFX_goal_generic_allies_build_infantry
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RHI_diewachtamrhine } 
+mutually_exclusive = { focus = RHI_germanequipment } 
+mutually_exclusive = { focus = RHI_germanequipment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Die Wacht Am Rhine
+focus = { 
+id = RHI_diewachtamrhine
+icon = GFX_focus_generic_little_entente
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for German Equipment
+focus = { 
+id = RHI_germanequipment
+icon = GFX_goal_generic_axis_build_infantry
+x = 10
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = RHI_diewachtamrhine } 
+mutually_exclusive = { focus = RHI_foreignequipment } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Revolt in the Rhine Republic
+focus = { 
+id = RHI_revoltintherhinerepublic
+icon = GFX_goal_generic_war_with_comintern
+x = 6
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

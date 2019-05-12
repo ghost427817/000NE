@@ -430,6 +430,11 @@ spriteTypes = {
 		name = "GFX_ideology_fascism_group"
 		texturefile = "gfx/interface/ideologies/fascism_group.dds"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_austrofascism_group"
+		texturefile = "gfx/interface/ideologies/austrofascism_group.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_democratic_group"
@@ -466,6 +471,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_SOV_technocracy_group"
 		texturefile = "gfx/interface/ideologies/tektology_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_AUS_fascism_group"
+		texturefile = "gfx/interface/ideologies/austrofascism_group.dds"
 	}
 
 	spriteType = {

@@ -207,6 +207,10 @@ ideologies = {
 
 			islamofascism = {
 			}
+
+			austrofascism = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {

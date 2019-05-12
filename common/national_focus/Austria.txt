@@ -1,0 +1,161 @@
+focus_tree = { 
+id = AUS
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = AUS
+} 
+} 
+#Focus for The 1936 Civil War
+focus = { 
+id = Austria_the1936civilwar
+icon = GFX_the1936civilwar
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_fourfutures } 
+mutually_exclusive = { focus = Austria_theaustriansecondrepublic } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Socialist Future
+focus = { 
+id = Austria_asocialistfuture
+icon = GFX_asocialistfuture
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_theaustriansecondrepublic } 
+mutually_exclusive = { focus = Austria_asocialdemocraticfuture } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Building Austria
+focus = { 
+id = Austria_buildingaustria
+icon = GFX_focus_generic_industry_3
+x = 13
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus= {
+ bonus = 0.5 
+ uses = 2 
+ name = industrial_bonus
+ category = industry
+}
+ } 
+
+ } 
+
+#Focus for An Austrofascist Future
+focus = { 
+id = Austria_anaustrofascistfuture
+icon = GFX_anaustrofascistfuture
+x = 7
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_the1936civilwar } 
+mutually_exclusive = { focus = Austria_areturntoourpast } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Four Futures
+focus = { 
+id = Austria_fourfutures
+icon = GFX_fourfutures
+x = 6
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 150
+ } 
+
+ } 
+
+#Focus for Construction Effort
+focus = { 
+id = Austria_constructioneffort
+icon = GFX_goal_generic_production2
+x = 12
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_buildingaustria } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Austrian Second Republic
+focus = { 
+id = Austria_theaustriansecondrepublic
+icon = GFX_theaustriansecondrepublic
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_fourfutures } 
+mutually_exclusive = { focus = Austria_the1936civilwar } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Social Democratic Future
+focus = { 
+id = Austria_asocialdemocraticfuture
+icon = GFX_asocialdemocraticfuture
+x = 5
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_theaustriansecondrepublic } 
+mutually_exclusive = { focus = Austria_asocialistfuture } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for A Return to Our Past
+focus = { 
+id = Austria_areturntoourpast
+icon = GFX_areturntoourpast
+x = 9
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Austria_the1936civilwar } 
+mutually_exclusive = { focus = Austria_anaustrofascistfuture } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }

@@ -38,8 +38,8 @@ POL = {
 	color_ui = rgb { 255 120 138 }
 }
 AUS = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 255 186 0 }
+	color_ui = rgb { 255 186 0 }
 }
 LIT = {
 	color = rgb { 219 219 119 }
@@ -741,6 +741,10 @@ SUD = {
 }
 LGS = {
 	color = rgb { 205 205 255 }
+	color_ui = rgb { 255 255 255 }
+}
+FRK = {
+	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
 D01 = {

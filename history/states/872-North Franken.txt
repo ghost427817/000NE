@@ -1,0 +1,22 @@
+
+state={
+	id=872
+	name="North Franken"
+	manpower = 508159
+
+	state_category = city
+
+	history={
+		owner = FRK
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = FRK
+
+	}
+
+	provinces={
+		6594 11417 13116 6421 3474 11404
+	}
+}

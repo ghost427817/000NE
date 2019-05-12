@@ -1,0 +1,31 @@
+spriteTypes = { 
+##Icon For: 722301
+ SpriteType = { 
+ name = "GFX_the1936civilwar" 
+ texturefile = "gfx/interface/goals/GFX_the1936civilwar.tga" 
+ }##Icon For: 722468
+ SpriteType = { 
+ name = "GFX_asocialistfuture" 
+ texturefile = "gfx/interface/goals/GFX_asocialistfuture.tga" 
+ }##Icon For: 722543
+ SpriteType = { 
+ name = "GFX_anaustrofascistfuture" 
+ texturefile = "gfx/interface/goals/GFX_anaustrofascistfuture.tga" 
+ }##Icon For: 722012
+ SpriteType = { 
+ name = "GFX_fourfutures" 
+ texturefile = "gfx/interface/goals/GFX_fourfutures.tga" 
+ }##Icon For: 722119
+ SpriteType = { 
+ name = "GFX_theaustriansecondrepublic" 
+ texturefile = "gfx/interface/goals/GFX_theaustriansecondrepublic.tga" 
+ }##Icon For: 722387
+ SpriteType = { 
+ name = "GFX_asocialdemocraticfuture" 
+ texturefile = "gfx/interface/goals/GFX_asocialdemocraticfuture.tga" 
+ }##Icon For: 722549
+ SpriteType = { 
+ name = "GFX_areturntoourpast" 
+ texturefile = "gfx/interface/goals/GFX_areturntoourpast.tga" 
+ } 
+ }

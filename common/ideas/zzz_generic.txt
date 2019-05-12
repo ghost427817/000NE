@@ -1121,7 +1121,7 @@ ideas = {
 						original_tag = NZL
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = NZL_the_lee_affair
+					#has_completed_focus = NZL_the_lee_affair
 				}
 				
 			}
@@ -1158,7 +1158,7 @@ ideas = {
 						original_tag = NZL
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = NZL_the_lee_affair
+					#has_completed_focus = NZL_the_lee_affair
 				}
 				
 			}
@@ -1195,7 +1195,7 @@ ideas = {
 						original_tag = NZL
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = NZL_the_lee_affair
+					#has_completed_focus = NZL_the_lee_affair
 				}
 				
 			}
@@ -1231,7 +1231,7 @@ ideas = {
 						original_tag = NZL
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = NZL_the_lee_affair
+					#has_completed_focus = NZL_the_lee_affair
 				}
 				
 			}
@@ -1269,8 +1269,8 @@ ideas = {
 						has_dlc = "Together for Victory"
 					}
 					OR = {
-						has_completed_focus = NZL_strengthen_the_commonwealth
-						has_completed_focus = NZL_constitution_amendment_act
+						#has_completed_focus = NZL_strengthen_the_commonwealth
+						#has_completed_focus = NZL_constitution_amendment_act
 					}
 				}
 			}
@@ -1309,7 +1309,7 @@ ideas = {
 						original_tag = NZL
 						has_dlc = "Together for Victory"
 					}
-					has_completed_focus = NZL_in_the_darkness
+					#has_completed_focus = NZL_in_the_darkness
 				}
 				
 			}

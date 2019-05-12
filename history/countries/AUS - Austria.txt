@@ -18,40 +18,40 @@ set_politics = {
 
 	parties = {
 		neutrality = { 
-			popularity = 48
+			popularity = 28
 		}
 
 		fascism = {
-			popularity = 50
+			popularity = 25
 		}
 
 		democratic = {
-			popularity = 1
+			popularity = 30
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 12
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1930.11.9"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_stability = 0.50
 
-create_country_leader = {
-	name = "Kurt Schuschnigg"
-	desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
-	picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
+#create_country_leader = {
+	#name = "Kurt Schuschnigg"                               #SCHUSSCHNIGG IS DEAD
+	#desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+	#picture = "Portrait_Austria_Kurt_Schuschnigg.dds"
+	#expire = "1965.1.1"
+	#ideology = centrism
+#	traits = {
 		#
-	}
-}
+	#}
+#}
 
 create_country_leader = {
 	name = "Karl Renner"
@@ -70,6 +70,17 @@ create_country_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 	expire = "1965.1.1"
 	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Otto Ender"
+	desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+	picture = "gfx/leaders/AUS/Otto Ender.dds"
+	expire = "1965.1.1"
+	ideology = austrofascism
 	traits = {
 		#
 	}
