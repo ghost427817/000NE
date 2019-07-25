@@ -47,7 +47,7 @@ set_technology = {
 
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
-set_research_slots = 4
+set_research_slots = 3
 set_stability = 0.75 
 set_war_support = 0.3
 
@@ -61,18 +61,12 @@ create_import = {
 set_politics = {
 
 	set_popularities = {
-		democratic = { 
-			 20
-		}
+		democratic = 20
 
-		fascism = {
-			 60
-		}
+
+		fascism = 60
 		
-		communism = {
-			 20
-			banned = yes #default is no
-		}
+		communism = 20
 	}
 	
 	ruling_party = fascism

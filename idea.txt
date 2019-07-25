@@ -1,0 +1,7 @@
+IDEA
+
+HOI4 Leader events
+
+National focii give ideas/policies have stats that some leaders are incompatible with which causes a - to PP income
+If too many policies that are incompatible with the leader are chosen (eg maybe each has some stat "Progressive," "Traditional," "Civc," "Ethnic," etc. and if those are over a certain threshold for a leader they resign or get assasinated.)
+With Nazis maybe you can summon a coup by taking certain advisors?

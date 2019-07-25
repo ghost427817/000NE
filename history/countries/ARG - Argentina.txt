@@ -21,21 +21,13 @@ set_country_flag = monroe_doctrine
 set_convoys = 120
 
 set_popularities = {
-		democratic = { 
-			 5
-		}
+		democratic = 5
 
-		fascism = {
-			 5
-		}
+		fascism = 5
 		
-		communism = {
-			 12
-		}
+		communism = 12
 		
-		neutrality = { 
-			 78
-		}
+		neutrality = 78
 	}
 
 set_politics = {
