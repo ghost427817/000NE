@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = RUT
 		victory_points = {
 			11370 20
 		}
@@ -17,6 +17,7 @@ state={
 			air_base = 8
 		}
 		add_core_of = SOV
+		add_core_of = RUT
 		add_core_of = BLR
 		1939.1.1 = {
 			buildings = {

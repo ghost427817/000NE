@@ -13,17 +13,17 @@ add_ideas = {
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 40
+			 40
 		}
 
 		fascism = {
-			popularity = 15
+			 15
 		}
 		
 		communism = {
-			popularity = 45
+			 45
 			#banned = yes
 		}
 	}

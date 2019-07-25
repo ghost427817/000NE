@@ -741,3 +741,9 @@
  WCN_democratic_party:0 "Independence"
  WCN_communism_party_long:0 "Progressive Party"
  WCN_communism_party:0 "Progressive"
+ #SOR
+ SOR_neutrality_party_desc:0 "Polish Mandate"
+ SOR_neutrality_party:0 "Joint Leadership Council"
+ #GAL
+ GAL_neutrality_party_desc:0 "Polish Mandate"
+ GAL_neutrality_party:0 "Joint Leadership Council"

@@ -22,21 +22,21 @@ set_research_slots = 3
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 65
+			 65
 		}
 
 		neutrality = { 
-			popularity = 20
+			 20
 		}
 
 		fascism = {
-			popularity = 5
+			 5
 		}
 		
 		communism = {
-			popularity = 10
+			 10
 		}
 	}
 	
@@ -128,8 +128,10 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
+		SLAV_Ethnicity
 		CZE_skoda_works
 		CZE_divided_nation
+		
 }
 	give_guarantee = YUG
 	give_guarantee = ROM
@@ -140,6 +142,7 @@ if = {
 		NOT = { has_dlc = "Death or Dishonor" }
 	}
 	add_ideas = {
+		SLAV_Ethnicity
 		CZE_fortification_focus
 	}
 }

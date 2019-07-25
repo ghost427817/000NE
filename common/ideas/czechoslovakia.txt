@@ -1,6 +1,18 @@
 ideas = {
 
 	country = {
+
+		SLAV_Ethnicity = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+		}
 	
 		CZE_democratic_bastion = {
 			

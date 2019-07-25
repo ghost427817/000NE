@@ -78,17 +78,17 @@ set_stability = 0.75
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 96
+			 96
 		}
 
 		fascism = {
-			popularity = 2
+			 2
 		}
 		
 		communism = {
-			popularity = 2
+			 2
 		}
 	}
 	
@@ -101,21 +101,21 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 84
+				 84
 			}
 
 			fascism = {
-				popularity = 2
+				 2
 			}
 			
 			communism = {
-				popularity = 2
+				 2
 			}
 
 			neutrality = {
-				popularity = 12
+				 12
 			}
 		}
 		

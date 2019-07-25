@@ -46,22 +46,17 @@ set_technology = {
 
 set_convoys = 300
 
+set_popularities = {
+		democratic = 70
+
+		fascism = 20
+		
+		communism = 10
+	}
 
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 70
-		}
-
-		fascism = {
-			popularity = 20
-		}
-		
-		communism = {
-			popularity = 10
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1932.5.1"
@@ -72,7 +67,9 @@ set_politics = {
 add_ideas = {
 }
 
-#give_guarantee = CZE
+FRA = {
+	give_guarantee = ALG
+}
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {

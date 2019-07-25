@@ -35,25 +35,25 @@ set_war_support = 0.2
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 40
+			 40
 		}
 
 		fascism = {
-			popularity = 3
+			 3
 		}
 
 		neutrality = {
-			popularity = 3
+			 3
 		}
 
 		anarch = {
-			popularity = 4
+			 4
 		}
 
 		communism = {
-			popularity = 50
+			 50
 		}
 	}
 	

@@ -51,21 +51,23 @@ add_ideas = {
 	Defense_Prussia
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 10
+			 10
 		}
 
 		fascism = {
-			popularity = 10
+			 10
 		}
 		
 		communism = {
-			popularity = 80
+			 80
 		}
 	}
+
+set_politics = {
+
+	
 	
 	ruling_party = communism
 	last_election = "1932.3.5"

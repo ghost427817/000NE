@@ -33,28 +33,28 @@ set_technology = {
 	basic_carrier = 1
 	transport = 1
 }
-
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 50
+			 50
 		}
 
 		fascism = {
-			popularity = 3
+			 3
 		}
 		
 		communism = {
-			popularity = 30
+			 30
 		}
 		neutrality = {
-			popularity = 4
+			 4
 		}
 		anarch = {
-			popularity = 3
+			 3
 		}
 	}
+set_politics = {
+
+	
 	
 	ruling_party = democratic
 	last_election = "1935.10.22"

@@ -1,0 +1,31 @@
+
+state={
+	id=875
+	name="Lower Lusatia"
+	manpower = 780000
+	resources={
+		aluminium=8 # was: 30
+	}
+	
+	state_category = city
+
+	history={
+		owner = SOR
+		victory_points = {
+			11415 30
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 6
+		}
+		add_core_of = SOR
+
+		
+	}
+
+	provinces={
+		11505 9428 9496 3473
+	}
+}

@@ -46,20 +46,21 @@ set_technology = {
 
 set_convoys = 300
 
+set_popularities = {
+		neutrality = {
+			 30
+		}
+		democratic = { 
+			 40
+		}
+		fascism = {
+			 30
+		}
+	}
 
 set_politics = {
 
-	parties = {
-		neutrality = {
-			popularity = 30
-		}
-		democratic = { 
-			popularity = 40
-		}
-		fascism = {
-			popularity = 30
-		}
-	}
+	
 	
 	ruling_party = democratic
 	last_election = "1932.5.1"

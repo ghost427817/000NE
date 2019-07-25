@@ -9,28 +9,28 @@ set_technology = {
 }
 
 set_convoys = 5
-
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 0
+			 0
 			banned = yes
 		}
 
 		fascism = {
-			popularity = 80
+			 80
 		}
 		
 		communism = {
-			popularity = 0
+			 0
 			banned = yes
 		}
 
 		neutrality = {
-			popularity = 20
+			 20
 		}
 	}
+set_politics = {
+
+	
 	
 	ruling_party = fascism
 	last_election = "1936.1.1"
@@ -105,7 +105,4 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 	female = yes
-}
-
-1939.1.1 = {
 }

@@ -30,30 +30,31 @@ set_technology = {
 }
 set_stability = 0.3
 set_war_support = 0.8
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 1
+			 1
 		}
 
 		fascism = {
-			popularity = 94
+			 94
 		}
 		
 		communism = {
-			popularity = 1
+			 1
 			banned = yes
 		}
 		
 		neutrality = { 
-			popularity = 1
+			 1
 		}
 
 		anarch = { 
-			popularity = 1
+			 1
 		}
 	}
+set_politics = {
+
+	
 
 	
 	ruling_party = fascism

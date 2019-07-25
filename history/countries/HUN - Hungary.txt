@@ -1,4 +1,4 @@
-﻿capital = 43
+﻿capital = 155
 
 oob = "HUN_1936"
 
@@ -126,18 +126,18 @@ if = {
 }
 
 set_politics = {
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 25
+			 25
 		}
 		fascism = {
-			popularity = 31
+			 31
 		}
 		neutrality = {
-			popularity = 44
+			 44
 		}
 		communism = {
-			popularity = 0
+			 0
 		}
 	}
 	
@@ -226,17 +226,17 @@ create_country_leader = {
 
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 27
+				 27
 			}
 
 			fascism = {
-				popularity = 70
+				 70
 			}
 			
 			communism = {
-				popularity = 3
+				 3
 			}
 		}
 		

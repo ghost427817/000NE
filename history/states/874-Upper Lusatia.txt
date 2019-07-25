@@ -1,0 +1,31 @@
+
+state={
+	id=874
+	name="Upper Lusatia"
+	manpower = 780000
+	resources={
+		aluminium=8 # was: 30
+	}
+	
+	state_category = city
+
+	history={
+		owner = SOR
+		victory_points = {
+			11415 30
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 6
+		}
+		add_core_of = SOR
+
+		
+	}
+
+	provinces={
+		9535 11415 11517 3572 478 3514
+	}
+}

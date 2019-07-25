@@ -11,22 +11,24 @@ add_ideas = {
 	limited_conscription
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 40
+			 40
 		}
 
 		fascism = {
-			popularity = 20
+			 20
 		}
 		
 		communism = {
-			popularity = 40
+			 40
 			#banned = yes
 		}
 	}
+
+set_politics = {
+
+	
 	
 	ruling_party = democratic
 	last_election = "1936.1.1"

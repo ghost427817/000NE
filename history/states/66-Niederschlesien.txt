@@ -1,7 +1,7 @@
 
 state={
 	id=66
-	name="STATE_66"
+	name="Lower Silesia"
 	manpower = 3052726
 	resources={
 		steel=50 # was: 110
@@ -22,16 +22,10 @@ state={
 		}
 		add_core_of = POL
 		add_core_of = WEI
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				arms_factory = 3
-				industrial_complex = 3
-			}
-		}
+		
 	}
 
 	provinces={
-		552 3283 3438 3510 3545 6462 6534 6595 9470 9570 11517 
+		552 3283 3438 3510 3545 6462 6534 6595 9470 9570
 	}
 }

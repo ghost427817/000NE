@@ -61,22 +61,22 @@ set_convoys = 5
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 30
+			 30
 		}
 
 		fascism = {
-			popularity = 0
+			 0
 		}
 		
 		communism = {
-			popularity = 0
+			 0
 			#banned = no #default is no
 		}
 
 		neutrality = {
-			popularity = 70
+			 70
 		}
 	}
 	
@@ -100,22 +100,22 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 30
+				 30
 			}
 
 			fascism = {
-				popularity = 0
+				 0
 			}
 			
 			communism = {
-				popularity = 0
+				 0
 				#banned = no #default is no
 			}
 
 			neutrality = {
-				popularity = 70
+				 70
 			}
 		}
 		

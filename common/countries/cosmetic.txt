@@ -1,7 +1,27 @@
 
 MAL_UK = {
-    color = rgb { 201 56 93 }
+    color = rgb { 51 115 175 }
     color_ui = rgb { 255 73 121 }
+}
+
+SAF_UK = {
+    color = rgb { 51 115 175 }
+    color_ui = rgb { 255 120 138 }
+}
+
+RAJ_UK = {
+    color = rgb { 51 115 175 }
+    color_ui = rgb { 255 120 138 }
+}
+
+AST_UK = {
+    color = rgb { 51 115 175 }
+    color_ui = rgb { 255 120 138 }
+}
+
+NZL_UK = {
+    color = rgb { 51 115 175 }
+    color_ui = rgb { 255 120 138 }
 }
 
 INS_HOL = {
@@ -26,7 +46,7 @@ SCA_UNIFIED = {
 
 NDC_UNIFIED = {
     color = rgb { 0 76 153 }
-    color_ui = rgb { 0 76 153 }
+    color_ui = rgb { 0 76 153 } 
 }
 
 GCO_UNIFIED = {
@@ -34,10 +54,10 @@ GCO_UNIFIED = {
     color_ui = rgb { 255 255 51 }
 }
 
-PLC_UNIFIED = {
-    color = rgb { 255 125 160 }
-    color_ui = rgb { 255 125 160 }
-}
+#PLC_UNIFIED = {
+ #   color = rgb { 255 125 160 } #PLC colors were too bright and yucky considering they occur naturally
+  #  color_ui = rgb { 255 125 160 }
+#}
 
 UNL_UNIFIED = {
     color = rgb { 255 128 0 }
@@ -233,6 +253,31 @@ AHW_JOR = {
 }
 
 SSR_KRD = {
-    color = rgb { 125 13 24 }
+    color = rgb { 125 45 45 }
     color_ui = rgb { 163 17 31 }
+}
+
+SOV_RUS = {
+    color = rgb { 0  90  0 }
+    color_ui = rgb { 0  90  0 }
+}
+
+POL_SOR = {
+    color = rgb { 197 92 106 }
+    color_ui = rgb { 255 120 138 }
+}
+
+POL_GAL = {
+    color = rgb { 197 92 106 }
+    color_ui = rgb { 255 120 138 }
+}
+
+POL_RUT = {
+    color = rgb { 197 92 106 }
+    color_ui = rgb { 255 120 138 }
+}
+
+POL_POD = {
+    color = rgb { 197 92 106 }
+    color_ui = rgb { 255 120 138 }
 }

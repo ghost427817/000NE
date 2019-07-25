@@ -456,18 +456,22 @@ spriteTypes = {
 	#	name = "GFX_ideology_USA_FED_democratic_group"
 	#	texturefile = "gfx/interface/ideologies/bbwr_group.dds"
 	#}
+
 	spriteType = {
 		name = "GFX_ideology_USA_democratic_group"
 		texturefile = "gfx/interface/ideologies/federalist_group.dds"
 	}
+
 	spriteType = {
 		name = "GFX_ideology_NEE_communism_group"
 		texturefile = "gfx/interface/ideologies/workers_group.dds"
 	}
+
 	spriteType = {
 		name = "GFX_ideology_POL_neutrality_group"
 		texturefile = "gfx/interface/ideologies/bbwr_group.dds"
 	}
+
 	spriteType = {
 		name = "GFX_ideology_SOV_technocracy_group"
 		texturefile = "gfx/interface/ideologies/tektology_group.dds"
@@ -476,6 +480,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_AUS_fascism_group"
 		texturefile = "gfx/interface/ideologies/austrofascism_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_AUS_democratic_group"
+		texturefile = "gfx/interface/ideologies/socialist_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_SOR_neutrality_group"
+		texturefile = "gfx/interface/ideologies/SORPOL_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_GAL_neutrality_group"
+		texturefile = "gfx/interface/ideologies/GALPOL_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_RUT_neutrality_group"
+		texturefile = "gfx/interface/ideologies/RUTPOL_group.dds"
 	}
 
 	spriteType = {

@@ -20,21 +20,25 @@ set_technology = {
 	early_submarine = 1
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		fascism = { 
-			popularity = 33
+			 33
 		}
 		neutrality = { 
-			popularity = 33
+			 33
 		}		
 		communism = {
-			popularity = 34
+			 34
 		}
 	}
-}
 
+set_politics = {
+
+	
+}
+add_ideas = {
+	SLAV_Ethnicity
+}
 create_country_leader = {
 	name = "Sekula Drljević"
 	desc = ""

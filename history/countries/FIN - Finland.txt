@@ -87,21 +87,21 @@ add_ideas = {
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 10
+			 10
 		}
 
 		fascism = {
-			popularity = 10
+			 10
 		}
 		
 		communism = {
-			popularity = 1
+			 1
 		}
 
 		neutrality = {
-			popularity = 79
+			 79
 		}
 	}
 	
@@ -114,21 +114,21 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 10
+				 10
 			}
 
 			fascism = {
-				popularity = 10
+				 10
 			}
 			
 			communism = {
-				popularity = 1
+				 1
 			}
 
 			neutrality = {
-				popularity = 79
+				 79
 			}
 		}
 		

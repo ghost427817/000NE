@@ -19,25 +19,19 @@ set_technology = {
 	transport = 1
 }
 
+set_popularities = {
+		democratic = 3
+
+		fascism = 65
+		
+		communism = 30
+
+		anarch = 2
+	}
+
 set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 3
-		}
-
-		fascism = {
-			popularity = 65
-		}
-		
-		communism = {
-			popularity = 30
-		}
-
-		anarch = {
-			popularity = 2
-		}
-	}
+	
 	
 	ruling_party = fascism
 	last_election = "1935.10.22"

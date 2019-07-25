@@ -33,16 +33,18 @@ set_technology = {
 	transport = 1
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		communism = {
-			popularity = 70
+			 70
 		}
 		anarch = {
-			popularity = 30
+			 30
 		}
 	}
+
+set_politics = {
+
+	
 	
 	ruling_party = communism
 	last_election = "1935.10.22"

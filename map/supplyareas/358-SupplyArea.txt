@@ -1,0 +1,8 @@
+supply_area={
+	id=358
+	name="Sorbia"
+	value=4
+	states={
+		874 875
+	}
+}

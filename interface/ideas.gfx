@@ -1,5 +1,10 @@
 spriteTypes = {	
+	### Ethnic and Cultural Icons
 
+	spriteType = {
+		name = "GFX_idea_SLAV_Ethnicity" 
+		texturefile = "gfx/interface/ideas/SlavicIdea.dds"
+	}
 
 
 	SpriteType = {

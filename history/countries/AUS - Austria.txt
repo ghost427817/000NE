@@ -14,27 +14,29 @@ set_technology = {
 	early_fighter = 1
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		neutrality = { 
-			popularity = 28
+			 28
 		}
 
 		fascism = {
-			popularity = 25
+			 30
 		}
 
 		democratic = {
-			popularity = 30
+			 25
 		}
 		
 		communism = {
-			popularity = 12
+			 12
 		}
 	}
+
+set_politics = {
+
 	
-	ruling_party = democratic
+	
+	ruling_party = fascism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = yes

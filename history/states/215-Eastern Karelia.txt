@@ -1,17 +1,17 @@
 state={
 	id=215
-	name="STATE_215"
+	name="Eastern Karelia"
 	resources={
 		steel=30 # was: 52.000
 	}
 
 	history={
-		owner = SOV
+		owner = FIN
 		buildings = {
 			infrastructure = 3
 
 		}
-		add_core_of = SOV
+		add_core_of = FIN
 
 	}
 

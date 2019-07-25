@@ -45,14 +45,15 @@ set_technology = {
 
 set_convoys = 300
 
+set_popularities = {
+		technocracy = {
+			 100
+		}
+	}
 
 set_politics = {
 
-	parties = {
-		technocracy = {
-			popularity = 100
-		}
-	}
+	
 	
 	ruling_party = technocracy
 	last_election = "1932.5.1"

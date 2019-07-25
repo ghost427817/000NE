@@ -45,17 +45,17 @@ set_stability = 0.75
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 30
+			 30
 		}
 
 		fascism = {
-			popularity = 30
+			 30
 		}
 		
 		communism = {
-			popularity = 40
+			 40
 			banned = no #default is no
 		}
 	}

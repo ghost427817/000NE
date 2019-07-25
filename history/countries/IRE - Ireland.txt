@@ -63,17 +63,17 @@ set_convoys = 10
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 98
+			 98
 		}
 
 		fascism = {
-			popularity = 1
+			 1
 		}
 		
 		communism = {
-			popularity = 1
+			 1
 		}
 	}
 	
@@ -86,17 +86,17 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 98
+				 98
 			}
 
 			fascism = {
-				popularity = 1
+				 1
 			}
 			
 			communism = {
-				popularity = 1
+				 1
 			}
 		}
 		

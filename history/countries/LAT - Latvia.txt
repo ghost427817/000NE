@@ -72,21 +72,21 @@ set_convoys = 10
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 30
+			 30
 		}
 
 		fascism = {
-			popularity = 15
+			 15
 		}
 		
 		communism = {
-			popularity = 15
+			 15
 		}
 		
 		neutrality = { 
-			popularity = 50
+			 50
 		}
 	}
 	
@@ -99,21 +99,21 @@ set_politics = {
 1939.1.1 = {# probably needs some adjustment before nazi occupation in 1940
 	set_politics = {
 
-		parties = {
+		set_popularities = {
 			democratic = { 
-				popularity = 30
+				 30
 			}
 
 			fascism = {
-				popularity = 15
+				 15
 			}
 			
 			communism = {
-				popularity = 15
+				 15
 			}
 			
 			neutrality = { 
-				popularity = 50
+				 50
 			}
 		}
 		

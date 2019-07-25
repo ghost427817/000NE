@@ -3,6 +3,7 @@
 oob = "BUL_1936"
 
 add_ideas = {
+	SLAV_Ethnicity
 	limited_conscription
 }
 
@@ -78,21 +79,21 @@ set_convoys = 5
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 5
+			 5
 		}
 
 		fascism = {
-			popularity = 35
+			 35
 		}
 		
 		communism = {
-			popularity = 0
+			 0
 			banned = yes
 		}
 		neutrality = { 
-			popularity = 60
+			 60
 		}
 	}
 	
@@ -105,21 +106,21 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 5
+			 5
 		}
 
 		fascism = {
-			popularity = 35
+			 35
 		}
 		
 		communism = {
-			popularity = 0
+			 0
 			banned = yes
 		}
 		neutrality = { 
-			popularity = 60
+			 60
 		}
 	}
 	

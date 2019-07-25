@@ -60,17 +60,17 @@ create_import = {
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 20
+			 20
 		}
 
 		fascism = {
-			popularity = 60
+			 60
 		}
 		
 		communism = {
-			popularity = 20
+			 20
 			banned = yes #default is no
 		}
 	}
@@ -95,6 +95,17 @@ create_country_leader = {
 	name = "Adolf Hitler"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+}
+
+create_country_leader = {
+	name = "Ernst Roehm"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "rom.dds"
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {

@@ -1,4 +1,4 @@
-﻿capital = 64
+﻿capital = 60
 
 oob = "WEI_1936"
 
@@ -54,22 +54,24 @@ create_import = {
 		exporter = SWE
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 60
+			 60
 		}
 
 		fascism = {
-			popularity = 20
+			 20
 		}
 		
 		communism = {
-			popularity = 20
+			 20
 			banned = yes #default is no
 		}
 	}
+
+set_politics = {
+
+	
 	
 	ruling_party = democratic
 	last_election = "1932.3.5"

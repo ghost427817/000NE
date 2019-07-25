@@ -12,22 +12,22 @@ set_convoys = 5
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 35
+			 35
 		}
 
 		fascism = {
-			popularity = 25
+			 25
 		}
 		
 		communism = {
-			popularity = 30
+			 30
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 10
+			 10
 		}
 	}
 	ruling_party = democratic

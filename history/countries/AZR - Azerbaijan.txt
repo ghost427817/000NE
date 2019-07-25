@@ -37,21 +37,27 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-set_politics = {
-
-	parties = {
+set_popularities = {
 		democratic = { 
-			popularity = 30
+			 30
 		}
 		
 		communism = {
-			popularity = 40
+			 40
 		}
 		
 		neutrality = {
-			popularity = 30
+			 30
 		}		
 	}
+
+set_politics = {
+
+	ruling_party = neutrality
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = no
+	
 }
 
 create_country_leader = {

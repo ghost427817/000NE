@@ -226,17 +226,17 @@ create_country_leader = {
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 97
+			 97
 		}
 
 		fascism = {
-			popularity = 2
+			 2
 		}
 		
 		communism = {
-			popularity = 1
+			 1
 		}
 	}
 	

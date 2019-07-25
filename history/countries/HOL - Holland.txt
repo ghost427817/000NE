@@ -104,17 +104,17 @@ if = {
 
 set_politics = {
 
-	parties = {
+	set_popularities = {
 		democratic = { 
-			popularity = 93
+			 93
 		}
 
 		fascism = {
-			popularity = 4
+			 4
 		}
 		
 		communism = {
-			popularity = 3
+			 3
 		}
 	}
 	
