@@ -12,7 +12,7 @@ set_technology = {
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		neutrality = {
 			popularity = 100
 		}

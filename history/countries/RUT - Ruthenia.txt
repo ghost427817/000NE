@@ -30,7 +30,7 @@ set_cosmetic_tag = POL_RUT
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			 popularity = 15
 		}

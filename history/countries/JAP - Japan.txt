@@ -205,7 +205,7 @@ if = {
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			 popularity = 0
 		}
@@ -230,7 +230,7 @@ set_politics = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
 				 0
 			}

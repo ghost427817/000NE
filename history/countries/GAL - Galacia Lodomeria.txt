@@ -28,7 +28,7 @@ set_cosmetic_tag = POL_GAL
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			 popularity = 15
 		}

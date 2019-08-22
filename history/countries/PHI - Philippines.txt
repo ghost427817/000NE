@@ -18,7 +18,7 @@ set_convoys = 5
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 82
 		}
@@ -64,7 +64,7 @@ create_country_leader = {
 1939.1.1 = {
 	set_politics = {
 
-		set_popularities = {
+		parties = {
 			democratic = { 
 				 82
 			}

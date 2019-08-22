@@ -42,7 +42,7 @@ set_technology = {
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		agrarianism = { 
 			popularity = 40
 		}

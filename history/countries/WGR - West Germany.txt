@@ -50,7 +50,7 @@ set_stability = 0.7
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 80
 		}

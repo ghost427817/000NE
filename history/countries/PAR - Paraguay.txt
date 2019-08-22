@@ -13,7 +13,7 @@ set_country_flag = monroe_doctrine
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 25
 		}

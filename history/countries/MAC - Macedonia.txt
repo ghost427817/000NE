@@ -42,7 +42,7 @@ if = {
 add_ideas = {
 	SLAV_Ethnicity
 }
-set_popularities = {
+parties = {
 		fascism = { 
 			 popularity = 33
 		}

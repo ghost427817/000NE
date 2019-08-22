@@ -32,7 +32,7 @@ set_stability = 0.3
 set_war_support = 0.2
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			 popularity = 37
 		}

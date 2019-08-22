@@ -51,7 +51,7 @@ set_convoys = 300
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		neutrality = {
 			popularity = 40
 		}

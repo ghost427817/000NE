@@ -22,7 +22,7 @@ set_technology = {
 
 
 set_politics = {
-	set_popularities = {
+	parties = {
 		
 		communism = {
 			popularity = 25

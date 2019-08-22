@@ -48,7 +48,7 @@ set_politics = {
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 15
 		}

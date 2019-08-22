@@ -18,7 +18,7 @@ save_global_event_target_as = WTT_communist_china
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 0
 		}

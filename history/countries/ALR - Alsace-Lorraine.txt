@@ -47,7 +47,7 @@ set_stability = 0.75
 set_war_support = 0.3
 
 set_politics = {
-	set_popularities = {
+	parties = {
 		
 		MarxismLeninism = {
 			popularity = 30

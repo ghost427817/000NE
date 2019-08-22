@@ -147,7 +147,7 @@ set_convoys = 200
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			 popularity = 22
 		}

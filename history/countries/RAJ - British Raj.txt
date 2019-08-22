@@ -40,7 +40,7 @@ set_cosmetic_tag = RAJ_UK # British Raj
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 17
 		}

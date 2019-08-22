@@ -24,7 +24,7 @@ add_ideas = {
 
 
 set_politics = {
-	set_popularities = {
+	parties = {
 		fascism = { 
 			popularity = 33
 		}

@@ -14,7 +14,7 @@ set_stability = 0.8
 
 set_politics = {
 
-	set_popularities = {
+	parties = {
 		democratic = { 
 			popularity = 0
 		}
