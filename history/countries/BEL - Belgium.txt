@@ -18,23 +18,23 @@ set_technology = {
 
 }
 
-set_popularities = {
-		democratic = { 
-			 83
-		}
 
-		fascism = {
-			 11
-		}
-		
-		communism = {
-			 6
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 83
+		}
+
+		fascism = {
+			popularity = 11
+		}
+		
+		communism = {
+			popularity = 6
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1932.11.27"

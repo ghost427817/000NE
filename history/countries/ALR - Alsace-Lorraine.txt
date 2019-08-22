@@ -43,12 +43,20 @@ set_technology = {
 }
 
 set_research_slots = 4
-set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
 set_politics = {
-	
+	set_popularities = {
+		
+		MarxismLeninism = {
+			popularity = 30
+		}
+		communism = {
+			popularity = 60
+		}
+
+	}
 	ruling_party = communism
 	last_election = "1932.3.5"
 	election_frequency = 48
@@ -56,6 +64,3 @@ set_politics = {
 
 }
 
-set_popularities = {
-		communism = 90
-	}

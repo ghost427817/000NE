@@ -41,30 +41,30 @@ add_ideas = {
 	SLAV_Ethnicity
 }
 
-set_popularities = {
-		democratic = { 
-			 15
-		}
 
-		neutrality = {
-			 20
-		}
-		
-		communism = {
-			 60
-		}
-
-		fascism = { 
-			 5
-		}
-	}
 
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.11.11"
 	election_frequency = 72
 	elections_allowed = yes
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 15
+		}
+
+		neutrality = {
+			popularity = 20
+		}
+		
+		communism = {
+			 popularity =60
+		}
+
+		fascism = { 
+			popularity = 5
+		}
+	}
 }
 
 create_country_leader = {

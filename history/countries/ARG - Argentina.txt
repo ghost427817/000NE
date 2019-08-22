@@ -20,18 +20,26 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 120
 
-set_popularities = {
-		democratic = 5
 
-		fascism = 5
-		
-		communism = 12
-		
-		neutrality = 78
-	}
 
 set_politics = {
-	
+	set_popularities = {
+		democratic = {
+			popularity = 5
+		}
+
+		agrarianism = {
+			popularity = 25
+		}
+		
+		communism = {
+			popularity = 25
+		}
+		
+		neutrality = {
+			popularity = 78
+		}
+	}
 	ruling_party = neutrality
 	last_election = "1931.11.8"
 	election_frequency = 72
