@@ -49,15 +49,15 @@ set_war_support = 0
 
 set_popularities = {
 		democratic = { 
-			 70
+			 popularity = 70
 		}
 
 		fascism = {
-			 10
+			 popularity = 10
 		}
 		
 		communism = {
-			 20
+			 popularity = 20
 			banned = yes #default is no
 		}
 	}

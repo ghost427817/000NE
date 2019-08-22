@@ -128,16 +128,16 @@ if = {
 set_politics = {
 	set_popularities = {
 		democratic = { 
-			 25
+			 popularity = 25
 		}
 		fascism = {
-			 31
+			 popularity = 31
 		}
 		neutrality = {
-			 44
+			 popularity = 44
 		}
 		communism = {
-			 0
+			 popularity = 0
 		}
 	}
 	

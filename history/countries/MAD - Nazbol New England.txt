@@ -32,11 +32,11 @@ set_stability = 0.3
 set_war_support = 0.8
 set_popularities = {
 		democratic = { 
-			 1
+			 popularity = 1
 		}
 
 		fascism = {
-			 94
+			 popularity = 94
 		}
 		
 		communism = {

@@ -61,12 +61,15 @@ create_import = {
 set_politics = {
 
 	set_popularities = {
-		democratic = 20
-
-
-		fascism = 60
-		
-		communism = 20
+		democratic = {
+			popularity = 20
+		}
+		fascism = {
+			popularity = 60
+		}
+		communism = {
+			popularity = 20
+		}
 	}
 	
 	ruling_party = fascism

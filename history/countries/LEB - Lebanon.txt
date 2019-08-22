@@ -10,20 +10,20 @@ set_convoys = 5
 
 set_popularities = {
 		democratic = { 
-			 50
+			 popularity = 50
 		}
 
 		fascism = {
-			 10
+			 popularity = 10
 		}
 		
 		communism = {
-			 10
+			 popularity = 10
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			 30
+			 popularity = 30
 		}
 	}
 

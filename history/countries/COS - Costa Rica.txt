@@ -59,15 +59,15 @@ set_politics = {
 
 	set_popularities = {
 		democratic = { 
-			 98
+			popularity = 98
 		}
 
 		fascism = {
-			 2
+			popularity = 2
 		}
 		
 		communism = {
-			 0
+			popularity = 0
 			#banned = no #default is no
 		}
 	}
