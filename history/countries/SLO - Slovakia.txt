@@ -26,15 +26,15 @@ set_politics = {
 
 	set_popularities = {
 		democratic = { 
-			5
+			popularity = 5
 		}
 
 		fascism = {
-			90
+			popularity = 90
 		}
 		
 		communism = {
-			5
+			popularity = 5
 		}
 	}
 	

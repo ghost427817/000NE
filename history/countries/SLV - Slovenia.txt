@@ -21,20 +21,20 @@ add_ideas = {
 	SLAV_Ethnicity
 }
 
-set_popularities = {
-		fascism = { 
-			 33
-		}
-		neutrality = { 
-			 33
-		}		
-		communism = {
-			 34
-		}
-	}
+
 
 set_politics = {
-
+	set_popularities = {
+		fascism = { 
+			popularity = 33
+		}
+		neutrality = { 
+			popularity = 33
+		}		
+		communism = {
+			popularity = 34
+		}
+	}
 	
 }
 

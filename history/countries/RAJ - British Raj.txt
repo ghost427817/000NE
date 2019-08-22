@@ -36,27 +36,27 @@ set_convoys = 20
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
-set_popularities = {
-		democratic = { 
-			 17
-		}
 
-		fascism = {
-			 2
-		}
-		
-		communism = {
-			 1
-		}
-
-		neutrality = {
-			 80
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 17
+		}
+
+		fascism = {
+			popularity = 2
+		}
+		
+		communism = {
+			 popularity =1
+		}
+
+		neutrality = {
+			popularity = 80
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1935.11.14"

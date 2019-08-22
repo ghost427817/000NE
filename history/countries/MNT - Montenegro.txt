@@ -20,20 +20,20 @@ set_technology = {
 	early_submarine = 1
 }
 
-set_popularities = {
-		fascism = { 
-			 33
-		}
-		neutrality = { 
-			 33
-		}		
-		communism = {
-			 34
-		}
-	}
+
 
 set_politics = {
-
+	set_popularities = {
+		fascism = { 
+			popularity = 33
+		}
+		neutrality = { 
+			popularity = 33
+		}		
+		communism = {
+			popularity = 34
+		}
+	}
 	
 }
 add_ideas = {

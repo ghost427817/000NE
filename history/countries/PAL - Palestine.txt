@@ -8,24 +8,24 @@ set_technology = {
 
 set_convoys = 5
 
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 40
+			popularity = 40
 		}
 
 		fascism = {
-			 30
+			popularity = 30
 		}
 		
 		communism = {
-			 30
+			 popularity = 30
 			#banned = no #default is no
 		}
 	}
 
-set_politics = {
-
-	
 	
 	ruling_party = democratic
 	last_election = "1936.1.1"

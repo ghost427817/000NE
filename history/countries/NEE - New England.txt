@@ -35,29 +35,29 @@ set_technology = {
 
 }
 
-set_popularities = {
+
+
+set_politics = {
+	set_popularities = {
 		democratic = { 
-			 15
+			popularity = 15
 		}
 
 		fascism = {
-			 10
+			popularity = 10
 		}
 		
 		communism = {
-			 55
+			popularity = 55
 		}
 		
 		neutrality = { 
-			 5
+			popularity = 5
 		}
 		anarch = {
-			 15
+			popularity = 15
 		}
 	}
-
-set_politics = {
-
 	ruling_party = communism
 	last_election = "1936.1.1"
 	election_frequency = 48

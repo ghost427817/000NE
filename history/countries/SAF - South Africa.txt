@@ -38,22 +38,22 @@ if = {
 set_cosmetic_tag = SAF_UK 
 
 set_convoys = 25
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 75
+			popularity = 75
 		}
 
 		fascism = {
-			 20
+			popularity = 20
 		}
 		
 		communism = {
-			 5
+			popularity = 5
 		}
 	}
-set_politics = {
-
-	
 	
 	ruling_party = democratic
 	last_election = "1933.5.17"

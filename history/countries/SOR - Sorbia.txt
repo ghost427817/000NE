@@ -26,23 +26,22 @@ add_ideas = {
 
 set_cosmetic_tag = POL_SOR
 
-set_popularities = {
-		democratic = { 
-			 15
-		}
-
-		neutrality = {
-			 75
-		}
-		
-		communism = {
-			 10
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 15
+		}
+
+		neutrality = {
+			popularity = 75
+		}
+		
+		communism = {
+			popularity = 10
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1935.6.9"

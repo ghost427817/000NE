@@ -28,28 +28,28 @@ add_ideas = {
 
 set_convoys = 0
 
-set_popularities = {
+
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 20
+			popularity = 20
 		}
 
 		fascism = {
-			 30
+			popularity = 30
 		}
 		
 		communism = {
-			 20
+			popularity = 20
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			 30
+			popularity = 30
 		}
 	}
-
-set_politics = {
-
-	
 	
 	ruling_party = neutrality
 	last_election = "1936.1.1"

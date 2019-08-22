@@ -40,21 +40,24 @@ add_ideas = {
 	SLAV_Ethnicity
 }
 
-set_popularities = {
+
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 15
+			popularity = 15
 		}
 
 		fascism = {
-			 30
+			popularity = 30
 		}
 		
 		communism = {
-			 50
+			popularity = 50
 		}
 	}
 
-set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48

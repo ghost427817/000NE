@@ -25,23 +25,23 @@ set_technology = {
 	transport = 1
 }
 
-set_popularities = {
-		democratic = { 
-			 47
-		}
 
-		fascism = {
-			 46
-		}
-		
-		communism = {
-			 7
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 47
+		}
+
+		fascism = {
+			popularity = 46
+		}
+		
+		communism = {
+			popularity = 7
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1933.2.16"

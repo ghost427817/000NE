@@ -17,27 +17,27 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 45
 
-set_popularities = {
-		democratic = { 
-			 5
-		}
 
-		fascism = {
-			 0
-		}
-		
-		communism = {
-			 1
-		}
-		
-		neutrality = { 
-			 94
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 1
+		}
+		
+		neutrality = { 
+			popularity = 94
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1934.7.1"

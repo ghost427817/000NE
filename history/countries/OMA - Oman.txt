@@ -11,28 +11,28 @@ set_convoys = 10
 set_war_support = 0.1
 set_stability = 0.8
 
-set_popularities = {
+
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 0
+			popularity = 0
 		}
 
 		fascism = {
-			 0
+			popularity = 0
 		}
 		
 		communism = {
-			 0
+			 popularity = 0
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			 100
+			popularity = 100
 		}
 	}
-
-set_politics = {
-
-	
 	
 	ruling_party = neutrality
 	last_election = "1936.1.1"

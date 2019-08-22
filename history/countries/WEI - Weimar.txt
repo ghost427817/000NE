@@ -54,24 +54,24 @@ create_import = {
 		exporter = SWE
 }
 
-set_popularities = {
-		democratic = { 
-			 60
-		}
 
-		fascism = {
-			 20
-		}
-		
-		communism = {
-			 20
-			banned = yes #default is no
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 60
+		}
+
+		fascism = {
+			popularity = 20
+		}
+		
+		communism = {
+			popularity = 20
+			banned = yes #default is no
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1932.3.5"

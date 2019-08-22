@@ -8,36 +8,36 @@ set_technology = {
 	basic_light_tank = 1
 }
 
-set_popularities = {
+
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 10
+			popularity = 10
 		}
 
 		fascism = {
-			 5
+			popularity = 5
 		}
 		
 		communism = {
-			 80
+			popularity = 80
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			 5
+			popularity = 5
 		}
 
 		technocracy = { 
-			 0
+			popularity = 0
 		}
 
 		anarch = { 
-			 0
+			popularity = 0
 		}
 	}
-
-set_politics = {
-
-	
 	
 	ruling_party = technocracy
 	last_election = "1936.1.1"

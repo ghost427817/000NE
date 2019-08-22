@@ -23,30 +23,31 @@ set_technology = {
 	transport = 1
 }
 
-set_popularities = {
-		democratic = { 
-			 10
-		}
 
-		fascism = {
-			 0
-			banned = yes
-		}
-		
-		communism = {
-			 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			 100
-		}
-	}
 
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			 popularity = 10
+			 banned = yes
+		}
+
+		fascism = {
+			popularity =  0
+			banned = yes
+		}
+		
+		communism = {
+			popularity =  0
+			banned = yes #default is no
+		}
+		
+		neutrality = { 
+			 popularity = 100
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1935.2.8"

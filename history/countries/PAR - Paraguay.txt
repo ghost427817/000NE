@@ -10,24 +10,24 @@ set_technology = {
 }
 set_country_flag = monroe_doctrine
 
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 25
+			popularity = 25
 		}
 
 		fascism = {
-			 0
+			popularity = 0
 		}
 		
 		communism = {
-			 75
+			popularity = 75
 			#banned = no #default is no
 		}
 	}
 
-set_politics = {
-
-	
 	
 	ruling_party = communism
 	last_election = "1936.1.1"

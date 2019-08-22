@@ -40,26 +40,26 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-set_popularities = {
-		democratic = { 
-			 35
-		}
 
-		fascism = {
-			 15
-		}
-		
-		communism = {
-			 15
-		}
-		neutrality = {
-			 35
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 35
+		}
+
+		fascism = {
+			popularity = 15
+		}
+		
+		communism = {
+			popularity = 15
+		}
+		neutrality = {
+			popularity = 35
+		}
+	}
 
 	ruling_party = democratic
 	last_election = "1933.2.16"

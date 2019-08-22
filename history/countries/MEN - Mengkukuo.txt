@@ -7,29 +7,29 @@ set_technology = {
 	
 }
 
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 0
+			popularity = 0
 			banned = yes
 		}
 
 		fascism = {
-			 80
+			popularity = 80
 		}
 		
 		communism = {
-			 0
+			popularity = 0
 			banned = yes
 		}
 
 		neutrality = {
-			 20
+			popularity = 20
 		}
 	}
 
-set_politics = {
-
-	
 	
 	ruling_party = fascism
 	last_election = "1936.1.1"

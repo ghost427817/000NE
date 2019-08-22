@@ -13,24 +13,24 @@ set_country_flag = monroe_doctrine
 
 set_convoys = 10
 
-set_popularities = {
-		democratic = { 
-			 5
-		}
 
-		fascism = {
-			 80
-		}
-		
-		communism = {
-			 15
-			#banned = no #default is no
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			 popularity = 80
+		}
+		
+		communism = {
+			popularity = 15
+			#banned = no #default is no
+		}
+	}
 	
 	ruling_party = fascism
 	last_election = "1936.1.1"

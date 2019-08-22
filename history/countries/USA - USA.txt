@@ -40,31 +40,31 @@ set_technology = {
 
 set_convoys = 50
 
-set_popularities = {
-		democratic = { 
-			 40
-		}
-		fascism = {
-			 5
-			banned = yes
-		}
-		anarch = {
-			 5
-			banned = yes
-		}
-		technocracy = {
-			 15
-			banned = yes
-		}
-		communism = {
-			 40
-			banned = yes
-		}
-	}
+
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 40
+		}
+		fascism = {
+			popularity = 5
+			banned = yes
+		}
+		anarch = {
+			popularity = 5
+			banned = yes
+		}
+		technocracy = {
+			popularity = 15
+			banned = yes
+		}
+		communism = {
+			popularity = 40
+			banned = yes
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1932.11.8"

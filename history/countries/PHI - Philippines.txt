@@ -14,24 +14,24 @@ set_technology = {
 }
 
 set_convoys = 5
-set_popularities = {
-		democratic = { 
-			 82
-		}
 
-		fascism = {
-			 9
-		}
-		
-		communism = {
-			 9
-			#banned = no #default is no
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 82
+		}
+
+		fascism = {
+			 popularity = 9
+		}
+		
+		communism = {
+			popularity = 9
+			#banned = no #default is no
+		}
+	}
 	
 	ruling_party = democratic
 	last_election = "1935.9.15"

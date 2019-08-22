@@ -10,23 +10,23 @@ set_technology = {
 add_ideas = {
 	limited_conscription
 }
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 55
+			popularity = 55
 		}
 
 		fascism = {
-			 45
+			popularity = 45
 		}
 		
 		communism = {
-			 0
+			popularity = 0
 			#banned = yes
 		}
 	}
-set_politics = {
-
-	
 	
 	ruling_party = democratic
 	last_election = "1936.1.1"

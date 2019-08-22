@@ -42,27 +42,27 @@ add_ideas = {
 } 
 set_convoys = 10
 
-set_popularities = {
-		democratic = { 
-			 18
-		}
 
-		fascism = {
-			 15
-		}
-		
-		communism = {
-			 2
-		}
-		
-		neutrality = { 
-			 65
-		}
-	}
 
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = { 
+			popularity = 18
+		}
+
+		fascism = {
+			 popularity =15
+		}
+		
+		communism = {
+			popularity = 2
+		}
+		
+		neutrality = { 
+			popularity = 65
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1935.9.8"

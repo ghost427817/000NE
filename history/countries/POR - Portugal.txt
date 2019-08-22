@@ -19,29 +19,29 @@ set_technology = {
 	transport = 1
 }
 
-set_popularities = {
-		democratic = {
-			 0
-		}
 
-		fascism = {
-			 5
-		}
-		
-		communism = {
-			 5
-		}
-		
-		neutrality = {
-			 90
-		}
-	}
 
 
 set_convoys = 50
 set_politics = {
 
-	
+	set_popularities = {
+		democratic = {
+			popularity =  0
+		}
+
+		fascism = {
+			popularity =  5
+		}
+		
+		communism = {
+			popularity =  5
+		}
+		
+		neutrality = {
+			 popularity = 90
+		}
+	}
 	
 	ruling_party = neutrality
 	last_election = "1933.3.5"

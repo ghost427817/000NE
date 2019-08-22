@@ -46,23 +46,23 @@ set_research_slots = 4
 set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
-set_popularities = {
+
+set_politics = {
+
+	set_popularities = {
 		democratic = { 
-			 50
+			popularity = 50
 		}
 
 		fascism = {
-			 10
+			 popularity =10
 		}
 		
 		communism = {
-			 40
+			popularity = 40
 			banned = yes
 		}
 	}
-set_politics = {
-
-	
 	
 	ruling_party = democratic
 	last_election = "1932.3.5"
